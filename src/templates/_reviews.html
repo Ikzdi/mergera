@@ -1,0 +1,24 @@
+<section class="section bg-accent-soft/40 border-y border-line">
+  <div class="container-content">
+    <div class="text-center max-w-prose mx-auto mb-12">
+      <div class="eyebrow inline-flex items-center gap-3"><span class="gold-rule"></span>{{home.reviews.eyebrow}}<span class="gold-rule"></span></div>
+      <h2 class="mt-4 text-balance">{{home.reviews.title}}</h2>
+      <div class="mt-5 inline-flex flex-wrap items-center justify-center gap-3">
+        <span class="inline-flex items-center justify-center h-10 px-3 rounded-lg bg-ink text-white font-semibold text-lg">{{home.reviews.score}}</span>
+        <span class="text-sm text-ink-muted">{{home.reviews.scoreLabel}} · {{home.reviews.source}}</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{#each home.reviews.items}}
+      <figure class="card bg-white p-7 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center justify-center min-w-[2.75rem] h-11 px-2 rounded-lg bg-ink text-white font-semibold" aria-label="Booking.com vērtējums">{{this.rating}}</span>
+          <span class="text-xs text-ink-muted leading-snug">{{this.meta}}</span>
+        </div>
+        <blockquote class="text-lg text-ink leading-relaxed flex-1">&ldquo;{{this.text}}&rdquo;</blockquote>
+        <figcaption class="text-sm text-ink-muted"><span class="font-semibold text-ink">{{this.author}}</span> · {{this.country}}</figcaption>
+      </figure>
+      {{/each}}
+    </div>
+  </div>
+</section>

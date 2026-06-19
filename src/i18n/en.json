@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "lang": "en",
+    "ogLocale": "en_US",
+    "name": "English"
+  },
+  "brand": {
+    "name": "Hotel Mergera",
+    "tagline": "A quiet seaside guesthouse in Mērsrags — rooms, sauna and outdoor hot tub.",
+    "street": "Lielā iela 1",
+    "postalCode": "LV-3284",
+    "phone": "+371 20 000 000",
+    "phoneRaw": "+37120000000",
+    "email": "info@mergera.lv",
+    "facebook": "https://www.facebook.com/p/Hotel-Mergera-61566408587945/",
+    "instagram": "https://www.instagram.com/",
+    "booking": "https://www.booking.com/hotel/lv/mergera.lv.html",
+    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+M%C4%93rsrags",
+    "mapsWaze": "https://waze.com/ul?ll=57.3236,23.1186&navigate=yes"
+  },
+  "maps": {
+    "google": "Open in Google Maps",
+    "waze": "Open in Waze"
+  },
+  "distances": {
+    "eyebrow": "Nearby",
+    "title": "How far to…",
+    "items": [
+      {"name": "Mērsrags beach", "value": "3.2 km"},
+      {"name": "Lake Engure", "value": "2 km"},
+      {"name": "Lake Engure Nature Park", "value": "11 km"},
+      {"name": "Riga Airport", "value": "83 km"}
+    ]
+  },
+  "events": {
+    "title": "Event hall in Mērsrags | Hotel Mergera",
+    "description": "A hall and equipped kitchen for events up to 50 people in Mērsrags — celebrations, concerts and seminars. Prices from €120. Rent the whole guesthouse.",
+    "hero": {"eyebrow": "Events", "title": "A venue for events and celebrations", "subtitle": "A spacious hall with an equipped kitchen for up to 50 guests — celebrations, concerts, seminars and family occasions in Mērsrags.", "ctaCall": "Call: +371 29286132", "ctaReserve": "Request a quote"},
+    "features": {"eyebrow": "What's possible", "title": "Everything for your event", "items": [
+      {"title": "Up to 50 guests", "text": "A hall and equipped kitchen for events of up to 50 people."},
+      {"title": "Concerts & shows", "text": "Host concerts or performances for up to 50 spectators."},
+      {"title": "Flexible layout", "text": "The hall can be arranged with round or rectangular tables and chairs."},
+      {"title": "Kitchen & sauna", "text": "An equipped kitchen with a large table and a sauna — for celebrations of up to 10 people."},
+      {"title": "Equipment", "text": "Projector and screen, sound system and ambient lighting."},
+      {"title": "The whole house", "text": "Option to rent the entire guesthouse together with the rooms."}
+    ]},
+    "gallery": {"title": "The hall and spaces"},
+    "pricing": {"eyebrow": "Pricing", "title": "Prices from €120", "text": "The final price depends on the type of event, number of guests and extras. Get in touch and we'll prepare an offer for your event.", "ctaCall": "+371 29286132", "ctaWrite": "Write to us"}
+  },
+  "nav": {
+    "location": "Mērsrags · Latvia",
+    "home": "Home",
+    "guesthouse": "Guest house",
+    "accommodation": "Stay",
+    "bala": "Hot tub",
+    "pirts": "Sauna",
+    "events": "Events",
+    "gallery": "Gallery",
+    "about": "About",
+    "contacts": "Contact",
+    "reserve": "Reserve",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "ariaPrimary": "Main navigation",
+    "ariaMobile": "Mobile navigation"
+  },
+  "footer": {
+    "tagline": "A family-run guesthouse in Mērsrags — cosy rooms, a traditional Latvian sauna and a year-round outdoor hot tub under the stars. Made for a quiet weekend escape.",
+    "navTitle": "Pages",
+    "contactTitle": "Get in touch",
+    "bookingLink": "View on Booking.com",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "title": "Seaside stays in Mērsrags",
+    "description": "Hotel Mergera — a modern guesthouse in Mērsrags with cosy rooms, a Latvian sauna and an outdoor hot tub. Quiet, close to the sea, warmly hosted.",
+    "hero": {
+      "eyebrow": "Mērsrags · Gulf of Riga coast",
+      "title": "Hotel Mergera",
+      "subtitle": "A guest house in Mērsrags, steps from the sea — modern rooms, a sauna, an outdoor hot tub and an event hall for quiet getaways, families and celebrations.",
+      "ctaPrimary": "Book a room",
+      "ctaSecondary": "See the rooms"
+    },
+    "intro": {
+      "eyebrow": "Why Mergera",
+      "title": "Small place. Big stay.",
+      "features": [
+        {"icon": "wave", "title": "200 m to the sea", "text": "Three minutes on foot to the white sand of the Gulf of Riga and the Mērsrags lighthouse."},
+        {"icon": "leaf", "title": "Latvian sauna & hot tub", "text": "A wood-fired sauna and an outdoor hot tub under the open sky — open all year round."},
+        {"icon": "home", "title": "Cosy, modern rooms", "text": "Natural materials, quiet design and every detail considered, so you feel at home."}
+      ]
+    },
+    "rooms": {
+      "eyebrow": "Stays",
+      "title": "Our rooms",
+      "subtitle": "Six rooms in three types — for couples, families or groups of friends. All with a private kitchenette, bathroom, coffee machine and free Wi-Fi.",
+      "items": [
+        {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Quadruple room with terrace", "eyebrow": "4 guests · 28 m² · terrace", "title": "Quadruple room with terrace", "price": "€96 / 1 guest · €102 / 2+ guests", "description": "One sofa bed and one large double bed. Private terrace, kitchenette and bathroom — room for a family or a group of friends.", "features": ["Sofa bed + double", "Private terrace", "Kitchenette", "Coffee machine"]},
+        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Double room with terrace", "eyebrow": "2 guests · 20 m² · terrace", "title": "Double room with terrace", "price": "€77 / 1 guest · €85 / 2 guests", "description": "Two single beds or one large double bed. A cosy room with its own terrace and a kitchenette.", "features": ["1 or 2 beds", "Private terrace", "Kitchenette", "Private bathroom"]},
+        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Double room", "eyebrow": "2 guests · 20 m²", "title": "Double room", "price": "€72 / 1 guest · €80 / 2 guests", "description": "Two single beds or one large double bed. A quiet room with a kitchenette and a private bathroom.", "features": ["1 or 2 beds", "Kitchenette", "Private bathroom", "Free Wi-Fi"]}
+      ]
+    },
+    "wellness": {
+      "eyebrow": "Sauna & hot tub",
+      "title": "Heat that resets you",
+      "text": "Warm up in the Latvian sauna, then step into the outdoor hot tub under the stars. Book them on their own or as part of a stay.",
+      "ctaBala": "About the hot tub",
+      "ctaPirts": "About the sauna"
+    },
+    "reviews": {
+      "eyebrow": "Reviews",
+      "title": "What our guests say",
+      "source": "Booking.com · 9.2 / 10 · 70 reviews",
+      "score": "9.2",
+      "scoreLabel": "average score",
+      "items": [
+        {"rating": "10", "text": "Lovely place and warm hosts. You can feel the rural calm and quiet. The rooms are comfortable and cosy.", "author": "Sanita", "country": "Latvia", "meta": "Double room · Aug 2025"},
+        {"rating": "10", "text": "Great place! We really loved it.", "author": "Rebecca", "country": "United Kingdom", "meta": "Double room with terrace · Sep 2025"},
+        {"rating": "9.0", "text": "Everything was fresh, clean and tidy.", "author": "Gints", "country": "Latvia", "meta": "Quadruple room with terrace · Jan 2026"},
+        {"rating": "8.0", "text": "Comfortable, cosy and clean overall, easy access, kitchen in the room.", "author": "Alvis", "country": "Latvia", "meta": "Double room with terrace · Mar 2026"},
+        {"rating": "8.0", "text": "Everything beautiful and clean.", "author": "Daiga", "country": "Latvia", "meta": "Double room with terrace · Aug 2025"}
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Atmosphere",
+      "title": "A look at where you'll be",
+      "cta": "See the full gallery"
+    },
+    "location": {
+      "eyebrow": "Location",
+      "title": "Mērsrags — where Kurzeme meets the sea",
+      "text": "1.5 hours' drive from Riga. Next door — the Mērsrags lighthouse, the birdwatching tower and the Roja coastal road.",
+      "ctaDirections": "Get directions"
+    },
+    "finalCta": {
+      "title": "Ready for a quiet weekend?",
+      "text": "Check availability and book directly — no middlemen.",
+      "cta": "Check dates"
+    }
+  },
+  "accommodation": {
+    "title": "Stays in Mērsrags",
+    "description": "Hotel Mergera rooms and add-ons — sauna and hot tub. All stays include free Wi-Fi and parking.",
+    "hero": {
+      "eyebrow": "Stays",
+      "title": "Pick a room that suits you",
+      "subtitle": "From a cosy double room to a roomy family suite. Natural materials, thick pillows and quiet — in every one."
+    },
+    "explore": {
+      "eyebrow": "Wellness",
+      "title": "More than a place to sleep",
+      "pirtsText": "A traditional Latvian wood-fired sauna with warm timber walls — perfect to unwind after a long day by the sea.",
+      "balaText": "A heated outdoor hot tub under the open sky. Step into the warm water and enjoy the quiet of Mērsrags under the stars.",
+      "cta": "Learn more"
+    },
+    "included": {
+      "title": "Included with every night",
+      "items": ["Free Wi-Fi throughout", "Free parking", "Towels and toiletries", "Morning coffee and tea"]
+    },
+    "wellness": {
+      "title": "Add the sauna and hot tub",
+      "text": "Turn the weekend into something special — both are available as add-ons to any room."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Before you book",
+      "items": [
+        {"q": "What are check-in and check-out times?", "a": "Check-in from 15:00, check-out by 11:00. Later check-out by arrangement."},
+        {"q": "Are pets welcome?", "a": "Small, calm pets are welcome by prior arrangement, with a small surcharge."},
+        {"q": "Is breakfast available?", "a": "Morning coffee and tea are included. Full breakfast — on request."},
+        {"q": "What's the cancellation policy?", "a": "Free cancellation up to 7 days before arrival. Details in your booking confirmation."}
+      ]
+    }
+  },
+  "bala": {
+    "title": "Outdoor hot tub at Hotel Mergera",
+    "description": "A warming outdoor hot tub in Mērsrags — a relaxing soak under the stars, available year round.",
+    "hero": {
+      "eyebrow": "Outdoor hot tub",
+      "title": "Hot water. Quiet night. Stars above.",
+      "subtitle": "Our outdoor hot tub heats up all year — sun in summer, snow on your shoulders in winter."
+    },
+    "details": {
+      "eyebrow": "Details",
+      "title": "How it works",
+      "items": [
+        {"label": "Capacity", "value": "Up to 6 people"},
+        {"label": "Warm-up time", "value": "About 2 hours"},
+        {"label": "Water temperature", "value": "38–40 °C"},
+        {"label": "Available", "value": "Year round, by booking"}
+      ],
+      "text": "We light the tub before you arrive. You just walk up, step in and let go. Afterwards — a cold shower, a towel and a chair by the fire pit."
+    },
+    "pricing": {
+      "title": "Booking",
+      "text": "The hot tub can be booked on its own or as an add-on to a room. Ask for pricing when booking — it depends on the season and the number of guests.",
+      "cta": "Book the hot tub"
+    },
+    "related": {
+      "title": "Pair it with the sauna",
+      "text": "A classic combination: hot wood-fired sauna first, then a leap into the outdoor tub. The Latvian way.",
+      "cta": "About the sauna"
+    }
+  },
+  "pirts": {
+    "title": "Sauna at Hotel Mergera",
+    "description": "Traditional Latvian wood-fired sauna in Mērsrags. Hot steam to ease a long day.",
+    "hero": {
+      "eyebrow": "Latvian sauna",
+      "title": "Heat, steam and warm wood",
+      "subtitle": "Our sauna is built in the traditional Latvian style — a real wood-fired stove and warm wooden walls."
+    },
+    "details": {
+      "eyebrow": "Details",
+      "title": "About the sauna",
+      "items": [
+        {"label": "Type", "value": "Latvian wood-fired sauna"},
+        {"label": "Capacity", "value": "Up to 6 people"},
+        {"label": "Warm-up time", "value": "About 1.5 hours"},
+        {"label": "Included", "value": "Whisks, towels, shower area"}
+      ],
+      "text": "We fire the stove for you — you only need to arrive on time. After the sauna we recommend a cold shower and a moment in the quiet lounge or by the hot tub."
+    },
+    "pricing": {
+      "title": "Booking",
+      "text": "The sauna can be booked on its own (2–3 hours) or as an add-on to a room. A pirtnieks (sauna master) is available by separate arrangement.",
+      "cta": "Book the sauna"
+    },
+    "related": {
+      "title": "Add the hot tub",
+      "text": "Sauna and hot tub work brilliantly together in the same evening — the classic Latvian weekend.",
+      "cta": "About the hot tub"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "Photos of Hotel Mergera — rooms, sauna, outdoor hot tub and the area around Mērsrags.",
+    "hero": {
+      "eyebrow": "Gallery",
+      "title": "A look at where you'll be",
+      "subtitle": "Honest, professional photos of the house, the sauna, the hot tub and the nature around us."
+    },
+    "filters": {
+      "all": "All",
+      "exterior": "Exterior",
+      "rooms": "Rooms",
+      "sauna": "Sauna",
+      "hotTub": "Hot tub",
+      "surroundings": "Surroundings"
+    }
+  },
+  "about": {
+    "title": "About us",
+    "description": "The Hotel Mergera story — why Mērsrags, who we are and what inspired us.",
+    "hero": {
+      "eyebrow": "About us",
+      "title": "Small place. Heart project.",
+      "subtitle": "Hotel Mergera is a family-run guesthouse — our way of sharing the quiet of Mērsrags and the Latvian sauna tradition."
+    },
+    "story": {
+      "title": "Our story",
+      "paragraphs": [
+        "Mērsrags has always been more than a seaside town for us — it's the kind of quiet that lets you hear yourself again after long working months. When we got the chance to buy this house near the lighthouse, we knew: we wanted others to find the feeling we did.",
+        "Over the past few years we've reworked the house — natural materials, calm design, no clutter. The heart of it is the sauna and the hot tub, both open all year. When winter outside hits −10 °C, you'll find +40 °C in here."
+      ]
+    },
+    "values": {
+      "eyebrow": "What we care about",
+      "title": "Simple, quiet, considered",
+      "items": [
+        {"icon": "hand", "title": "Personal hosting", "text": "You're not just another booking. Write to us directly and you'll get an answer — often before you've even sat down."},
+        {"icon": "leaf", "title": "Natural materials", "text": "Wood, linen, stone — no plastic and no fake gloss."},
+        {"icon": "moon", "title": "Quiet", "text": "No TVs in shared areas, no background noise. Just the sea and the wind."}
+      ]
+    },
+    "nearby": {
+      "eyebrow": "Around here",
+      "title": "What to see in Mērsrags and nearby",
+      "items": [
+        {"title": "Mērsrags lighthouse", "text": "5 min walk. Climb up for a full view of the Gulf of Riga."},
+        {"title": "Birdwatching tower", "text": "10 min by car. Thousands of birds in spring and autumn."},
+        {"title": "Cape Kolka", "text": "1 hour by car. The point where the Baltic meets the Gulf of Riga."},
+        {"title": "Roja coast", "text": "20 min by car. Beautiful coastline and sunset spots."}
+      ]
+    }
+  },
+  "contacts": {
+    "title": "Contact",
+    "description": "Get in touch with Hotel Mergera in Mērsrags — phone, email, address and map.",
+    "hero": {
+      "eyebrow": "Get in touch",
+      "title": "We're always here",
+      "subtitle": "Questions about a booking, the sauna or what to do nearby? Drop us a line."
+    },
+    "info": {
+      "addressLabel": "Address",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Check-in times",
+      "checkIn": "Check-in: 15:00 — 21:00",
+      "checkOut": "Check-out: by 11:00"
+    },
+    "form": {
+      "title": "Write to us",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "consent": "By sending, you agree we may process your data to reply to your question."
+    },
+    "map": {"title": "Location"}
+  },
+  "reservation": {
+    "title": "Book a stay",
+    "description": "Check availability and book a room, the sauna or the hot tub at Hotel Mergera online.",
+    "hero": {
+      "eyebrow": "Booking",
+      "title": "Check dates and book",
+      "subtitle": "Pick your dates, a room and any add-ons. You'll get a confirmation in your inbox right away."
+    },
+    "placeholder": {
+      "title": "The booking engine will appear here",
+      "text": "This area is reserved for a third-party booking engine that our reservations partner will provide.",
+      "fallback": "In the meantime, you can also book via Booking.com or give us a call.",
+      "ctaBooking": "Book on Booking.com",
+      "ctaCall": "Call us"
+    },
+    "policies": {
+      "title": "Booking terms",
+      "items": [
+        {"title": "Cancellation", "text": "Free cancellation up to 7 days before arrival. After that — one night charge."},
+        {"title": "Arrival", "text": "Check-in 15:00–21:00. Later by arrangement."},
+        {"title": "Payment", "text": "Pay on arrival by card or cash. Online payment — through the booking engine."}
+      ]
+    }
+  }
+}

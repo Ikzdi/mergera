@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main" class="pt-28 md:pt-32">
+
+  <section class="container-content pt-12 pb-16 md:pt-20 md:pb-24">
+    <div class="max-w-3xl">
+      <div class="eyebrow">{{about.hero.eyebrow}}</div>
+      <h1 class="mt-4 text-balance">{{about.hero.title}}</h1>
+      <p class="mt-6 text-lg max-w-prose">{{about.hero.subtitle}}</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section-tight bg-bg-surface">
+    <div class="container-content grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <img src="/images/about/about-1.jpg" alt="Hotel Mergera saimnieki" loading="lazy"
+           class="w-full aspect-[4/5] object-cover rounded-2xl" />
+      <div>
+        <h2 class="text-balance">{{about.story.title}}</h2>
+        <div class="mt-6 space-y-5 max-w-prose">
+          {{#each about.story.paragraphs}}<p>{{this}}</p>{{/each}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section bg-bg">
+    <div class="container-content">
+      <div class="text-center max-w-prose mx-auto mb-16">
+        <div class="eyebrow inline-flex items-center gap-3"><span class="gold-rule"></span>{{about.values.eyebrow}}<span class="gold-rule"></span></div>
+        <h2 class="mt-4 text-balance">{{about.values.title}}</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{#each about.values.items}}
+        <div class="card p-8 text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-accent-soft flex items-center justify-center text-accent-hover">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z"/></svg>
+          </div>
+          <h3 class="mt-6 text-xl">{{this.title}}</h3>
+          <p class="mt-3 text-base">{{this.text}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+{{> reviews }}
+
+  <!-- Nearby -->
+  <section class="section-tight bg-bg-surface">
+    <div class="container-content">
+      <div class="max-w-3xl mb-12">
+        <div class="eyebrow">{{about.nearby.eyebrow}}</div>
+        <h2 class="mt-4 text-balance">{{about.nearby.title}}</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {{#each about.nearby.items}}
+        <article class="p-6 border border-line rounded-2xl bg-bg">
+          <h3 class="text-xl">{{this.title}}</h3>
+          <p class="mt-3 text-sm">{{this.text}}</p>
+        </article>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

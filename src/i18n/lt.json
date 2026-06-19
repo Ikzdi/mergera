@@ -1,0 +1,192 @@
+{
+  "meta": {"lang": "lt", "ogLocale": "lt_LT", "name": "Lietuvių"},
+  "brand": {
+    "name": "Hotel Mergera",
+    "tagline": "Ramus svečių namas prie jūros Mērsrage — kambariai, pirtis ir lauko karšta vonia.",
+    "street": "Lielā iela 1", "postalCode": "LV-3284",
+    "phone": "+371 20 000 000", "phoneRaw": "+37120000000",
+    "email": "info@mergera.lv",
+    "facebook": "https://www.facebook.com/p/Hotel-Mergera-61566408587945/",
+    "instagram": "https://www.instagram.com/",
+    "booking": "https://www.booking.com/hotel/lv/mergera.lv.html",
+    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+M%C4%93rsrags",
+    "mapsWaze": "https://waze.com/ul?ll=57.3236,23.1186&navigate=yes"
+  },
+  "maps": {
+    "google": "Atidaryti Google Maps",
+    "waze": "Atidaryti Waze"
+  },
+  "distances": {
+    "eyebrow": "Netoliese",
+    "title": "Kiek toli iki…",
+    "items": [
+      {"name": "Mērsrago paplūdimys", "value": "3,2 km"},
+      {"name": "Engurės ežeras", "value": "2 km"},
+      {"name": "Engurės ežero gamtos parkas", "value": "11 km"},
+      {"name": "Rygos oro uostas", "value": "83 km"}
+    ]
+  },
+  "events": {
+    "title": "Renginių salė Mērsrage | Hotel Mergera",
+    "description": "Salė ir įrengta virtuvė renginiams iki 50 žmonių Mērsrage — šventės, koncertai ir seminarai. Kainos nuo €120. Galima išsinuomoti visus svečių namus.",
+    "hero": {"eyebrow": "Renginiai", "title": "Vieta renginiams ir šventėms", "subtitle": "Erdvi salė su įrengta virtuve iki 50 svečių — šventėms, koncertams, seminarams ir šeimos progoms Mērsrage.", "ctaCall": "Skambinti: +371 29286132", "ctaReserve": "Užklausti pasiūlymo"},
+    "features": {"eyebrow": "Galimybės", "title": "Viskas jūsų renginiui", "items": [
+      {"title": "Iki 50 svečių", "text": "Salė ir įrengta virtuvė renginiams iki 50 žmonių."},
+      {"title": "Koncertai ir pasirodymai", "text": "Galima rengti koncertus ar pasirodymus iki 50 žiūrovų."},
+      {"title": "Lankstus išdėstymas", "text": "Salę galima įrengti su apvaliais ar stačiakampiais stalais ir kėdėmis."},
+      {"title": "Virtuvė ir pirtis", "text": "Įrengta virtuvė su dideliu stalu ir pirtimi — šventėms iki 10 žmonių."},
+      {"title": "Įranga", "text": "Projektorius ir ekranas, garso aparatūra ir jaukus apšvietimas."},
+      {"title": "Visi svečių namai", "text": "Galimybė išsinuomoti visus svečių namus kartu su kambariais."}
+    ]},
+    "gallery": {"title": "Salė ir patalpos"},
+    "pricing": {"eyebrow": "Kainos", "title": "Kainos nuo €120", "text": "Galutinė kaina priklauso nuo renginio tipo, svečių skaičiaus ir papildomų paslaugų. Susisiekite ir paruošime pasiūlymą jūsų renginiui.", "ctaCall": "+371 29286132", "ctaWrite": "Parašykite mums"}
+  },
+  "nav": {
+    "location": "Mērsragas · Latvija",
+    "home": "Pradžia", "guesthouse": "Svečių namai", "accommodation": "Apgyvendinimas", "bala": "Karšta vonia", "pirts": "Pirtis", "events": "Renginiai", "gallery": "Galerija", "about": "Apie mus", "contacts": "Kontaktai", "reserve": "Rezervuoti",
+    "openMenu": "Atidaryti meniu", "closeMenu": "Uždaryti meniu",
+    "ariaPrimary": "Pagrindinė navigacija", "ariaMobile": "Mobili navigacija"
+  },
+  "footer": {
+    "tagline": "Šeimos svečių namai Mērsrage — jaukūs kambariai, tradicinė latviška pirtis ir lauko karšta vonia po žvaigždėmis. Idealu ramiam savaitgaliui.",
+    "navTitle": "Puslapiai", "contactTitle": "Susisiekti", "bookingLink": "Žiūrėti Booking.com", "rights": "Visos teisės saugomos."
+  },
+  "home": {
+    "title": "Poilsis prie jūros Mērsrage",
+    "description": "Hotel Mergera — modernūs svečių namai Mērsrage su jaukiais kambariais, latviška pirtimi ir lauko karšta vonia.",
+    "hero": {
+      "eyebrow": "Mērsragas · Rygos įlankos pakrantė",
+      "title": "Hotel Mergera",
+      "subtitle": "Svečių namai Mērsrage, vos už kelių žingsnių nuo jūros — modernūs kambariai, pirtis, lauko vonia ir renginių salė ramiam poilsiui, šeimai ir šventėms.",
+      "ctaPrimary": "Rezervuoti kambarį", "ctaSecondary": "Pamatyti kambarius"
+    },
+    "intro": {"eyebrow": "Kodėl Mergera", "title": "Maža vieta. Didelis poilsis.",
+      "features": [
+        {"icon": "wave", "title": "200 m iki jūros", "text": "Trys minutės pėsčiomis iki balto Rygos įlankos smėlio ir Mērsrago švyturio."},
+        {"icon": "leaf", "title": "Latviška pirtis ir karšta vonia", "text": "Malkomis kūrenama pirtis ir lauko karšta vonia po atviru dangumi — atviros ištisus metus."},
+        {"icon": "home", "title": "Jaukūs, modernūs kambariai", "text": "Natūralios medžiagos, tyla ir kiekviena detalė apgalvota, kad jaustumėtės kaip namuose."}
+      ]
+    },
+    "rooms": {"eyebrow": "Apgyvendinimas", "title": "Mūsų kambariai", "subtitle": "Šeši kambariai, trys tipai — poroms, šeimoms ar draugų kompanijoms. Visuose sava virtuvėlė, vonios kambarys, kavos aparatas ir nemokamas Wi-Fi.",
+      "items": [
+        {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Keturvietis kambarys su terasa", "eyebrow": "4 svečiai · 28 m² · terasa", "title": "Keturvietis kambarys su terasa", "price": "€96 / 1 asm. · €102 / 2+ asm.", "description": "Viena sofa-lova ir viena didelė dviguba lova. Sava terasa, virtuvėlė ir vonios kambarys — vietos šeimai ar draugų kompanijai.", "features": ["Sofa-lova + dviguba", "Sava terasa", "Virtuvėlė", "Kavos aparatas"]},
+        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Dvivietis kambarys su terasa", "eyebrow": "2 svečiai · 20 m² · terasa", "title": "Dvivietis kambarys su terasa", "price": "€77 / 1 asm. · €85 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba. Jaukus kambarys su sava terasa ir virtuvėle.", "features": ["1 ar 2 lovos", "Sava terasa", "Virtuvėlė", "Atskiras vonios kambarys"]},
+        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Dvivietis kambarys", "eyebrow": "2 svečiai · 20 m²", "title": "Dvivietis kambarys", "price": "€72 / 1 asm. · €80 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba lova. Ramus kambarys su virtuvėle ir atskiru vonios kambariu.", "features": ["1 ar 2 lovos", "Virtuvėlė", "Atskiras vonios kambarys", "Nemokamas Wi-Fi"]}
+      ]
+    },
+    "wellness": {"eyebrow": "Pirtis ir karšta vonia", "title": "Šiluma, kuri atgaivina", "text": "Sušilkite latviškoje pirtyje, tada šokite į lauko karštą vonią po žvaigždėmis. Galima rezervuoti atskirai arba kartu su nakvyne.", "ctaBala": "Daugiau apie vonią", "ctaPirts": "Daugiau apie pirtį"},
+    "reviews": {"eyebrow": "Atsiliepimai", "title": "Ką sako mūsų svečiai", "source": "Booking.com · 9.2 / 10 · 70 atsiliepimų", "score": "9.2", "scoreLabel": "vidutinis įvertinimas",
+      "items": [
+        {"rating": "10", "text": "Miela vieta ir nuoširdūs šeimininkai. Jaučiama kaimo ramybė ir tyla. Kambariai patogūs ir jaukūs.", "author": "Sanita", "country": "Latvija", "meta": "Dvivietis kambarys · 2025 m. rugpj."},
+        {"rating": "10", "text": "Puiki vieta! Mums labai patiko.", "author": "Rebecca", "country": "Jungtinė Karalystė", "meta": "Dvivietis kambarys su terasa · 2025 m. rugsėjis"},
+        {"rating": "9.0", "text": "Viskas buvo gaivu, švaru ir tvarkinga.", "author": "Gints", "country": "Latvija", "meta": "Keturvietis kambarys su terasa · 2026 m. sausis"},
+        {"rating": "8.0", "text": "Apskritai patogu, jauku, švaru, lengvas privažiavimas, kambaryje virtuvė.", "author": "Alvis", "country": "Latvija", "meta": "Dvivietis kambarys su terasa · 2026 m. kovas"},
+        {"rating": "8.0", "text": "Viskas gražu ir švaru.", "author": "Daiga", "country": "Latvija", "meta": "Dvivietis kambarys su terasa · 2025 m. rugpj."}
+      ]
+    },
+    "gallery": {"eyebrow": "Atmosfera", "title": "Žvilgsnis į mūsų aplinką", "cta": "Pilna galerija"},
+    "location": {"eyebrow": "Vieta", "title": "Mērsragas — kur Kuržemė susitinka su jūra", "text": "1,5 val. kelio nuo Rygos. Šalia — Mērsrago švyturys, paukščių stebėjimo bokštas ir Rojos pajūrio kelias.", "ctaDirections": "Gauti maršrutą"},
+    "finalCta": {"title": "Pasiruošę ramiam savaitgaliui?", "text": "Patikrinkite laisvas datas ir rezervuokite tiesiogiai — be tarpininkų.", "cta": "Tikrinti datas"}
+  },
+  "accommodation": {
+    "title": "Apgyvendinimas Mērsrage",
+    "description": "Hotel Mergera kambariai ir papildomos paslaugos — pirtis, karšta vonia. Nemokamas Wi-Fi ir parkavimas visur.",
+    "hero": {"eyebrow": "Apgyvendinimas", "title": "Pasirinkite kambarį pagal save", "subtitle": "Nuo jaukaus dvivietio kambario iki erdvaus šeimos apartamento. Visur — natūralios medžiagos, minkštos pagalvės ir tyla."},
+    "explore": {"eyebrow": "Poilsis", "title": "Daugiau nei nakvynė", "pirtsText": "Tradicinė latviška pirtis su šiltomis medinėmis sienomis — puiki vieta atsipalaiduoti po ilgos dienos prie jūros.", "balaText": "Šildoma lauko vonia po atviru dangumi. Panirkite į šiltą vandenį ir mėgaukitės Mērsrago tyla po žvaigždėmis.", "cta": "Sužinoti daugiau"},
+    "included": {"title": "Įskaičiuota į kiekvieną naktį", "items": ["Nemokamas Wi-Fi visoje teritorijoje", "Nemokamas parkavimas", "Rankšluosčiai ir kosmetika", "Rytinė kava ir arbata"]},
+    "wellness": {"title": "Pridėkite pirtį ir karštą vonią", "text": "Padarykite savaitgalį ypatingu — abi paslaugos galimos kaip priedas prie bet kurio kambario."},
+    "faq": {"eyebrow": "Dažni klausimai", "title": "Prieš rezervuojant",
+      "items": [
+        {"q": "Atvykimo ir išvykimo laikas?", "a": "Atvykimas nuo 15:00, išvykimas iki 11:00. Vėlesnis išvykimas — pagal susitarimą."},
+        {"q": "Ar priimate su augintiniais?", "a": "Mažus, ramius augintinius priimame iš anksto suderinus, su nedidele priemoka."},
+        {"q": "Ar yra pusryčiai?", "a": "Rytinė kava ir arbata įskaičiuoti. Pilni pusryčiai — pagal pageidavimą."},
+        {"q": "Kokios atšaukimo sąlygos?", "a": "Nemokamas atšaukimas iki 7 dienų prieš atvykimą. Detalės — rezervacijos patvirtinime."}
+      ]
+    }
+  },
+  "bala": {
+    "title": "Lauko karšta vonia Hotel Mergera",
+    "description": "Šilta lauko karšta vonia Mērsrage — atsipalaidavimas po žvaigždėmis, ištisus metus.",
+    "hero": {"eyebrow": "Lauko karšta vonia", "title": "Karštas vanduo. Tyli naktis. Žvaigždės virš galvos.", "subtitle": "Mūsų karšta vonia šildoma ištisus metus — vasarą saulėje, žiemą su sniegu ant pečių."},
+    "details": {"eyebrow": "Detalės", "title": "Kaip tai vyksta",
+      "items": [
+        {"label": "Talpa", "value": "Iki 6 žmonių"},
+        {"label": "Šildymo laikas", "value": "Apie 2 val."},
+        {"label": "Vandens temperatūra", "value": "38–40 °C"},
+        {"label": "Galima", "value": "Ištisus metus, pagal rezervaciją"}
+      ],
+      "text": "Vonią užkuriame dar prieš jums atvykstant. Jums lieka tik ateiti, įlipti ir atsipalaiduoti. Po to — šaltas dušas, rankšluostis ir krėslas prie laužavietės."
+    },
+    "pricing": {"title": "Rezervacija", "text": "Vonią galima rezervuoti atskirai arba kaip priedą prie kambario. Kainą klauskite rezervuojant — priklauso nuo sezono ir žmonių skaičiaus.", "cta": "Rezervuoti vonią"},
+    "related": {"title": "Suderinkite su pirtimi", "text": "Klasikinis derinys: pirma karšta pirtis, tada šuolis į lauko vonią. Latviškai.", "cta": "Daugiau apie pirtį"}
+  },
+  "pirts": {
+    "title": "Pirtis Hotel Mergera",
+    "description": "Tradicinė latviška malkomis kūrenama pirtis Mērsrage. Karšti garai po ilgos dienos.",
+    "hero": {"eyebrow": "Latviška pirtis", "title": "Karštis, garai ir šilta mediena", "subtitle": "Mūsų pirtis pastatyta tradiciniu latvišku stiliumi — tikra malkomis kūrenama krosnis ir šiltos medinės sienos."},
+    "details": {"eyebrow": "Detalės", "title": "Apie pirtį",
+      "items": [
+        {"label": "Tipas", "value": "Latviška malkų pirtis"},
+        {"label": "Talpa", "value": "Iki 6 žmonių"},
+        {"label": "Šildymo laikas", "value": "Apie 1,5 val."},
+        {"label": "Įskaičiuota", "value": "Vantos, rankšluosčiai, dušas"}
+      ],
+      "text": "Krosnį kūrename mes — jums tereikia atvykti laiku. Po pirties rekomenduojame šaltą dušą ir poilsį tyliame kambaryje arba prie karštos vonios."
+    },
+    "pricing": {"title": "Rezervacija", "text": "Pirtį galima rezervuoti atskirai (2–3 val.) arba kaip priedą prie kambario. Su pirtininku — pagal atskirą susitarimą.", "cta": "Rezervuoti pirtį"},
+    "related": {"title": "Pridėkite karštą vonią", "text": "Pirtį ir vonią galima sujungti vieną vakarą — klasikinis latviškas savaitgalis.", "cta": "Daugiau apie vonią"}
+  },
+  "gallery": {
+    "title": "Galerija",
+    "description": "Hotel Mergera nuotraukos — kambariai, pirtis, lauko karšta vonia ir Mērsrago apylinkės.",
+    "hero": {"eyebrow": "Galerija", "title": "Žvilgsnis į vietą, kurioje būsite", "subtitle": "Sąžiningos profesionalios nuotraukos: namas, pirtis, vonia ir gamta aplink."},
+    "filters": {"all": "Viskas", "exterior": "Išorė", "rooms": "Kambariai", "sauna": "Pirtis", "hotTub": "Karšta vonia", "surroundings": "Apylinkės"}
+  },
+  "about": {
+    "title": "Apie mus",
+    "description": "Hotel Mergera istorija — kodėl Mērsragas, kas mes esame ir kas mus įkvėpė.",
+    "hero": {"eyebrow": "Apie mus", "title": "Maža vieta. Širdies projektas.", "subtitle": "Hotel Mergera — šeimos svečių namai, mūsų būdas pasidalinti Mērsrago tyla ir latviška pirties tradicija."},
+    "story": {"title": "Mūsų istorija",
+      "paragraphs": [
+        "Mērsragas mums visada buvo daugiau nei pajūrio miestelis — tai tyla, kuri po ilgų darbo mėnesių leidžia vėl išgirsti save. Kai pasitaikė galimybė nupirkti šį namą prie švyturio, supratome: norime, kad ir kiti rastų tą patį jausmą.",
+        "Pastaraisiais metais namą perdarėme — natūralios medžiagos, ramus dizainas, nieko nereikalingo. Esmė — pirtis ir karšta vonia, atviros ištisus metus. Kai lauke žiema, sniegas ir −10°, viduje mus rasi +40°."
+      ]
+    },
+    "values": {"eyebrow": "Mūsų vertybės", "title": "Paprasta, tylu, apgalvota",
+      "items": [
+        {"icon": "hand", "title": "Asmeninis priėmimas", "text": "Jūs nesate eilinė rezervacija. Rašykite tiesiogiai — atsakysime, dažnai dar prieš jums atsisėdant."},
+        {"icon": "leaf", "title": "Natūralios medžiagos", "text": "Mediena, linas, akmuo — jokio plastiko ir dirbtinio blizgesio."},
+        {"icon": "moon", "title": "Tyla", "text": "Jokių televizorių bendrose erdvėse, jokio fono triukšmo. Tik jūra ir vėjas."}
+      ]
+    },
+    "nearby": {"eyebrow": "Apylinkės", "title": "Ką pamatyti Mērsrage ir aplink",
+      "items": [
+        {"title": "Mērsrago švyturys", "text": "5 min. pėsčiomis. Iš viršaus — visa Rygos įlanka."},
+        {"title": "Paukščių stebėjimo bokštas", "text": "10 min. mašina. Pavasarį ir rudenį — tūkstančiai paukščių."},
+        {"title": "Kolkos ragas", "text": "1 val. mašina. Vieta, kur Baltija susitinka su Rygos įlanka."},
+        {"title": "Rojos pakrantė", "text": "20 min. mašina. Graži pakrantė ir saulėlydžiai."}
+      ]
+    }
+  },
+  "contacts": {
+    "title": "Kontaktai",
+    "description": "Susisiekite su Hotel Mergera Mērsrage — telefonas, el. paštas, adresas ir žemėlapis.",
+    "hero": {"eyebrow": "Susisiekti", "title": "Mes visada čia", "subtitle": "Klausimai apie rezervaciją, pirtį ar apylinkes? Rašykite arba skambinkite."},
+    "info": {"addressLabel": "Adresas", "phoneLabel": "Telefonas", "emailLabel": "El. paštas", "hoursLabel": "Atvykimo laikas", "checkIn": "Atvykimas: 15:00 — 21:00", "checkOut": "Išvykimas: iki 11:00"},
+    "form": {"title": "Parašykite mums", "name": "Vardas", "email": "El. paštas", "message": "Žinutė", "send": "Siųsti", "consent": "Siųsdami sutinkate, kad jūsų duomenys būtų tvarkomi atsakymui pateikti."},
+    "map": {"title": "Vieta"}
+  },
+  "reservation": {
+    "title": "Rezervacija",
+    "description": "Patikrinkite laisvas datas ir rezervuokite Hotel Mergera kambarį, pirtį ar vonią internetu.",
+    "hero": {"eyebrow": "Rezervacija", "title": "Tikrinkite datas ir rezervuokite", "subtitle": "Pasirinkite datas, kambarį ir priedus. Patvirtinimą gausite į el. paštą iškart."},
+    "placeholder": {"title": "Rezervacijų modulis bus čia", "text": "Ši vieta rezervuota trečiosios šalies booking engine moduliui.", "fallback": "Tuo tarpu galite rezervuoti per Booking.com arba paskambinti.", "ctaBooking": "Atidaryti Booking.com", "ctaCall": "Skambinti"},
+    "policies": {"title": "Rezervacijos sąlygos",
+      "items": [
+        {"title": "Atšaukimas", "text": "Nemokamas atšaukimas iki 7 dienų prieš atvykimą. Vėliau — vienos nakties mokestis."},
+        {"title": "Atvykimas", "text": "Atvykimas 15:00–21:00. Vėliau — pagal susitarimą."},
+        {"title": "Apmokėjimas", "text": "Apmokėjimas atvykus kortele arba grynais. Internetu — per rezervacijos modulį."}
+      ]
+    }
+  }
+}

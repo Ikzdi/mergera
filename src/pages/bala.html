@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="relative h-[70vh] min-h-[520px] overflow-hidden hero-overlay">
+    <img src="/images/hot-tub/hot-tub-hero.jpg" alt="" aria-hidden="true"
+         class="absolute inset-0 w-full h-full object-cover animate-kenburns motion-reduce:animate-none" />
+    <div class="relative z-10 container-content h-full flex flex-col justify-end pb-16 md:pb-24">
+      <div class="max-w-3xl text-white animate-fadeUp">
+        <div class="eyebrow text-accent">{{bala.hero.eyebrow}}</div>
+        <h1 class="mt-4 text-white text-balance">{{bala.hero.title}}</h1>
+        <p class="mt-6 text-white/90 text-lg max-w-2xl">{{bala.hero.subtitle}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section class="section bg-bg">
+    <div class="container-content grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <div class="eyebrow">{{bala.details.eyebrow}}</div>
+        <h2 class="mt-4 text-balance">{{bala.details.title}}</h2>
+        <p class="mt-6 max-w-prose">{{bala.details.text}}</p>
+      </div>
+      <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {{#each bala.details.items}}
+        <div class="card p-6">
+          <dt class="text-xs font-semibold uppercase tracking-wideish text-accent">{{this.label}}</dt>
+          <dd class="mt-2 text-xl font-serif text-ink">{{this.value}}</dd>
+        </div>
+        {{/each}}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Pricing/booking CTA -->
+  <section class="section bg-bg-dark text-white">
+    <div class="container-content grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-white">{{bala.pricing.title}}</h2>
+        <p class="mt-6 text-white/80 max-w-prose">{{bala.pricing.text}}</p>
+        <a href="/{{lang}}/rezervacija/" class="btn-primary mt-8">{{bala.pricing.cta}}</a>
+      </div>
+      <img src="/images/hot-tub/hot-tub-2.jpg" alt="Hotel Mergera āra baļa" loading="lazy"
+           class="w-full aspect-[4/3] object-cover rounded-2xl" />
+    </div>
+  </section>
+
+  <!-- Related: sauna -->
+  <section class="section bg-bg">
+    <div class="container-content text-center max-w-2xl mx-auto">
+      <h2 class="text-balance">{{bala.related.title}}</h2>
+      <p class="mt-6">{{bala.related.text}}</p>
+      <a href="/{{lang}}/naktsmitnes/pirts/" class="btn-ghost mt-8">{{bala.related.cta}}</a>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

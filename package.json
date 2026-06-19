@@ -1,0 +1,23 @@
+{
+  "name": "hotel-mergera-site",
+  "version": "0.1.0",
+  "description": "Hotel Mergera viesu nama mājaslapa — statiska, 5 valodas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/input.css -o ./dist/assets/css/main.css --minify",
+    "build:html": "node ./scripts/build.mjs",
+    "build:assets": "node ./scripts/copy-assets.mjs",
+    "build": "npm run build:assets && npm run build:html && npm run build:css",
+    "dev:css": "tailwindcss -i ./src/styles/input.css -o ./dist/assets/css/main.css --watch",
+    "dev": "npm run build && npx serve dist -l 4321",
+    "serve": "npx serve dist -l 4321",
+    "photos": "node ./scripts/import-photos.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13",
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47"
+  }
+}

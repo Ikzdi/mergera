@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main" class="pt-28 md:pt-32">
+
+  <!-- Page hero -->
+  <section class="container-content pt-12 pb-16 md:pt-20 md:pb-24">
+    <div class="max-w-3xl">
+      <div class="eyebrow">{{accommodation.hero.eyebrow}}</div>
+      <h1 class="mt-4 text-balance">{{accommodation.hero.title}}</h1>
+      <p class="mt-6 text-lg max-w-prose">{{accommodation.hero.subtitle}}</p>
+    </div>
+  </section>
+
+  <!-- Rooms list -->
+  <section class="section-tight bg-bg-surface">
+    <div class="container-content rooms-rows flex flex-col gap-8 md:gap-10">
+      {{#each home.rooms.items}}
+      <article class="room-row card overflow-hidden flex flex-col md:flex-row group">
+        <div class="md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[360px] overflow-hidden">
+          <img src="{{this.image}}" alt="Hotel Mergera — {{this.alt}}" loading="lazy" decoding="async"
+               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        </div>
+        <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center gap-4">
+          <div class="eyebrow">{{this.eyebrow}}</div>
+          <h2 class="text-3xl font-semibold">{{this.title}}</h2>
+          <p class="text-ink-muted">{{this.description}}</p>
+          <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-muted">
+            {{#each this.features}}<li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>{{this}}</li>{{/each}}
+          </ul>
+          <div class="flex flex-wrap items-center justify-between gap-4 mt-2 pt-5 border-t border-line">
+            <span class="text-base md:text-lg font-semibold text-accent-hover">{{this.price}}</span>
+            <a href="/{{lang}}/rezervacija/" class="btn-primary">{{../nav.reserve}}</a>
+          </div>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+  </section>
+
+  <!-- Included in every stay -->
+  <section class="section bg-bg">
+    <div class="container-content grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="text-balance">{{accommodation.included.title}}</h2>
+      </div>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {{#each accommodation.included.items}}
+        <li class="flex items-start gap-3 p-4 rounded-xl border border-line bg-bg-surface">
+          <svg class="w-5 h-5 mt-0.5 text-accent flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span class="text-ink">{{this}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Explore: pirts + baļa -->
+  <section class="section bg-bg-surface">
+    <div class="container-content">
+      <div class="text-center max-w-prose mx-auto mb-12">
+        <div class="eyebrow inline-flex items-center gap-3"><span class="gold-rule"></span>{{accommodation.explore.eyebrow}}<span class="gold-rule"></span></div>
+        <h2 class="mt-4 text-balance">{{accommodation.explore.title}}</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <article class="card overflow-hidden flex flex-col group">
+          <a href="/{{lang}}/naktsmitnes/pirts/" class="block aspect-[16/10] overflow-hidden">
+            <img src="/images/sauna/sauna-1.jpg" alt="Hotel Mergera pirts" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </a>
+          <div class="p-8 flex flex-col gap-3 flex-1">
+            <h3 class="text-2xl">{{nav.pirts}}</h3>
+            <p class="text-ink-muted flex-1">{{accommodation.explore.pirtsText}}</p>
+            <a href="/{{lang}}/naktsmitnes/pirts/" class="mt-2 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wideish text-accent-hover hover:text-ink">{{accommodation.explore.cta}} <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="card overflow-hidden flex flex-col group">
+          <a href="/{{lang}}/naktsmitnes/bala/" class="block aspect-[16/10] overflow-hidden">
+            <img src="/images/hot-tub/hot-tub-1.jpg" alt="Hotel Mergera āra baļa" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </a>
+          <div class="p-8 flex flex-col gap-3 flex-1">
+            <h3 class="text-2xl">{{nav.bala}}</h3>
+            <p class="text-ink-muted flex-1">{{accommodation.explore.balaText}}</p>
+            <a href="/{{lang}}/naktsmitnes/bala/" class="mt-2 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wideish text-accent-hover hover:text-ink">{{accommodation.explore.cta}} <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-bg">
+    <div class="container-content max-w-3xl">
+      <div class="text-center mb-12">
+        <div class="eyebrow inline-flex items-center gap-3">
+          <span class="gold-rule"></span>{{accommodation.faq.eyebrow}}<span class="gold-rule"></span>
+        </div>
+        <h2 class="mt-4 text-balance">{{accommodation.faq.title}}</h2>
+      </div>
+      <div class="flex flex-col gap-3">
+        {{#each accommodation.faq.items}}
+        <details class="card p-6 group" >
+          <summary class="flex items-center justify-between gap-4 cursor-pointer list-none">
+            <span class="font-serif text-xl">{{this.q}}</span>
+            <svg class="w-5 h-5 text-accent transition-transform group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+          </summary>
+          <p class="mt-4 text-ink-muted">{{this.a}}</p>
+        </details>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

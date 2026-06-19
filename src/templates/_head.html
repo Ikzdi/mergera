@@ -1,0 +1,69 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FAFAF7" />
+<title>{{page.title}} — {{brand.name}}</title>
+<meta name="description" content="{{page.description}}" />
+<link rel="canonical" href="{{canonical}}" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{brand.name}}" />
+<meta property="og:title" content="{{page.title}} — {{brand.name}}" />
+<meta property="og:description" content="{{page.description}}" />
+<meta property="og:url" content="{{canonical}}" />
+<meta property="og:image" content="{{baseUrl}}/images/og-cover.jpg" />
+<meta property="og:locale" content="{{ogLocale}}" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{page.title}} — {{brand.name}}" />
+<meta name="twitter:description" content="{{page.description}}" />
+<meta name="twitter:image" content="{{baseUrl}}/images/og-cover.jpg" />
+
+<!-- hreflang -->
+{{{hreflangTags}}}
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+<link rel="alternate icon" href="/images/favicon.ico" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css" />
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "{{brand.name}}",
+  "description": "{{brand.tagline}}",
+  "url": "{{baseUrl}}",
+  "image": "{{baseUrl}}/images/og-cover.jpg",
+  "telephone": "{{brand.phone}}",
+  "email": "{{brand.email}}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{brand.street}}",
+    "addressLocality": "Mērsrags",
+    "addressRegion": "Talsu novads",
+    "postalCode": "{{brand.postalCode}}",
+    "addressCountry": "LV"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "57.3236",
+    "longitude": "23.1186"
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Pirts", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Āra baļa", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Bezmaksas WiFi", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Bezmaksas autostāvvieta", "value": true}
+  ]
+}
+</script>

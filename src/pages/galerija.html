@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main" class="pt-28 md:pt-32">
+
+  <section class="container-content pt-12 pb-12 md:pt-20 md:pb-16">
+    <div class="max-w-3xl">
+      <div class="eyebrow">{{gallery.hero.eyebrow}}</div>
+      <h1 class="mt-4 text-balance">{{gallery.hero.title}}</h1>
+      <p class="mt-6 text-lg max-w-prose">{{gallery.hero.subtitle}}</p>
+    </div>
+  </section>
+
+  <!-- Filter tabs -->
+  <section class="container-content">
+    <div class="flex flex-wrap gap-2 border-b border-line pb-4" role="tablist" data-gallery-filters>
+      <button type="button" class="lang-pill is-active" data-filter="all" role="tab" aria-selected="true">{{gallery.filters.all}}</button>
+      <button type="button" class="lang-pill" data-filter="exterior" role="tab">{{gallery.filters.exterior}}</button>
+      <button type="button" class="lang-pill" data-filter="rooms" role="tab">{{gallery.filters.rooms}}</button>
+      <button type="button" class="lang-pill" data-filter="sauna" role="tab">{{gallery.filters.sauna}}</button>
+      <button type="button" class="lang-pill" data-filter="surroundings" role="tab">{{gallery.filters.surroundings}}</button>
+    </div>
+  </section>
+
+  <!-- Gallery grid -->
+  <section class="container-content py-12">
+    <div class="columns-2 md:columns-3 lg:columns-4 gap-4 [column-fill:_balance]" data-gallery-grid>
+      <figure class="mb-4 break-inside-avoid" data-cat="exterior"><a href="/images/gallery/g1.jpg" data-lightbox><img src="/images/gallery/g1.jpg" alt="Hotel Mergera ēka saulainā dienā" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="rooms"><a href="/images/gallery/g2.jpg" data-lightbox><img src="/images/gallery/g2.jpg" alt="Istaba ar skatu uz jūras gleznu" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="surroundings"><a href="/images/gallery/g3.jpg" data-lightbox><img src="/images/gallery/g3.jpg" alt="Saulriets Mērsraga pludmalē" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="rooms"><a href="/images/gallery/g4.jpg" data-lightbox><img src="/images/gallery/g4.jpg" alt="Istaba ar koka gultu" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="exterior"><a href="/images/gallery/g5.jpg" data-lightbox><img src="/images/gallery/g5.jpg" alt="Hotel Mergera ārpuse rudenī" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="rooms"><a href="/images/gallery/g6.jpg" data-lightbox><img src="/images/gallery/g6.jpg" alt="Ģimenes apartaments ar dīvānu" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="surroundings"><a href="/images/gallery/g7.jpg" data-lightbox><img src="/images/gallery/g7.jpg" alt="Mērsraga pludmale" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="exterior"><a href="/images/gallery/g8.jpg" data-lightbox><img src="/images/gallery/g8.jpg" alt="Mergera izkārtne uz ēkas" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="rooms"><a href="/images/gallery/g9.jpg" data-lightbox><img src="/images/gallery/g9.jpg" alt="Divvietīga istaba" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="surroundings"><a href="/images/gallery/g10.jpg" data-lightbox><img src="/images/gallery/g10.jpg" alt="Jūra ar akmeņiem un putniem" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="rooms"><a href="/images/gallery/g11.jpg" data-lightbox><img src="/images/gallery/g11.jpg" alt="Istaba ar virtuvīti" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="rooms"><a href="/images/gallery/g12.jpg" data-lightbox><img src="/images/gallery/g12.jpg" alt="Istaba ar divām gultām" loading="lazy" class="w-full rounded-xl"/></a></figure>
+      <figure class="mb-4 break-inside-avoid" data-cat="sauna"><a href="/images/gallery/g13.jpg" data-lightbox><img src="/images/gallery/g13.jpg" alt="Hotel Mergera pirts ar koka soliem" loading="lazy" class="w-full rounded-xl"/></a></figure>
+    </div>
+  </section>
+
+
+</main>
+
+{{> footer }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

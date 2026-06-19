@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --hero-overlay: rgba(17, 24, 39, 0.4);
+  }
+
+  /* Alternating room rows: every second row flips so the image swaps sides. */
+  @media (min-width: 768px) {
+    .rooms-rows > .room-row:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif text-ink tracking-tightish;
+    line-height: 1.15;
+  }
+
+  h1 { @apply text-4xl md:text-6xl font-medium; }
+  h2 { @apply text-3xl md:text-5xl font-medium; }
+  h3 { @apply text-2xl md:text-3xl font-medium; }
+  h4 { @apply text-xl md:text-2xl font-medium; }
+
+  p { @apply text-base md:text-lg text-ink-muted; }
+
+  a {
+    @apply transition-colors;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg rounded;
+  }
+
+  ::selection {
+    @apply bg-accent text-ink;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8 lg:px-12;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-semibold tracking-wideish uppercase transition-all cursor-pointer min-h-[44px];
+  }
+  .btn-primary {
+    @apply btn bg-accent text-ink hover:bg-accent-hover hover:text-white hover:shadow-md;
+  }
+  .btn-ghost {
+    @apply btn border border-line text-ink hover:bg-white hover:border-ink/20;
+  }
+  .btn-dark {
+    @apply btn bg-ink text-white hover:bg-bg-dark;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold tracking-wideish uppercase text-accent;
+  }
+
+  .gold-rule {
+    @apply inline-block h-px w-12 bg-accent align-middle;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+  .section-tight {
+    @apply py-14 md:py-20;
+  }
+
+  .card {
+    @apply bg-bg-surface rounded-2xl border border-line shadow-card overflow-hidden transition-shadow;
+  }
+  .card:hover {
+    @apply shadow-nav;
+  }
+
+  .nav-floating {
+    @apply fixed top-4 left-4 right-4 z-40 rounded-2xl bg-white/85 backdrop-blur-md shadow-nav border border-line;
+  }
+
+  .lang-pill {
+    @apply px-2 py-1 text-xs font-semibold uppercase tracking-wideish rounded-full text-ink-muted hover:text-ink cursor-pointer;
+  }
+  .lang-pill.is-active {
+    @apply bg-ink text-white;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .hero-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(17,24,39,0.15) 0%, rgba(17,24,39,0.6) 100%);
+    pointer-events: none;
+  }
+}

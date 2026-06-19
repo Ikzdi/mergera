@@ -1,0 +1,192 @@
+{
+  "meta": {"lang": "et", "ogLocale": "et_EE", "name": "Eesti"},
+  "brand": {
+    "name": "Hotel Mergera",
+    "tagline": "Vaikne rannamajake Mērsragis — toad, saun ja õue tünn.",
+    "street": "Lielā iela 1", "postalCode": "LV-3284",
+    "phone": "+371 20 000 000", "phoneRaw": "+37120000000",
+    "email": "info@mergera.lv",
+    "facebook": "https://www.facebook.com/p/Hotel-Mergera-61566408587945/",
+    "instagram": "https://www.instagram.com/",
+    "booking": "https://www.booking.com/hotel/lv/mergera.lv.html",
+    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+M%C4%93rsrags",
+    "mapsWaze": "https://waze.com/ul?ll=57.3236,23.1186&navigate=yes"
+  },
+  "maps": {
+    "google": "Ava Google Maps-is",
+    "waze": "Ava Waze-is"
+  },
+  "distances": {
+    "eyebrow": "Lähedal",
+    "title": "Kui kaugel on…",
+    "items": [
+      {"name": "Mērsragi rand", "value": "3,2 km"},
+      {"name": "Engure järv", "value": "2 km"},
+      {"name": "Engure järve looduspark", "value": "11 km"},
+      {"name": "Riia lennujaam", "value": "83 km"}
+    ]
+  },
+  "events": {
+    "title": "Ürituste saal Mērsragis | Hotel Mergera",
+    "description": "Saal ja sisustatud köök üritusteks kuni 50 inimesele Mērsragis — tähistamised, kontserdid ja seminarid. Hinnad alates €120. Võimalik rentida kogu külalismaja.",
+    "hero": {"eyebrow": "Üritused", "title": "Koht üritusteks ja tähistamisteks", "subtitle": "Avar saal sisustatud köögiga kuni 50 külalisele — tähistamised, kontserdid, seminarid ja pere tähtpäevad Mērsragis.", "ctaCall": "Helista: +371 29286132", "ctaReserve": "Küsi pakkumist"},
+    "features": {"eyebrow": "Võimalused", "title": "Kõik sinu ürituseks", "items": [
+      {"title": "Kuni 50 külalist", "text": "Saal ja sisustatud köök üritusteks kuni 50 inimesele."},
+      {"title": "Kontserdid ja etendused", "text": "Võimalik korraldada kontserte või etendusi kuni 50 vaatajale."},
+      {"title": "Paindlik paigutus", "text": "Saali saab sisustada ümmarguste või ristkülikukujuliste laudade ja toolidega."},
+      {"title": "Köök ja saun", "text": "Sisustatud köök suure laua ja saunaga — tähistamisteks kuni 10 inimesele."},
+      {"title": "Varustus", "text": "Projektor ja ekraan, helitehnika ja meeleoluvalgustus."},
+      {"title": "Kogu maja", "text": "Võimalus rentida kogu külalismaja koos tubadega."}
+    ]},
+    "gallery": {"title": "Saal ja ruumid"},
+    "pricing": {"eyebrow": "Hinnad", "title": "Hinnad alates €120", "text": "Lõpphind sõltub ürituse tüübist, külaliste arvust ja lisateenustest. Võta ühendust ja koostame pakkumise just sinu ürituseks.", "ctaCall": "+371 29286132", "ctaWrite": "Kirjuta meile"}
+  },
+  "nav": {
+    "location": "Mērsrags · Läti",
+    "home": "Avaleht", "guesthouse": "Külalismaja", "accommodation": "Majutus", "bala": "Tünn", "pirts": "Saun", "events": "Üritused", "gallery": "Galerii", "about": "Meist", "contacts": "Kontakt", "reserve": "Broneeri",
+    "openMenu": "Ava menüü", "closeMenu": "Sulge menüü",
+    "ariaPrimary": "Põhinavigatsioon", "ariaMobile": "Mobiilinavigatsioon"
+  },
+  "footer": {
+    "tagline": "Pereomanduses külalismaja Mērsragis — hubased toad, ehtne läti saun ja aastaringne kuum õuetünn tähtede all. Loodud rahulikuks nädalavahetuseks.",
+    "navTitle": "Lehed", "contactTitle": "Võta ühendust", "bookingLink": "Vaata Booking.com-is", "rights": "Kõik õigused kaitstud."
+  },
+  "home": {
+    "title": "Mereäärne puhkus Mērsragis",
+    "description": "Hotel Mergera — moodne külalismaja Mērsragis hubaste tubade, läti sauna ja õuetünniga.",
+    "hero": {
+      "eyebrow": "Mērsrags · Riia lahe rannik",
+      "title": "Hotel Mergera",
+      "subtitle": "Külalismaja Mērsragis, mere lähedal — moodsad toad, saun, välitünn ja ürituste saal rahulikuks puhkuseks, perele ja tähistamisteks.",
+      "ctaPrimary": "Broneeri tuba", "ctaSecondary": "Vaata tube"
+    },
+    "intro": {"eyebrow": "Miks Mergera", "title": "Väike koht. Suur kogemus.",
+      "features": [
+        {"icon": "wave", "title": "200 m mereni", "text": "Kolm minutit jalgsi Riia lahe valge liivani ja Mērsragi tuletornini."},
+        {"icon": "leaf", "title": "Läti saun ja kuum tünn", "text": "Puuküttega saun ja kuum õuetünn lahtise taeva all — avatud aastaringselt."},
+        {"icon": "home", "title": "Hubased, moodsad toad", "text": "Looduslikud materjalid, vaikus ja iga detail läbi mõeldud, et tunneksid end nagu kodus."}
+      ]
+    },
+    "rooms": {"eyebrow": "Majutus", "title": "Meie toad", "subtitle": "Kuus tuba kolmes tüübis — paaridele, peredele või sõpruskondadele. Kõigis oma kööginurk, vannituba, kohvimasin ja tasuta Wi-Fi.",
+      "items": [
+        {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Neljane tuba terrassiga", "eyebrow": "4 külalist · 28 m² · terrass", "title": "Neljane tuba terrassiga", "price": "€96 / 1 külaline · €102 / 2+ külalist", "description": "Üks diivanvoodi ja üks suur kaheinimesevoodi. Oma terrass, kööginurk ja vannituba — ruumi perele või sõpruskonnale.", "features": ["Diivanvoodi + kaheinimese", "Oma terrass", "Kööginurk", "Kohvimasin"]},
+        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Kaheinimesetuba terrassiga", "eyebrow": "2 külalist · 20 m² · terrass", "title": "Kaheinimesetuba terrassiga", "price": "€77 / 1 külaline · €85 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Hubane tuba oma terrassi ja kööginurgaga.", "features": ["1 või 2 voodit", "Oma terrass", "Kööginurk", "Oma vannituba"]},
+        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Kaheinimesetuba", "eyebrow": "2 külalist · 20 m²", "title": "Kaheinimesetuba", "price": "€72 / 1 külaline · €80 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Vaikne tuba kööginurga ja oma vannitoaga.", "features": ["1 või 2 voodit", "Kööginurk", "Oma vannituba", "Tasuta Wi-Fi"]}
+      ]
+    },
+    "wellness": {"eyebrow": "Saun ja tünn", "title": "Soojus, mis taastab", "text": "Soojenda end läti saunas, siis astu kuuma õuetünni tähtede all. Broneeri eraldi või osana toast.", "ctaBala": "Tünni kohta", "ctaPirts": "Sauna kohta"},
+    "reviews": {"eyebrow": "Arvustused", "title": "Mida külalised räägivad", "source": "Booking.com · 9.2 / 10 · 70 arvustust", "score": "9.2", "scoreLabel": "keskmine hinne",
+      "items": [
+        {"rating": "10", "text": "Armas koht ja soojad võõrustajad. Tunda on maaelu rahu ja vaikust. Toad on mugavad ja hubased.", "author": "Sanita", "country": "Läti", "meta": "Kahene tuba · august 2025"},
+        {"rating": "10", "text": "Suurepärane koht! Meile väga meeldis.", "author": "Rebecca", "country": "Ühendkuningriik", "meta": "Kaheinimesetuba rõduga · september 2025"},
+        {"rating": "9.0", "text": "Kõik oli värske, puhas ja korras.", "author": "Gints", "country": "Läti", "meta": "Neljane tuba rõduga · jaanuar 2026"},
+        {"rating": "8.0", "text": "Üldiselt mugav, hubane, puhas, lihtne juurdepääs, toas köök.", "author": "Alvis", "country": "Läti", "meta": "Kaheinimesetuba rõduga · märts 2026"},
+        {"rating": "8.0", "text": "Kõik ilus ja puhas.", "author": "Daiga", "country": "Läti", "meta": "Kaheinimesetuba rõduga · august 2025"}
+      ]
+    },
+    "gallery": {"eyebrow": "Atmosfäär", "title": "Pilk meie keskkonda", "cta": "Vaata kogu galeriid"},
+    "location": {"eyebrow": "Asukoht", "title": "Mērsrags — kus Kurzeme kohtub merega", "text": "1,5 tundi sõitu Riiast. Kõrval — Mērsragi tuletorn, linnuvaatlustorn ja Roja rannateetee.", "ctaDirections": "Saada teejuhis"},
+    "finalCta": {"title": "Valmis vaikseks nädalavahetuseks?", "text": "Kontrolli vabu kuupäevi ja broneeri otse — ilma vahendajateta.", "cta": "Kontrolli kuupäevi"}
+  },
+  "accommodation": {
+    "title": "Majutus Mērsragis",
+    "description": "Hotel Mergera toad ja lisateenused — saun, tünn. Kõik majutused tasuta Wi-Fi ja parkimisega.",
+    "hero": {"eyebrow": "Majutus", "title": "Vali endale sobiv tuba", "subtitle": "Hubasest kahesest toast avara peresviidini. Looduslikud materjalid, pehmed padjad ja vaikus — igal pool."},
+    "explore": {"eyebrow": "Lõõgastus", "title": "Rohkem kui ööbimiskoht", "pirtsText": "Traditsiooniline läti puuküttega saun soojade puitseintega — ideaalne lõõgastumiseks pärast pikka päeva mere ääres.", "balaText": "Soe välitünn lahtise taeva all. Astu sooja vette ja naudi Mērsragi vaikust tähtede all.", "cta": "Loe lähemalt"},
+    "included": {"title": "Iga öö sees", "items": ["Tasuta Wi-Fi kogu hoones", "Tasuta parkimine", "Rätikud ja kosmeetika", "Hommikukohv ja tee"]},
+    "wellness": {"title": "Lisa saun ja tünn", "text": "Tee nädalavahetus eriliseks — mõlemad teenused on saadaval lisana mis tahes toale."},
+    "faq": {"eyebrow": "KKK", "title": "Enne broneerimist",
+      "items": [
+        {"q": "Mis on sisse- ja väljaregistreerimise aeg?", "a": "Sisseregistreerimine alates 15:00, väljaregistreerimine 11:00-ks. Hiljem kokkuleppel."},
+        {"q": "Kas lemmikloomad on lubatud?", "a": "Väikesed rahulikud lemmikloomad eelneval kokkuleppel, väikese lisatasuga."},
+        {"q": "Kas hommikusöök on saadaval?", "a": "Hommikukohv ja tee on sees. Täis hommikusöök — soovi korral."},
+        {"q": "Mis on tühistamistingimused?", "a": "Tasuta tühistamine kuni 7 päeva enne saabumist. Detailid broneeringu kinnituses."}
+      ]
+    }
+  },
+  "bala": {
+    "title": "Õue kuum tünn Hotel Mergeras",
+    "description": "Soojendav õuetünn Mērsragis — lõõgastus tähtede all aastaringselt.",
+    "hero": {"eyebrow": "Õue tünn", "title": "Kuum vesi. Vaikne öö. Tähed pea kohal.", "subtitle": "Meie tünn küttub aastaringselt — suvel päikese all, talvel lumi õlgadel."},
+    "details": {"eyebrow": "Detailid", "title": "Kuidas see käib",
+      "items": [
+        {"label": "Mahutavus", "value": "Kuni 6 inimest"},
+        {"label": "Soojenemisaeg", "value": "Umbes 2 tundi"},
+        {"label": "Vee temperatuur", "value": "38–40 °C"},
+        {"label": "Saadaval", "value": "Aastaringselt, broneeringu alusel"}
+      ],
+      "text": "Tünni küttame enne sinu saabumist. Sul tuleb vaid tulla, astuda sisse ja lõõgastuda. Pärast — külm dušš, rätik ja tool lõkke ääres."
+    },
+    "pricing": {"title": "Broneerimine", "text": "Tünni saab broneerida eraldi või toale lisaks. Hinda küsi broneerides — sõltub aastaajast ja inimeste arvust.", "cta": "Broneeri tünn"},
+    "related": {"title": "Paari saunaga", "text": "Klassikaline kombinatsioon: kõigepealt kuum puusaun, siis hüpe õuetünni. Läti moodi.", "cta": "Sauna kohta"}
+  },
+  "pirts": {
+    "title": "Saun Hotel Mergeras",
+    "description": "Traditsiooniline läti puuküttega saun Mērsragis. Kuum aur pärast pikka päeva.",
+    "hero": {"eyebrow": "Läti saun", "title": "Kuumus, aur ja soe puit", "subtitle": "Meie saun on ehitatud traditsioonilises läti stiilis — pärisbahn puuküttega ja soojad puidust seinad."},
+    "details": {"eyebrow": "Detailid", "title": "Sauna kohta",
+      "items": [
+        {"label": "Tüüp", "value": "Läti puusaun"},
+        {"label": "Mahutavus", "value": "Kuni 6 inimest"},
+        {"label": "Soojenemisaeg", "value": "Umbes 1,5 tundi"},
+        {"label": "Sees", "value": "Viht, rätikud, dušš"}
+      ],
+      "text": "Ahju kütame meie — sul tuleb vaid õigeks ajaks kohale tulla. Pärast sauna soovitame külma duši ja hetke vaikses puhkeruumis või tünni juures."
+    },
+    "pricing": {"title": "Broneerimine", "text": "Sauna saab broneerida eraldi (2–3 tundi) või toale lisaks. Saunameistriga — eraldi kokkuleppel.", "cta": "Broneeri saun"},
+    "related": {"title": "Lisa kuum tünn", "text": "Saun ja tünn töötavad samal õhtul suurepäraselt koos — klassikaline läti nädalavahetus.", "cta": "Tünni kohta"}
+  },
+  "gallery": {
+    "title": "Galerii",
+    "description": "Fotod Hotel Mergerast — toad, saun, õuetünn ja Mērsragi ümbrus.",
+    "hero": {"eyebrow": "Galerii", "title": "Pilk kohale, kus sa oled", "subtitle": "Ausad professionaalsed fotod majast, saunast, tünnist ja loodusest ümberringi."},
+    "filters": {"all": "Kõik", "exterior": "Välimine", "rooms": "Toad", "sauna": "Saun", "hotTub": "Tünn", "surroundings": "Ümbrus"}
+  },
+  "about": {
+    "title": "Meist",
+    "description": "Hotel Mergera lugu — miks Mērsrags, kes me oleme ja mis meid inspireeris.",
+    "hero": {"eyebrow": "Meist", "title": "Väike koht. Südameprojekt.", "subtitle": "Hotel Mergera on pereomanduses külalismaja — meie viis jagada Mērsragi vaikust ja läti saunatraditsiooni."},
+    "story": {"title": "Meie lugu",
+      "paragraphs": [
+        "Mērsrags on meie jaoks alati olnud rohkem kui rannalinn — see on vaikus, mis pikkade töökuude järel laseb taas iseennast kuulda. Kui saime võimaluse osta selle maja tuletorni lähedal, mõistsime: tahame, et ka teised leiaksid sama tunde.",
+        "Viimaste aastate jooksul oleme maja ümber ehitanud — looduslikud materjalid, vaikne disain, ei midagi liigset. Süda on saun ja tünn, mõlemad avatud aastaringselt. Kui väljas on talv −10 °C, on siin sees +40."
+      ]
+    },
+    "values": {"eyebrow": "Meie väärtused", "title": "Lihtne, vaikne, läbi mõeldud",
+      "items": [
+        {"icon": "hand", "title": "Isiklik vastuvõtt", "text": "Sa ei ole järjekordne broneering. Kirjuta otse — vastame, sageli enne kui sa istuda jõuad."},
+        {"icon": "leaf", "title": "Looduslikud materjalid", "text": "Puit, linane, kivi — ei mingit plastikut ega kunstläiget."},
+        {"icon": "moon", "title": "Vaikus", "text": "Ühistes ruumides telereid ei ole, taustamüra ka. Ainult meri ja tuul."}
+      ]
+    },
+    "nearby": {"eyebrow": "Ümbrus", "title": "Mida vaadata Mērsragis ja lähedal",
+      "items": [
+        {"title": "Mērsragi tuletorn", "text": "5 min jalgsi. Otsast avaneb kogu Riia lahe vaade."},
+        {"title": "Linnuvaatlustorn", "text": "10 min autoga. Kevadel ja sügisel — tuhanded linnud."},
+        {"title": "Kolka neem", "text": "1 tund autoga. Koht, kus Läänemeri kohtub Riia lahega."},
+        {"title": "Roja rannik", "text": "20 min autoga. Ilus rannik ja päikeseloojangud."}
+      ]
+    }
+  },
+  "contacts": {
+    "title": "Kontakt",
+    "description": "Võta ühendust Hotel Mergeraga Mērsragis — telefon, e-post, aadress ja kaart.",
+    "hero": {"eyebrow": "Võta ühendust", "title": "Oleme alati siin", "subtitle": "Küsimused broneeringu, sauna või ümbruse kohta? Kirjuta või helista."},
+    "info": {"addressLabel": "Aadress", "phoneLabel": "Telefon", "emailLabel": "E-post", "hoursLabel": "Sisseregistreerimise aeg", "checkIn": "Sisseregistreerimine: 15:00 — 21:00", "checkOut": "Väljaregistreerimine: kuni 11:00"},
+    "form": {"title": "Kirjuta meile", "name": "Nimi", "email": "E-post", "message": "Sõnum", "send": "Saada", "consent": "Saates nõustud, et töötleme andmeid sinu küsimusele vastamiseks."},
+    "map": {"title": "Asukoht"}
+  },
+  "reservation": {
+    "title": "Broneerimine",
+    "description": "Kontrolli vabu kuupäevi ja broneeri Hotel Mergera tuba, saun või tünn võrgus.",
+    "hero": {"eyebrow": "Broneerimine", "title": "Kontrolli kuupäevi ja broneeri", "subtitle": "Vali kuupäevad, tuba ja lisad. Kinnituse saad e-postile kohe."},
+    "placeholder": {"title": "Broneerimismoodul ilmub siia", "text": "See ala on reserveeritud kolmanda osapoole broneerimismootorile.", "fallback": "Seni saad broneerida Booking.com-i kaudu või helistades.", "ctaBooking": "Ava Booking.com", "ctaCall": "Helista"},
+    "policies": {"title": "Broneerimistingimused",
+      "items": [
+        {"title": "Tühistamine", "text": "Tasuta tühistamine kuni 7 päeva enne saabumist. Pärast seda — ühe öö tasu."},
+        {"title": "Saabumine", "text": "Sisseregistreerimine 15:00–21:00. Hiljem kokkuleppel."},
+        {"title": "Maksmine", "text": "Maksmine saabudes kaardiga või sularahas. Online-makse — läbi broneerimismooduli."}
+      ]
+    }
+  }
+}

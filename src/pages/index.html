@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="relative h-screen min-h-[640px] overflow-hidden hero-overlay" aria-label="{{home.hero.title}}">
+    <!-- Elegant crossfade slideshow on loop (slow, modern transitions) -->
+    <div class="absolute inset-0" data-hero-slideshow>
+      <img src="/images/hero/slide-1.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" aria-hidden="true" />
+      <img src="/images/hero/slide-2.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+      <img src="/images/hero/slide-3.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+      <img src="/images/hero/slide-4.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+      <img src="/images/hero/slide-5.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+    </div>
+    <!-- Left-side dark gradient for text legibility -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" aria-hidden="true"></div>
+    <div class="relative z-10 container-content h-full flex flex-col justify-end pb-24 md:pb-32">
+      <div class="max-w-3xl text-white animate-fadeUp">
+        <div class="inline-flex items-center gap-3 text-xs tracking-wideish uppercase text-accent">
+          <span class="gold-rule"></span> {{home.hero.eyebrow}}
+        </div>
+        <h1 class="mt-6 text-white text-balance">{{home.hero.title}}</h1>
+        <p class="mt-6 text-white/90 text-lg md:text-xl max-w-2xl">{{home.hero.subtitle}}</p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="/{{lang}}/rezervacija/" class="btn-primary">{{home.hero.ctaPrimary}}</a>
+          <a href="/{{lang}}/naktsmitnes/" class="btn-ghost text-white border-white/40 hover:bg-white hover:text-ink">{{home.hero.ctaSecondary}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro / 3 features -->
+  <section id="intro" class="section bg-bg">
+    <div class="container-content">
+      <div class="text-center max-w-prose mx-auto mb-16">
+        <div class="eyebrow inline-flex items-center gap-3">
+          <span class="gold-rule"></span>{{home.intro.eyebrow}}<span class="gold-rule"></span>
+        </div>
+        <h2 class="mt-4 text-balance">{{home.intro.title}}</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{#each home.intro.features}}
+        <div class="card p-8 text-center">
+          <div class="w-14 h-14 mx-auto rounded-full bg-accent-soft flex items-center justify-center text-accent-hover">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.5-2 6.5-2 8 0M8 10h.01M16 10h.01"/></svg>
+          </div>
+          <h3 class="mt-6 text-xl">{{this.title}}</h3>
+          <p class="mt-3 text-base">{{this.text}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms preview -->
+  <section class="section bg-bg-surface">
+    <div class="container-content">
+      <div class="text-center max-w-prose mx-auto mb-16">
+        <div class="eyebrow inline-flex items-center gap-3">
+          <span class="gold-rule"></span>{{home.rooms.eyebrow}}<span class="gold-rule"></span>
+        </div>
+        <h2 class="mt-4 text-balance">{{home.rooms.title}}</h2>
+        <p class="mt-6">{{home.rooms.subtitle}}</p>
+      </div>
+      <div class="rooms-rows flex flex-col gap-8 md:gap-10">
+        {{#each home.rooms.items}}
+        <article class="room-row card overflow-hidden flex flex-col md:flex-row group">
+          <div class="md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[360px] overflow-hidden">
+            <img src="{{this.image}}" alt="Hotel Mergera — {{this.alt}}" loading="lazy" decoding="async"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center gap-4">
+            <div class="eyebrow">{{this.eyebrow}}</div>
+            <h3 class="text-3xl font-semibold">{{this.title}}</h3>
+            <p class="text-ink-muted">{{this.description}}</p>
+            <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-muted">
+              {{#each this.features}}<li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>{{this}}</li>{{/each}}
+            </ul>
+            <div class="flex flex-wrap items-center justify-between gap-4 mt-2 pt-5 border-t border-line">
+              <span class="text-base md:text-lg font-semibold text-accent-hover">{{this.price}}</span>
+              <a href="/{{lang}}/rezervacija/" class="btn-primary">{{../nav.reserve}}</a>
+            </div>
+          </div>
+        </article>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- Wellness banner -->
+  <section class="section bg-bg-dark text-white">
+    <div class="container-content">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="eyebrow text-accent">{{home.wellness.eyebrow}}</div>
+          <h2 class="mt-4 text-white text-balance">{{home.wellness.title}}</h2>
+          <p class="mt-6 text-white/80 max-w-prose">{{home.wellness.text}}</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="/{{lang}}/naktsmitnes/bala/" class="btn-primary">{{home.wellness.ctaBala}}</a>
+            <a href="/{{lang}}/naktsmitnes/pirts/" class="btn-ghost text-white border-white/40 hover:bg-white hover:text-ink">{{home.wellness.ctaPirts}}</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="/images/hot-tub/hot-tub-1.jpg" alt="Hotel Mergera āra baļa naktī" loading="lazy" decoding="async"
+               class="w-full aspect-[3/4] object-cover rounded-2xl translate-y-6" />
+          <img src="/images/sauna/sauna-1.jpg" alt="Hotel Mergera latviešu pirts" loading="lazy" decoding="async"
+               class="w-full aspect-[3/4] object-cover rounded-2xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+{{> reviews }}
+
+  <!-- Gallery preview -->
+  <section class="section-tight bg-bg-surface">
+    <div class="container-content">
+      <div class="text-center max-w-prose mx-auto mb-12">
+        <div class="eyebrow inline-flex items-center gap-3">
+          <span class="gold-rule"></span>{{home.gallery.eyebrow}}<span class="gold-rule"></span>
+        </div>
+        <h2 class="mt-4 text-balance">{{home.gallery.title}}</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <img src="/images/gallery/g1.jpg" alt="Hotel Mergera ārpuse" loading="lazy" class="w-full aspect-square object-cover rounded-xl" />
+        <img src="/images/gallery/g2.jpg" alt="Hotel Mergera istaba" loading="lazy" class="w-full aspect-square object-cover rounded-xl" />
+        <img src="/images/gallery/g3.jpg" alt="Mērsraga jūra" loading="lazy" class="w-full aspect-square object-cover rounded-xl" />
+        <img src="/images/gallery/g13.jpg" alt="Hotel Mergera pirts" loading="lazy" class="w-full aspect-square object-cover rounded-xl" />
+      </div>
+      <div class="mt-10 text-center">
+        <a href="/{{lang}}/galerija/" class="btn-ghost">{{home.gallery.cta}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location + map -->
+  <section class="section bg-bg">
+    <div class="container-content grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="eyebrow">{{home.location.eyebrow}}</div>
+        <h2 class="mt-4 text-balance">{{home.location.title}}</h2>
+        <p class="mt-6 max-w-prose">{{home.location.text}}</p>
+        <address class="mt-6 not-italic text-ink-muted">
+          {{brand.street}}, Mērsrags, {{brand.postalCode}}<br/>
+          <a href="tel:{{brand.phoneRaw}}" class="hover:text-accent-hover">{{brand.phone}}</a>
+        </address>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="{{brand.mapsGoogle}}" rel="noopener" target="_blank" class="btn-ghost">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.3-7-11a7 7 0 1114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            {{maps.google}}
+          </a>
+          <a href="{{brand.mapsWaze}}" rel="noopener" target="_blank" class="btn-ghost">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11l18-7-7 18-2.5-7.5z"/></svg>
+            {{maps.waze}}
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-line shadow-card aspect-[4/3]">
+        <iframe title="Mērsrags map" src="https://www.openstreetmap.org/export/embed.html?bbox=23.05%2C57.30%2C23.20%2C57.36&amp;layer=mapnik&amp;marker=57.3236%2C23.1186" loading="lazy" class="w-full h-full" referrerpolicy="no-referrer"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Distances -->
+  <section class="section-tight bg-bg-surface">
+    <div class="container-content">
+      <div class="text-center max-w-prose mx-auto mb-12">
+        <div class="eyebrow inline-flex items-center gap-3"><span class="gold-rule"></span>{{distances.eyebrow}}<span class="gold-rule"></span></div>
+        <h2 class="mt-4 text-balance">{{distances.title}}</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        {{#each distances.items}}
+        <div class="text-center p-6 rounded-2xl border border-line bg-bg">
+          <div class="w-12 h-12 mx-auto rounded-full bg-accent-soft flex items-center justify-center text-accent-hover">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.3-7-11a7 7 0 1114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </div>
+          <div class="mt-4 font-serif text-2xl text-ink">{{this.value}}</div>
+          <div class="mt-1 text-sm text-ink-muted">{{this.name}}</div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="bg-accent-soft py-20">
+    <div class="container-content text-center">
+      <h2 class="text-balance">{{home.finalCta.title}}</h2>
+      <p class="mt-6 max-w-prose mx-auto">{{home.finalCta.text}}</p>
+      <a href="/{{lang}}/rezervacija/" class="btn-primary mt-10">{{home.finalCta.cta}}</a>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

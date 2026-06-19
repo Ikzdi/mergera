@@ -30,6 +30,21 @@
     </div>
   </section>
 
+  <!-- History / opening -->
+  <section class="section bg-bg">
+    <div class="container-content grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="eyebrow">{{about.history.eyebrow}}</div>
+        <h2 class="mt-4 text-balance">{{about.history.title}}</h2>
+        <div class="mt-6 space-y-5 max-w-prose">
+          {{#each about.history.paragraphs}}<p>{{this}}</p>{{/each}}
+        </div>
+      </div>
+      <img src="/images/about/par-mums.jpg" alt="{{about.history.imageAlt}}" loading="lazy" decoding="async"
+           class="w-full aspect-[4/3] object-cover rounded-2xl shadow-card" />
+    </div>
+  </section>
+
   <!-- Values -->
   <section class="section bg-bg">
     <div class="container-content">

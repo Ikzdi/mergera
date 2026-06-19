@@ -7,16 +7,17 @@
   "brand": {
     "name": "Hotel Mergera",
     "tagline": "Klusa atpūta jūras tuvumā Mērsragā — istabas, pirts un āra baļa.",
-    "street": "Lielā iela 1",
+    "street": "Zvejnieku iela 3B",
+    "addressLine": "Zvejnieku iela 3B, Mērsrags, Talsu nov., LV-3284, Latvija",
     "postalCode": "LV-3284",
-    "phone": "+371 20 000 000",
-    "phoneRaw": "+37120000000",
-    "email": "info@mergera.lv",
+    "phone": "+371 29286132",
+    "phoneRaw": "+37129286132",
+    "email": "hotelmergera@gmail.com",
     "facebook": "https://www.facebook.com/p/Hotel-Mergera-61566408587945/",
     "instagram": "https://www.instagram.com/",
     "booking": "https://www.booking.com/hotel/lv/mergera.lv.html",
-    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+M%C4%93rsrags",
-    "mapsWaze": "https://waze.com/ul?ll=57.3236,23.1186&navigate=yes"
+    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+Zvejnieku+iela+3B+M%C4%93rsrags",
+    "mapsWaze": "https://waze.com/ul?ll=57.33649,23.12140&navigate=yes"
   },
   "maps": {
     "google": "Skatīt Google Maps",
@@ -25,11 +26,13 @@
   "distances": {
     "eyebrow": "Tuvumā",
     "title": "Cik tālu līdz…",
+    "googleCta": "Google",
+    "wazeCta": "Waze",
     "items": [
-      {"name": "Mērsraga pludmale", "value": "3,2 km"},
-      {"name": "Engures ezers", "value": "2 km"},
-      {"name": "Engures ezera Dabas parks", "value": "11 km"},
-      {"name": "Rīgas lidosta", "value": "83 km"}
+      {"name": "Mērsraga bāka un piekraste", "value": "3,2 km", "image": "/images/nearby/baka.jpg", "alt": "Mērsraga bāka priežu ieskauta", "google": "https://www.google.com/maps/search/?api=1&query=M%C4%93rsraga+b%C4%81ka", "waze": "https://waze.com/ul?q=M%C4%93rsraga%20b%C4%81ka&navigate=yes"},
+      {"name": "Engures ezers", "value": "2 km", "image": "/images/nearby/engures-ezers.jpg", "alt": "Engures ezera niedres un ūdens ainava", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezers", "waze": "https://waze.com/ul?q=Engures%20ezers&navigate=yes"},
+      {"name": "Engures ezera Dabas parks", "value": "11 km", "image": "/images/nearby/engures-dabas-parks.jpg", "alt": "Engures ezera dabas parka taka un putnu vērošanas tornis", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezera+Dabas+parks", "waze": "https://waze.com/ul?q=Engures%20ezera%20Dabas%20parks&navigate=yes"},
+      {"name": "Rīgas lidosta", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Rīgas lidostas ieeja", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
   "events": {
@@ -105,11 +108,11 @@
     "rooms": {
       "eyebrow": "Naktsmītnes",
       "title": "Mūsu numuri",
-      "subtitle": "Seši numuri trīs veidos — pārim, ģimenei vai draugu kompānijai. Visos privāta virtuves zona, vannas istaba, kafijas automāts un bezmaksas WiFi.",
+      "subtitle": "Kopā seši numuri: pieci divvietīgi un viens četrvietīgs numurs ar terasi. Visos numuros privāta virtuves zona, vannas istaba, kafijas automāts un bezmaksas WiFi.",
       "items": [
         {"slug": "cetrvietigs-terase", "image": "/images/rooms/room-2.jpg", "alt": "Četrvietīgs numurs ar terasi", "eyebrow": "4 viesi · 28 m² · ar terasi", "title": "Četrvietīgs numurs ar terasi", "price": "€96 / 1 pers. · €102 / 2+ pers.", "description": "1 dīvāngulta un 1 liela divguļamā gulta. Privāta terase, virtuves zona un vannas istaba — pietiek vietas ģimenei vai draugu kompānijai.", "features": ["Dīvāngulta + divguļamā", "Sava terase", "Virtuves zona", "Kafijas automāts"]},
-        {"slug": "divvietigs-terase", "image": "/images/rooms/room-1.jpg", "alt": "Divvietīgs numurs ar terasi", "eyebrow": "2 viesi · 20 m² · ar terasi", "title": "Divvietīgs numurs ar terasi", "price": "€77 / 1 pers. · €85 / 2 pers.", "description": "2 vienguļamās gultas vai 1 liela divguļamā gulta. Mājīgs numurs ar privātu terasi un virtuves zonu.", "features": ["1 vai 2 gultas", "Sava terase", "Virtuves zona", "Privāta vannas istaba"]},
-        {"slug": "divvietigs", "image": "/images/rooms/room-4.jpg", "alt": "Divvietīgs numurs", "eyebrow": "2 viesi · 20 m²", "title": "Divvietīgs numurs", "price": "€72 / 1 pers. · €80 / 2 pers.", "description": "2 vienguļamās gultas vai 1 liela divguļamā gulta. Klusa istaba ar virtuves zonu un privātu vannas istabu.", "features": ["1 vai 2 gultas", "Virtuves zona", "Privāta vannas istaba", "Bezmaksas WiFi"]}
+        {"slug": "divvietigs-terase", "image": "/images/rooms/room-1.jpg", "alt": "Divvietīgs numurs ar terasi", "eyebrow": "2 viesi · 20 m² · ar terasi", "title": "Divvietīgs numurs (1 vai 2 gultas) ar terasi", "price": "€77 / 1 pers. · €85 / 2 pers.", "description": "2 vienguļamās gultas vai 1 liela divguļamā gulta. Mājīgs numurs ar privātu terasi un virtuves zonu.", "features": ["2 vienguļamās vai 1 divguļamā", "Sava terase", "Virtuves zona", "Privāta vannas istaba"]},
+        {"slug": "divvietigs", "image": "/images/rooms/room-4.jpg", "alt": "Divvietīgs numurs", "eyebrow": "2 viesi · 20 m²", "title": "Divvietīgs numurs (1 vai 2 gultas)", "price": "€72 / 1 pers. · €80 / 2 pers.", "description": "2 vienguļamās gultas vai 1 liela divguļamā gulta. Klusa istaba ar virtuves zonu un privātu vannas istabu.", "features": ["2 vienguļamās vai 1 divguļamā", "Virtuves zona", "Privāta vannas istaba", "Bezmaksas WiFi"]}
       ]
     },
     "wellness": {
@@ -125,12 +128,15 @@
       "source": "Booking.com · 9,2 / 10 · 70 atsauksmes",
       "score": "9,2",
       "scoreLabel": "vidējais vērtējums",
+      "cta": "Skatīt atsauksmes Booking.com",
+      "url": "https://www.booking.com/hotel/lv/mergera.lv.html?aid=331511&label=mergera-I04qIJPQaPnHIpuCe7vOLAS719991268516%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2437814816852%3Alp9254302%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7A86A4teleFWE&sid=45103c958977c1ad624fa6457e037fc2&dest_id=-3210951&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1781867980&srpvid=11f74fa3570b0f68&type=total&ucfs=1&#tab-reviews",
       "items": [
         {"rating": "10", "text": "Jauka vieta un sirsnīgi saimnieki. Jūtams lauku miers un klusums. Numuriņi ērti un komfortabli.", "author": "Sanita", "country": "Latvija", "meta": "Divvietīgs numurs · 2025. g. augusts"},
         {"rating": "10", "text": "Lieliska vieta! Mums ļoti patikās.", "author": "Rebecca", "country": "Apvienotā Karaliste", "meta": "Divvietīgs numurs ar terasi · 2025. g. septembris"},
         {"rating": "9,0", "text": "Viss bija svaigs, tīrs un sakopts.", "author": "Gints", "country": "Latvija", "meta": "Četrvietīgs numurs ar terasi · 2026. g. janvāris"},
         {"rating": "8,0", "text": "Kopumā komfortabli, mājīgi, tīrs, viegla piekļūšana, numuriņā virtuve.", "author": "Alvis", "country": "Latvija", "meta": "Divvietīgs numurs ar terasi · 2026. g. marts"},
-        {"rating": "8,0", "text": "Viss skaists, tīrs.", "author": "Daiga", "country": "Latvija", "meta": "Divvietīgs numurs ar terasi · 2025. g. augusts"}
+        {"rating": "8,0", "text": "Viss skaists, tīrs.", "author": "Daiga", "country": "Latvija", "meta": "Divvietīgs numurs ar terasi · 2025. g. augusts"},
+        {"rating": "9,0", "text": "Ļoti mierīga vieta, ērta numuriņa iekārta un atsaucīga uzņemšana.", "author": "Ilze", "country": "Latvija", "meta": "Divvietīgs numurs · 2025. g. jūlijs"}
       ]
     },
     "gallery": {
@@ -142,7 +148,8 @@
       "eyebrow": "Atrašanās vieta",
       "title": "Mērsrags — kur Kurzeme satiek jūru",
       "text": "1.5 stundas brauciena no Rīgas. Tepat pie nama — Mērsraga bāka, putnu vērošanas tornis un Rojas piekrastes ceļš.",
-      "ctaDirections": "Saņemt virzienus"
+      "ctaDirections": "Saņemt virzienus",
+      "mapEyebrow": "Norāde uz viesu namu"
     },
     "finalCta": {
       "title": "Gatavi mierīgai nedēļas nogalei?",
@@ -166,12 +173,35 @@
       "cta": "Uzzināt vairāk"
     },
     "included": {
-      "title": "Iekļauts katrā naktī",
+      "eyebrow": "Ērtības",
+      "title": "Lieliskas ērtības jūsu nakšņošanai",
+      "text": "Viss nepieciešamais mierīgai atpūtai Mērsragā — no privātas vannas istabas un virtuves zonas līdz pirtij, kublam un bezmaksas autostāvvietai.",
       "items": [
-        "Bezmaksas WiFi visā teritorijā",
-        "Bezmaksas autostāvvieta",
-        "Dvieļi un kosmētika",
-        "Rīta kafija un tēja"
+        "Nesmēķētāju numuri",
+        "Ģimenes numuri",
+        "Bezmaksas WiFi visā naktsmītnē",
+        "Bezmaksas privāta autostāvvieta uz vietas",
+        "Privāta vannas istaba ar dušu",
+        "Tualetes papīrs, dvieļi un gultas veļa",
+        "Bezmaksas higiēnas piederumi",
+        "Virtuves zona numurā",
+        "Kafijas automāts un elektriskā tējkanna",
+        "Plīts virsma, ledusskapis un virtuves piederumi",
+        "Pusdienu galds un ēdamistabas zona",
+        "Drēbju skapis, drēbju statīvs un kontaktligzda pie gultas",
+        "Terase atsevišķiem numuriem",
+        "Grila aprīkojums",
+        "Mājdzīvnieki atļauti pēc pieprasījuma bez maksas",
+        "Velosipēdu noma un ekskursijas ar velosipēdu par papildmaksu",
+        "Riteņbraukšana un pārgājieni tuvumā",
+        "Privāta reģistrēšanās / izrakstīšanās",
+        "Ātrā reģistrēšanās / izrakstīšanās un diennakts reģistratūra",
+        "Sanāksmju un banketa iespējas par papildmaksu",
+        "Ugunsdzēšamie aparāti, dūmu detektori un piekļuve ar atslēgām",
+        "Apkure un smēķēt aizliegts visā naktsmītnē",
+        "Kubls / burbuļvanna par papildmaksu",
+        "Sauna par papildmaksu",
+        "Personāls runā latviski, angliski un krieviski"
       ]
     },
     "wellness": {
@@ -291,6 +321,16 @@
       "paragraphs": [
         "Mērsrags mums vienmēr ir bijis vairāk par jūras pilsētu — tas ir miers, kas pēc gariem darba mēnešiem ļauj atkal sadzirdēt sevi. Kad mums radās iespēja iegādāties šo namu pie bākas, sapratām: gribam, lai citi atrod to pašu sajūtu, ko mēs.",
         "Pēdējos gados namu pārveidojām — dabīgi materiāli, kluss dizains, neviena lieka detaļa. Galvenais — pirts un baļa, kas paliek atvērta visu gadu. Kad ārā ir ziema, sniegs un -10°, mēs zinām, ka šeit tev būs +40."
+      ]
+    },
+    "history": {
+      "eyebrow": "Kā tas sākās",
+      "title": "No senas idejas līdz vietai, kur gribas atgriezties",
+      "imageAlt": "Hotel Mergera atklāšanas brīdis ar saimniekiem",
+      "paragraphs": [
+        "Mergera neradās kā ātrs projekts. Tā sākās ar domu par māju, kurā cilvēks ienāk un uzreiz sajūt siltumu — ne tikai no krāsns vai pirts, bet no attieksmes, no koka smaržas, no sveiciena pie durvīm.",
+        "Mums gribējās saglabāt nama dvēseli un tajā pašā laikā iedot tam jaunu dzīvi. Daudz kas tapa pašu rokām, ar ģimenes un draugu palīdzību, soli pa solim. Katrs numurs, katra kāpne un katra mazā detaļa te ir ar savu stāstu.",
+        "Tāpēc Hotel Mergera mums nav tikai viesu nams. Tā ir vieta, kur svinēt vienkāršas lietas: mierīgu rītu, sarunu pie kafijas, karstu pirti, bērnu smieklus un sajūtu, ka esi gaidīts."
       ]
     },
     "values": {

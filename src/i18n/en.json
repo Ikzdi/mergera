@@ -7,16 +7,17 @@
   "brand": {
     "name": "Hotel Mergera",
     "tagline": "A quiet seaside guesthouse in Mērsrags — rooms, sauna and outdoor hot tub.",
-    "street": "Lielā iela 1",
+    "street": "Zvejnieku iela 3B",
+    "addressLine": "Zvejnieku iela 3B, Mērsrags, Talsu nov., LV-3284, Latvia",
     "postalCode": "LV-3284",
-    "phone": "+371 20 000 000",
-    "phoneRaw": "+37120000000",
-    "email": "info@mergera.lv",
+    "phone": "+371 29286132",
+    "phoneRaw": "+37129286132",
+    "email": "hotelmergera@gmail.com",
     "facebook": "https://www.facebook.com/p/Hotel-Mergera-61566408587945/",
     "instagram": "https://www.instagram.com/",
     "booking": "https://www.booking.com/hotel/lv/mergera.lv.html",
-    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+M%C4%93rsrags",
-    "mapsWaze": "https://waze.com/ul?ll=57.3236,23.1186&navigate=yes"
+    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+Zvejnieku+iela+3B+M%C4%93rsrags",
+    "mapsWaze": "https://waze.com/ul?ll=57.33649,23.12140&navigate=yes"
   },
   "maps": {
     "google": "Open in Google Maps",
@@ -25,11 +26,13 @@
   "distances": {
     "eyebrow": "Nearby",
     "title": "How far to…",
+    "googleCta": "Google",
+    "wazeCta": "Waze",
     "items": [
-      {"name": "Mērsrags beach", "value": "3.2 km"},
-      {"name": "Lake Engure", "value": "2 km"},
-      {"name": "Lake Engure Nature Park", "value": "11 km"},
-      {"name": "Riga Airport", "value": "83 km"}
+      {"name": "Mērsrags lighthouse and coast", "value": "3.2 km", "image": "/images/nearby/baka.jpg", "alt": "Mērsrags lighthouse surrounded by pines", "google": "https://www.google.com/maps/search/?api=1&query=M%C4%93rsraga+b%C4%81ka", "waze": "https://waze.com/ul?q=M%C4%93rsraga%20b%C4%81ka&navigate=yes"},
+      {"name": "Lake Engure", "value": "2 km", "image": "/images/nearby/engures-ezers.jpg", "alt": "Reeds and water at Lake Engure", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezers", "waze": "https://waze.com/ul?q=Engures%20ezers&navigate=yes"},
+      {"name": "Lake Engure Nature Park", "value": "11 km", "image": "/images/nearby/engures-dabas-parks.jpg", "alt": "Boardwalk and birdwatching tower at Lake Engure Nature Park", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezera+Dabas+parks", "waze": "https://waze.com/ul?q=Engures%20ezera%20Dabas%20parks&navigate=yes"},
+      {"name": "Riga Airport", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Entrance of Riga Airport", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
   "events": {
@@ -93,11 +96,11 @@
     "rooms": {
       "eyebrow": "Stays",
       "title": "Our rooms",
-      "subtitle": "Six rooms in three types — for couples, families or groups of friends. All with a private kitchenette, bathroom, coffee machine and free Wi-Fi.",
+      "subtitle": "Six rooms in total: five double rooms and one quadruple room with a terrace. All rooms include a private kitchenette, bathroom, coffee machine and free Wi-Fi.",
       "items": [
         {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Quadruple room with terrace", "eyebrow": "4 guests · 28 m² · terrace", "title": "Quadruple room with terrace", "price": "€96 / 1 guest · €102 / 2+ guests", "description": "One sofa bed and one large double bed. Private terrace, kitchenette and bathroom — room for a family or a group of friends.", "features": ["Sofa bed + double", "Private terrace", "Kitchenette", "Coffee machine"]},
-        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Double room with terrace", "eyebrow": "2 guests · 20 m² · terrace", "title": "Double room with terrace", "price": "€77 / 1 guest · €85 / 2 guests", "description": "Two single beds or one large double bed. A cosy room with its own terrace and a kitchenette.", "features": ["1 or 2 beds", "Private terrace", "Kitchenette", "Private bathroom"]},
-        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Double room", "eyebrow": "2 guests · 20 m²", "title": "Double room", "price": "€72 / 1 guest · €80 / 2 guests", "description": "Two single beds or one large double bed. A quiet room with a kitchenette and a private bathroom.", "features": ["1 or 2 beds", "Kitchenette", "Private bathroom", "Free Wi-Fi"]}
+        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Double or twin room with terrace", "eyebrow": "2 guests · 20 m² · terrace", "title": "Double or twin room with terrace", "price": "€77 / 1 guest · €85 / 2 guests", "description": "Two single beds or one large double bed. A cosy room with its own terrace and a kitchenette.", "features": ["2 single beds or 1 double", "Private terrace", "Kitchenette", "Private bathroom"]},
+        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Double or twin room", "eyebrow": "2 guests · 20 m²", "title": "Double or twin room", "price": "€72 / 1 guest · €80 / 2 guests", "description": "Two single beds or one large double bed. A quiet room with a kitchenette and a private bathroom.", "features": ["2 single beds or 1 double", "Kitchenette", "Private bathroom", "Free Wi-Fi"]}
       ]
     },
     "wellness": {
@@ -113,12 +116,15 @@
       "source": "Booking.com · 9.2 / 10 · 70 reviews",
       "score": "9.2",
       "scoreLabel": "average score",
+      "cta": "See reviews on Booking.com",
+      "url": "https://www.booking.com/hotel/lv/mergera.lv.html?aid=331511&label=mergera-I04qIJPQaPnHIpuCe7vOLAS719991268516%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2437814816852%3Alp9254302%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7A86A4teleFWE&sid=45103c958977c1ad624fa6457e037fc2&dest_id=-3210951&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1781867980&srpvid=11f74fa3570b0f68&type=total&ucfs=1&#tab-reviews",
       "items": [
         {"rating": "10", "text": "Lovely place and warm hosts. You can feel the rural calm and quiet. The rooms are comfortable and cosy.", "author": "Sanita", "country": "Latvia", "meta": "Double room · Aug 2025"},
         {"rating": "10", "text": "Great place! We really loved it.", "author": "Rebecca", "country": "United Kingdom", "meta": "Double room with terrace · Sep 2025"},
         {"rating": "9.0", "text": "Everything was fresh, clean and tidy.", "author": "Gints", "country": "Latvia", "meta": "Quadruple room with terrace · Jan 2026"},
         {"rating": "8.0", "text": "Comfortable, cosy and clean overall, easy access, kitchen in the room.", "author": "Alvis", "country": "Latvia", "meta": "Double room with terrace · Mar 2026"},
-        {"rating": "8.0", "text": "Everything beautiful and clean.", "author": "Daiga", "country": "Latvia", "meta": "Double room with terrace · Aug 2025"}
+        {"rating": "8.0", "text": "Everything beautiful and clean.", "author": "Daiga", "country": "Latvia", "meta": "Double room with terrace · Aug 2025"},
+        {"rating": "9.0", "text": "A very peaceful place, a comfortable room setup and welcoming service.", "author": "Ilze", "country": "Latvia", "meta": "Double room · Jul 2025"}
       ]
     },
     "gallery": {
@@ -130,7 +136,8 @@
       "eyebrow": "Location",
       "title": "Mērsrags — where Kurzeme meets the sea",
       "text": "1.5 hours' drive from Riga. Next door — the Mērsrags lighthouse, the birdwatching tower and the Roja coastal road.",
-      "ctaDirections": "Get directions"
+      "ctaDirections": "Get directions",
+      "mapEyebrow": "Guesthouse marker"
     },
     "finalCta": {
       "title": "Ready for a quiet weekend?",
@@ -154,8 +161,36 @@
       "cta": "Learn more"
     },
     "included": {
-      "title": "Included with every night",
-      "items": ["Free Wi-Fi throughout", "Free parking", "Towels and toiletries", "Morning coffee and tea"]
+      "eyebrow": "Amenities",
+      "title": "Everything you need for a comfortable stay",
+      "text": "Thoughtful room essentials and shared facilities for an easy stay in Mērsrags — from private bathrooms and kitchenettes to sauna, hot tub and free parking.",
+      "items": [
+        "Non-smoking rooms",
+        "Family rooms",
+        "Free Wi-Fi throughout the property",
+        "Free private on-site parking",
+        "Private bathroom with shower",
+        "Toilet paper, towels and bed linen",
+        "Free toiletries",
+        "Kitchenette in the room",
+        "Coffee machine and electric kettle",
+        "Stovetop, fridge and kitchenware",
+        "Dining table and dining area",
+        "Wardrobe, clothes rack and socket by the bed",
+        "Terrace in selected rooms",
+        "Barbecue facilities",
+        "Pets allowed on request free of charge",
+        "Bicycle rental and bike tours for an extra charge",
+        "Cycling and hiking nearby",
+        "Private check-in / check-out",
+        "Express check-in / check-out and 24-hour reception",
+        "Meeting and banquet facilities for an extra charge",
+        "Fire extinguishers, smoke alarms and key access",
+        "Heating and no smoking throughout",
+        "Hot tub / jacuzzi for an extra charge",
+        "Sauna for an extra charge",
+        "Staff speak Latvian, English and Russian"
+      ]
     },
     "wellness": {
       "title": "Add the sauna and hot tub",
@@ -262,6 +297,16 @@
       "paragraphs": [
         "Mērsrags has always been more than a seaside town for us — it's the kind of quiet that lets you hear yourself again after long working months. When we got the chance to buy this house near the lighthouse, we knew: we wanted others to find the feeling we did.",
         "Over the past few years we've reworked the house — natural materials, calm design, no clutter. The heart of it is the sauna and the hot tub, both open all year. When winter outside hits −10 °C, you'll find +40 °C in here."
+      ]
+    },
+    "history": {
+      "eyebrow": "How it began",
+      "title": "From a long-held idea to a place people want to return to",
+      "imageAlt": "Hotel Mergera opening moment with the hosts",
+      "paragraphs": [
+        "Mergera did not begin as a quick project. It began with a thought about a house where people would step inside and feel warmth right away — not only from the stove or the sauna, but from the welcome, the scent of wood and the care in small details.",
+        "We wanted to keep the soul of the house while giving it a new life. Much of it came together by our own hands, with family and friends helping along the way, one careful step at a time.",
+        "That is why Hotel Mergera is not just a guesthouse for us. It is a place for simple things: a quiet morning, coffee and conversation, a hot sauna, children's laughter and the feeling that you are truly expected."
       ]
     },
     "values": {

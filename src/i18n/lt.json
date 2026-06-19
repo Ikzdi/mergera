@@ -3,14 +3,14 @@
   "brand": {
     "name": "Hotel Mergera",
     "tagline": "Ramus svečių namas prie jūros Mērsrage — kambariai, pirtis ir lauko karšta vonia.",
-    "street": "Lielā iela 1", "postalCode": "LV-3284",
-    "phone": "+371 20 000 000", "phoneRaw": "+37120000000",
-    "email": "info@mergera.lv",
+    "street": "Zvejnieku iela 3B", "addressLine": "Zvejnieku iela 3B, Mērsrags, Talsu nov., LV-3284, Latvija", "postalCode": "LV-3284",
+    "phone": "+371 29286132", "phoneRaw": "+37129286132",
+    "email": "hotelmergera@gmail.com",
     "facebook": "https://www.facebook.com/p/Hotel-Mergera-61566408587945/",
     "instagram": "https://www.instagram.com/",
     "booking": "https://www.booking.com/hotel/lv/mergera.lv.html",
-    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+M%C4%93rsrags",
-    "mapsWaze": "https://waze.com/ul?ll=57.3236,23.1186&navigate=yes"
+    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+Zvejnieku+iela+3B+M%C4%93rsrags",
+    "mapsWaze": "https://waze.com/ul?ll=57.33649,23.12140&navigate=yes"
   },
   "maps": {
     "google": "Atidaryti Google Maps",
@@ -19,11 +19,13 @@
   "distances": {
     "eyebrow": "Netoliese",
     "title": "Kiek toli iki…",
+    "googleCta": "Google",
+    "wazeCta": "Waze",
     "items": [
-      {"name": "Mērsrago paplūdimys", "value": "3,2 km"},
-      {"name": "Engurės ežeras", "value": "2 km"},
-      {"name": "Engurės ežero gamtos parkas", "value": "11 km"},
-      {"name": "Rygos oro uostas", "value": "83 km"}
+      {"name": "Mērsrago švyturys ir pakrantė", "value": "3,2 km", "image": "/images/nearby/baka.jpg", "alt": "Mērsrago švyturys tarp pušų", "google": "https://www.google.com/maps/search/?api=1&query=M%C4%93rsraga+b%C4%81ka", "waze": "https://waze.com/ul?q=M%C4%93rsraga%20b%C4%81ka&navigate=yes"},
+      {"name": "Engurės ežeras", "value": "2 km", "image": "/images/nearby/engures-ezers.jpg", "alt": "Engurės ežero nendrės ir vanduo", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezers", "waze": "https://waze.com/ul?q=Engures%20ezers&navigate=yes"},
+      {"name": "Engurės ežero gamtos parkas", "value": "11 km", "image": "/images/nearby/engures-dabas-parks.jpg", "alt": "Engurės ežero gamtos parko takas ir paukščių stebėjimo bokštas", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezera+Dabas+parks", "waze": "https://waze.com/ul?q=Engures%20ezera%20Dabas%20parks&navigate=yes"},
+      {"name": "Rygos oro uostas", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Rygos oro uosto įėjimas", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
   "events": {
@@ -67,25 +69,26 @@
         {"icon": "home", "title": "Jaukūs, modernūs kambariai", "text": "Natūralios medžiagos, tyla ir kiekviena detalė apgalvota, kad jaustumėtės kaip namuose."}
       ]
     },
-    "rooms": {"eyebrow": "Apgyvendinimas", "title": "Mūsų kambariai", "subtitle": "Šeši kambariai, trys tipai — poroms, šeimoms ar draugų kompanijoms. Visuose sava virtuvėlė, vonios kambarys, kavos aparatas ir nemokamas Wi-Fi.",
+    "rooms": {"eyebrow": "Apgyvendinimas", "title": "Mūsų kambariai", "subtitle": "Iš viso šeši kambariai: penki dviviečiai ir vienas keturvietis kambarys su terasa. Visuose kambariuose yra sava virtuvėlė, vonios kambarys, kavos aparatas ir nemokamas Wi-Fi.",
       "items": [
         {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Keturvietis kambarys su terasa", "eyebrow": "4 svečiai · 28 m² · terasa", "title": "Keturvietis kambarys su terasa", "price": "€96 / 1 asm. · €102 / 2+ asm.", "description": "Viena sofa-lova ir viena didelė dviguba lova. Sava terasa, virtuvėlė ir vonios kambarys — vietos šeimai ar draugų kompanijai.", "features": ["Sofa-lova + dviguba", "Sava terasa", "Virtuvėlė", "Kavos aparatas"]},
-        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Dvivietis kambarys su terasa", "eyebrow": "2 svečiai · 20 m² · terasa", "title": "Dvivietis kambarys su terasa", "price": "€77 / 1 asm. · €85 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba. Jaukus kambarys su sava terasa ir virtuvėle.", "features": ["1 ar 2 lovos", "Sava terasa", "Virtuvėlė", "Atskiras vonios kambarys"]},
-        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Dvivietis kambarys", "eyebrow": "2 svečiai · 20 m²", "title": "Dvivietis kambarys", "price": "€72 / 1 asm. · €80 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba lova. Ramus kambarys su virtuvėle ir atskiru vonios kambariu.", "features": ["1 ar 2 lovos", "Virtuvėlė", "Atskiras vonios kambarys", "Nemokamas Wi-Fi"]}
+        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Dvivietis kambarys su terasa", "eyebrow": "2 svečiai · 20 m² · terasa", "title": "Dvivietis kambarys su 1 arba 2 lovomis ir terasa", "price": "€77 / 1 asm. · €85 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba. Jaukus kambarys su sava terasa ir virtuvėle.", "features": ["2 viengulės arba 1 dviguba", "Sava terasa", "Virtuvėlė", "Atskiras vonios kambarys"]},
+        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Dvivietis kambarys", "eyebrow": "2 svečiai · 20 m²", "title": "Dvivietis kambarys su 1 arba 2 lovomis", "price": "€72 / 1 asm. · €80 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba lova. Ramus kambarys su virtuvėle ir atskiru vonios kambariu.", "features": ["2 viengulės arba 1 dviguba", "Virtuvėlė", "Atskiras vonios kambarys", "Nemokamas Wi-Fi"]}
       ]
     },
     "wellness": {"eyebrow": "Pirtis ir karšta vonia", "title": "Šiluma, kuri atgaivina", "text": "Sušilkite latviškoje pirtyje, tada šokite į lauko karštą vonią po žvaigždėmis. Galima rezervuoti atskirai arba kartu su nakvyne.", "ctaBala": "Daugiau apie vonią", "ctaPirts": "Daugiau apie pirtį"},
-    "reviews": {"eyebrow": "Atsiliepimai", "title": "Ką sako mūsų svečiai", "source": "Booking.com · 9.2 / 10 · 70 atsiliepimų", "score": "9.2", "scoreLabel": "vidutinis įvertinimas",
+    "reviews": {"eyebrow": "Atsiliepimai", "title": "Ką sako mūsų svečiai", "source": "Booking.com · 9.2 / 10 · 70 atsiliepimų", "score": "9.2", "scoreLabel": "vidutinis įvertinimas", "cta": "Žiūrėti atsiliepimus Booking.com", "url": "https://www.booking.com/hotel/lv/mergera.lv.html?aid=331511&label=mergera-I04qIJPQaPnHIpuCe7vOLAS719991268516%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2437814816852%3Alp9254302%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7A86A4teleFWE&sid=45103c958977c1ad624fa6457e037fc2&dest_id=-3210951&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1781867980&srpvid=11f74fa3570b0f68&type=total&ucfs=1&#tab-reviews",
       "items": [
         {"rating": "10", "text": "Miela vieta ir nuoširdūs šeimininkai. Jaučiama kaimo ramybė ir tyla. Kambariai patogūs ir jaukūs.", "author": "Sanita", "country": "Latvija", "meta": "Dvivietis kambarys · 2025 m. rugpj."},
         {"rating": "10", "text": "Puiki vieta! Mums labai patiko.", "author": "Rebecca", "country": "Jungtinė Karalystė", "meta": "Dvivietis kambarys su terasa · 2025 m. rugsėjis"},
         {"rating": "9.0", "text": "Viskas buvo gaivu, švaru ir tvarkinga.", "author": "Gints", "country": "Latvija", "meta": "Keturvietis kambarys su terasa · 2026 m. sausis"},
         {"rating": "8.0", "text": "Apskritai patogu, jauku, švaru, lengvas privažiavimas, kambaryje virtuvė.", "author": "Alvis", "country": "Latvija", "meta": "Dvivietis kambarys su terasa · 2026 m. kovas"},
-        {"rating": "8.0", "text": "Viskas gražu ir švaru.", "author": "Daiga", "country": "Latvija", "meta": "Dvivietis kambarys su terasa · 2025 m. rugpj."}
+        {"rating": "8.0", "text": "Viskas gražu ir švaru.", "author": "Daiga", "country": "Latvija", "meta": "Dvivietis kambarys su terasa · 2025 m. rugpj."},
+        {"rating": "9.0", "text": "Labai rami vieta, patogus kambario išplanavimas ir svetingas priėmimas.", "author": "Ilze", "country": "Latvija", "meta": "Dvivietis kambarys · 2025 m. liepa"}
       ]
     },
     "gallery": {"eyebrow": "Atmosfera", "title": "Žvilgsnis į mūsų aplinką", "cta": "Pilna galerija"},
-    "location": {"eyebrow": "Vieta", "title": "Mērsragas — kur Kuržemė susitinka su jūra", "text": "1,5 val. kelio nuo Rygos. Šalia — Mērsrago švyturys, paukščių stebėjimo bokštas ir Rojos pajūrio kelias.", "ctaDirections": "Gauti maršrutą"},
+    "location": {"eyebrow": "Vieta", "title": "Mērsragas — kur Kuržemė susitinka su jūra", "text": "1,5 val. kelio nuo Rygos. Šalia — Mērsrago švyturys, paukščių stebėjimo bokštas ir Rojos pajūrio kelias.", "ctaDirections": "Gauti maršrutą", "mapEyebrow": "Svečių namų žyma"},
     "finalCta": {"title": "Pasiruošę ramiam savaitgaliui?", "text": "Patikrinkite laisvas datas ir rezervuokite tiesiogiai — be tarpininkų.", "cta": "Tikrinti datas"}
   },
   "accommodation": {
@@ -93,7 +96,7 @@
     "description": "Hotel Mergera kambariai ir papildomos paslaugos — pirtis, karšta vonia. Nemokamas Wi-Fi ir parkavimas visur.",
     "hero": {"eyebrow": "Apgyvendinimas", "title": "Pasirinkite kambarį pagal save", "subtitle": "Nuo jaukaus dvivietio kambario iki erdvaus šeimos apartamento. Visur — natūralios medžiagos, minkštos pagalvės ir tyla."},
     "explore": {"eyebrow": "Poilsis", "title": "Daugiau nei nakvynė", "pirtsText": "Tradicinė latviška pirtis su šiltomis medinėmis sienomis — puiki vieta atsipalaiduoti po ilgos dienos prie jūros.", "balaText": "Šildoma lauko vonia po atviru dangumi. Panirkite į šiltą vandenį ir mėgaukitės Mērsrago tyla po žvaigždėmis.", "cta": "Sužinoti daugiau"},
-    "included": {"title": "Įskaičiuota į kiekvieną naktį", "items": ["Nemokamas Wi-Fi visoje teritorijoje", "Nemokamas parkavimas", "Rankšluosčiai ir kosmetika", "Rytinė kava ir arbata"]},
+    "included": {"eyebrow": "Patogumai", "title": "Viskas patogiai nakvynei", "text": "Apgalvoti patogumai ramiam poilsiui Mersrage — privatus vonios kambarys, virtuvėlė, stovėjimo aikštelė, pirtis ir kubilas.", "items": ["Numeriai nerūkantiems", "Šeimos numeriai", "Nemokamas Wi-Fi visoje apgyvendinimo įstaigoje", "Nemokama privati stovėjimo aikštelė vietoje", "Privatus vonios kambarys su dušu", "Tualetinis popierius, rankšluosčiai ir patalynė", "Nemokami higienos reikmenys", "Virtuvėlė numeryje", "Kavos aparatas ir elektrinis virdulys", "Kaitlentė, šaldytuvas ir virtuvės reikmenys", "Valgomojo stalas ir valgomojo zona", "Spinta, drabužių kabykla ir lizdas prie lovos", "Terasa pasirinktuose numeriuose", "Kepsninės įranga", "Gyvūnai leidžiami pagal užklausą nemokamai", "Dviračių nuoma ir dviračių ekskursijos už papildomą mokestį", "Dviračių sportas ir žygiai netoliese", "Privatus įregistravimas / išregistravimas", "Greitas įregistravimas / išregistravimas ir visą parą dirbanti registratūra", "Susitikimų ir pokylių galimybės už papildomą mokestį", "Gesintuvai, dūmų detektoriai ir įėjimas su raktu", "Šildymas ir draudimas rūkyti visoje įstaigoje", "Kubilas / sūkurinė vonia už papildomą mokestį", "Pirtis už papildomą mokestį", "Personalas kalba latviškai, angliškai ir rusiškai"]},
     "wellness": {"title": "Pridėkite pirtį ir karštą vonią", "text": "Padarykite savaitgalį ypatingu — abi paslaugos galimos kaip priedas prie bet kurio kambario."},
     "faq": {"eyebrow": "Dažni klausimai", "title": "Prieš rezervuojant",
       "items": [
@@ -150,6 +153,13 @@
       "paragraphs": [
         "Mērsragas mums visada buvo daugiau nei pajūrio miestelis — tai tyla, kuri po ilgų darbo mėnesių leidžia vėl išgirsti save. Kai pasitaikė galimybė nupirkti šį namą prie švyturio, supratome: norime, kad ir kiti rastų tą patį jausmą.",
         "Pastaraisiais metais namą perdarėme — natūralios medžiagos, ramus dizainas, nieko nereikalingo. Esmė — pirtis ir karšta vonia, atviros ištisus metus. Kai lauke žiema, sniegas ir −10°, viduje mus rasi +40°."
+      ]
+    },
+    "history": {"eyebrow": "Kaip viskas prasidėjo", "title": "Nuo senos idėjos iki vietos, į kurią norisi sugrįžti", "imageAlt": "Hotel Mergera atidarymo akimirka su šeimininkais",
+      "paragraphs": [
+        "Mergera neatsirado kaip greitas projektas. Ji prasidėjo nuo minties apie namus, į kuriuos įėjus iškart pajunti šilumą — ne tik nuo krosnies ar pirties, bet nuo pasitikimo, medžio kvapo ir rūpesčio mažose detalėse.",
+        "Norėjome išsaugoti namo sielą ir kartu suteikti jam naują gyvenimą. Daug kas gimė mūsų pačių rankomis, padedant šeimai ir draugams, žingsnis po žingsnio.",
+        "Todėl Hotel Mergera mums nėra tik svečių namai. Tai vieta paprastiems dalykams: ramiam rytui, pokalbiui prie kavos, karštai pirčiai, vaikų juokui ir jausmui, kad čia esi laukiamas."
       ]
     },
     "values": {"eyebrow": "Mūsų vertybės", "title": "Paprasta, tylu, apgalvota",

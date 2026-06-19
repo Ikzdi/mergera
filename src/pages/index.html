@@ -20,14 +20,14 @@
     </div>
     <!-- Left-side dark gradient for text legibility -->
     <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" aria-hidden="true"></div>
-    <div class="relative z-10 container-content h-full flex flex-col justify-end pb-24 md:pb-32">
-      <div class="max-w-3xl text-white animate-fadeUp">
-        <div class="inline-flex items-center gap-3 text-xs tracking-wideish uppercase text-accent">
+    <div class="relative z-10 container-content h-full flex items-center justify-center py-28 md:py-32">
+      <div class="mx-auto max-w-3xl text-center text-white animate-fadeUp">
+        <div class="inline-flex items-center justify-center gap-3 text-xs tracking-wideish uppercase text-accent">
           <span class="gold-rule"></span> {{home.hero.eyebrow}}
         </div>
         <h1 class="mt-6 text-white text-balance">{{home.hero.title}}</h1>
-        <p class="mt-6 text-white/90 text-lg md:text-xl max-w-2xl">{{home.hero.subtitle}}</p>
-        <div class="mt-10 flex flex-wrap gap-4">
+        <p class="mx-auto mt-6 text-white/90 text-lg md:text-xl max-w-2xl">{{home.hero.subtitle}}</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
           <a href="/{{lang}}/rezervacija/" class="btn-primary">{{home.hero.ctaPrimary}}</a>
           <a href="/{{lang}}/naktsmitnes/" class="btn-ghost text-white border-white/40 hover:bg-white hover:text-ink">{{home.hero.ctaSecondary}}</a>
         </div>
@@ -77,13 +77,13 @@
           </div>
           <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center gap-4">
             <div class="eyebrow">{{this.eyebrow}}</div>
-            <h3 class="text-3xl font-semibold">{{this.title}}</h3>
+            <h3 class="text-3xl font-bold">{{this.title}}</h3>
             <p class="text-ink-muted">{{this.description}}</p>
             <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-muted">
               {{#each this.features}}<li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>{{this}}</li>{{/each}}
             </ul>
             <div class="flex flex-wrap items-center justify-between gap-4 mt-2 pt-5 border-t border-line">
-              <span class="text-base md:text-lg font-semibold text-accent-hover">{{this.price}}</span>
+              <span class="font-serif text-xl md:text-2xl font-semibold text-accent-hover">{{this.price}}</span>
               <a href="/{{lang}}/rezervacija/" class="btn-primary">{{../nav.reserve}}</a>
             </div>
           </div>
@@ -152,18 +152,36 @@
           <a href="tel:{{brand.phoneRaw}}" class="hover:text-accent-hover">{{brand.phone}}</a>
         </address>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="{{brand.mapsGoogle}}" rel="noopener" target="_blank" class="btn-ghost">
+          <a href="{{brand.mapsGoogle}}" rel="noopener" target="_blank" class="btn-primary">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.3-7-11a7 7 0 1114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
             {{maps.google}}
           </a>
-          <a href="{{brand.mapsWaze}}" rel="noopener" target="_blank" class="btn-ghost">
+          <a href="{{brand.mapsWaze}}" rel="noopener" target="_blank" class="btn-dark">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11l18-7-7 18-2.5-7.5z"/></svg>
             {{maps.waze}}
           </a>
         </div>
       </div>
-      <div class="rounded-2xl overflow-hidden border border-line shadow-card aspect-[4/3]">
-        <iframe title="Mērsrags map" src="https://www.openstreetmap.org/export/embed.html?bbox=23.05%2C57.30%2C23.20%2C57.36&amp;layer=mapnik&amp;marker=57.3236%2C23.1186" loading="lazy" class="w-full h-full" referrerpolicy="no-referrer"></iframe>
+      <div class="relative min-h-[430px] overflow-hidden rounded-2xl border border-line bg-[#F4EFE4] shadow-card">
+        <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(229,226,217,0.65)_1px,transparent_1px),linear-gradient(0deg,rgba(229,226,217,0.65)_1px,transparent_1px)] bg-[size:54px_54px]" aria-hidden="true"></div>
+        <div class="absolute -right-16 -top-20 h-72 w-72 rounded-full border-[34px] border-accent-soft/70" aria-hidden="true"></div>
+        <div class="absolute -left-20 bottom-0 h-72 w-80 rounded-tr-[9rem] bg-[#D9E7DF]" aria-hidden="true"></div>
+        <div class="absolute left-8 right-8 top-28 h-4 rotate-[-8deg] rounded-full bg-white/80 shadow-sm" aria-hidden="true"></div>
+        <div class="absolute left-24 right-10 top-52 h-3 rotate-[16deg] rounded-full bg-white/75 shadow-sm" aria-hidden="true"></div>
+        <div class="absolute bottom-12 left-12 right-20 h-2 rotate-[-18deg] rounded-full bg-accent/60" aria-hidden="true"></div>
+        <div class="absolute left-[54%] top-[43%] -translate-x-1/2 -translate-y-1/2">
+          <div class="relative flex h-28 w-28 items-center justify-center rounded-full bg-accent/20">
+            <div class="absolute h-16 w-16 rounded-full bg-accent/25 animate-ping motion-reduce:animate-none"></div>
+            <div class="relative flex h-14 w-14 items-center justify-center rounded-full bg-accent text-ink shadow-nav ring-8 ring-white">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.3-7-11a7 7 0 1114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-6 right-6 bottom-6 rounded-2xl border border-white/70 bg-white/90 p-6 shadow-nav backdrop-blur">
+          <div class="eyebrow">{{home.location.mapEyebrow}}</div>
+          <h3 class="mt-2 text-2xl font-bold">{{brand.name}}</h3>
+          <p class="mt-2 text-sm">{{brand.street}}, Mērsrags, {{brand.postalCode}}</p>
+        </div>
       </div>
     </div>
   </section>
@@ -175,15 +193,21 @@
         <div class="eyebrow inline-flex items-center gap-3"><span class="gold-rule"></span>{{distances.eyebrow}}<span class="gold-rule"></span></div>
         <h2 class="mt-4 text-balance">{{distances.title}}</h2>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {{#each distances.items}}
-        <div class="text-center p-6 rounded-2xl border border-line bg-bg">
-          <div class="w-12 h-12 mx-auto rounded-full bg-accent-soft flex items-center justify-center text-accent-hover">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.3-7-11a7 7 0 1114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <article class="card group flex h-full flex-col">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="{{this.image}}" alt="{{this.alt}}" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div class="mt-4 font-serif text-2xl text-ink">{{this.value}}</div>
-          <div class="mt-1 text-sm text-ink-muted">{{this.name}}</div>
-        </div>
+          <div class="flex min-h-[270px] flex-1 flex-col p-6">
+            <div class="font-serif text-3xl font-semibold text-accent-hover">{{this.value}}</div>
+            <h3 class="mt-2 font-serif text-2xl font-semibold leading-snug">{{this.name}}</h3>
+            <div class="mt-auto grid grid-cols-2 gap-2 pt-6">
+              <a href="{{this.google}}" rel="noopener" target="_blank" class="btn-primary px-3 py-2 text-[0.68rem]">{{distances.googleCta}}</a>
+              <a href="{{this.waze}}" rel="noopener" target="_blank" class="btn-dark px-3 py-2 text-[0.68rem]">{{distances.wazeCta}}</a>
+            </div>
+          </div>
+        </article>
         {{/each}}
       </div>
     </div>

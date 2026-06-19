@@ -3,14 +3,14 @@
   "brand": {
     "name": "Hotel Mergera",
     "tagline": "Vaikne rannamajake Mērsragis — toad, saun ja õue tünn.",
-    "street": "Lielā iela 1", "postalCode": "LV-3284",
-    "phone": "+371 20 000 000", "phoneRaw": "+37120000000",
-    "email": "info@mergera.lv",
+    "street": "Zvejnieku iela 3B", "addressLine": "Zvejnieku iela 3B, Mērsrags, Talsu nov., LV-3284, Läti", "postalCode": "LV-3284",
+    "phone": "+371 29286132", "phoneRaw": "+37129286132",
+    "email": "hotelmergera@gmail.com",
     "facebook": "https://www.facebook.com/p/Hotel-Mergera-61566408587945/",
     "instagram": "https://www.instagram.com/",
     "booking": "https://www.booking.com/hotel/lv/mergera.lv.html",
-    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+M%C4%93rsrags",
-    "mapsWaze": "https://waze.com/ul?ll=57.3236,23.1186&navigate=yes"
+    "mapsGoogle": "https://www.google.com/maps/search/?api=1&query=Hotel+Mergera+Zvejnieku+iela+3B+M%C4%93rsrags",
+    "mapsWaze": "https://waze.com/ul?ll=57.33649,23.12140&navigate=yes"
   },
   "maps": {
     "google": "Ava Google Maps-is",
@@ -19,11 +19,13 @@
   "distances": {
     "eyebrow": "Lähedal",
     "title": "Kui kaugel on…",
+    "googleCta": "Google",
+    "wazeCta": "Waze",
     "items": [
-      {"name": "Mērsragi rand", "value": "3,2 km"},
-      {"name": "Engure järv", "value": "2 km"},
-      {"name": "Engure järve looduspark", "value": "11 km"},
-      {"name": "Riia lennujaam", "value": "83 km"}
+      {"name": "Mērsragi tuletorn ja rannik", "value": "3,2 km", "image": "/images/nearby/baka.jpg", "alt": "Mērsragi tuletorn mändide vahel", "google": "https://www.google.com/maps/search/?api=1&query=M%C4%93rsraga+b%C4%81ka", "waze": "https://waze.com/ul?q=M%C4%93rsraga%20b%C4%81ka&navigate=yes"},
+      {"name": "Engure järv", "value": "2 km", "image": "/images/nearby/engures-ezers.jpg", "alt": "Engure järve roostik ja vesi", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezers", "waze": "https://waze.com/ul?q=Engures%20ezers&navigate=yes"},
+      {"name": "Engure järve looduspark", "value": "11 km", "image": "/images/nearby/engures-dabas-parks.jpg", "alt": "Engure järve looduspargi laudtee ja linnuvaatlustorn", "google": "https://www.google.com/maps/search/?api=1&query=Engures+ezera+Dabas+parks", "waze": "https://waze.com/ul?q=Engures%20ezera%20Dabas%20parks&navigate=yes"},
+      {"name": "Riia lennujaam", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Riia lennujaama sissepääs", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
   "events": {
@@ -67,25 +69,26 @@
         {"icon": "home", "title": "Hubased, moodsad toad", "text": "Looduslikud materjalid, vaikus ja iga detail läbi mõeldud, et tunneksid end nagu kodus."}
       ]
     },
-    "rooms": {"eyebrow": "Majutus", "title": "Meie toad", "subtitle": "Kuus tuba kolmes tüübis — paaridele, peredele või sõpruskondadele. Kõigis oma kööginurk, vannituba, kohvimasin ja tasuta Wi-Fi.",
+    "rooms": {"eyebrow": "Majutus", "title": "Meie toad", "subtitle": "Kokku kuus tuba: viis kaheinimesetuba ja üks neljane tuba terrassiga. Kõigis tubades on oma kööginurk, vannituba, kohvimasin ja tasuta Wi-Fi.",
       "items": [
         {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Neljane tuba terrassiga", "eyebrow": "4 külalist · 28 m² · terrass", "title": "Neljane tuba terrassiga", "price": "€96 / 1 külaline · €102 / 2+ külalist", "description": "Üks diivanvoodi ja üks suur kaheinimesevoodi. Oma terrass, kööginurk ja vannituba — ruumi perele või sõpruskonnale.", "features": ["Diivanvoodi + kaheinimese", "Oma terrass", "Kööginurk", "Kohvimasin"]},
-        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Kaheinimesetuba terrassiga", "eyebrow": "2 külalist · 20 m² · terrass", "title": "Kaheinimesetuba terrassiga", "price": "€77 / 1 külaline · €85 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Hubane tuba oma terrassi ja kööginurgaga.", "features": ["1 või 2 voodit", "Oma terrass", "Kööginurk", "Oma vannituba"]},
-        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Kaheinimesetuba", "eyebrow": "2 külalist · 20 m²", "title": "Kaheinimesetuba", "price": "€72 / 1 külaline · €80 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Vaikne tuba kööginurga ja oma vannitoaga.", "features": ["1 või 2 voodit", "Kööginurk", "Oma vannituba", "Tasuta Wi-Fi"]}
+        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Kaheinimesetuba terrassiga", "eyebrow": "2 külalist · 20 m² · terrass", "title": "Kaheinimesetuba 1 või 2 voodiga ja terrassiga", "price": "€77 / 1 külaline · €85 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Hubane tuba oma terrassi ja kööginurgaga.", "features": ["2 üheinimesevoodit või 1 kaheinimesevoodi", "Oma terrass", "Kööginurk", "Oma vannituba"]},
+        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Kaheinimesetuba", "eyebrow": "2 külalist · 20 m²", "title": "Kaheinimesetuba 1 või 2 voodiga", "price": "€72 / 1 külaline · €80 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Vaikne tuba kööginurga ja oma vannitoaga.", "features": ["2 üheinimesevoodit või 1 kaheinimesevoodi", "Kööginurk", "Oma vannituba", "Tasuta Wi-Fi"]}
       ]
     },
     "wellness": {"eyebrow": "Saun ja tünn", "title": "Soojus, mis taastab", "text": "Soojenda end läti saunas, siis astu kuuma õuetünni tähtede all. Broneeri eraldi või osana toast.", "ctaBala": "Tünni kohta", "ctaPirts": "Sauna kohta"},
-    "reviews": {"eyebrow": "Arvustused", "title": "Mida külalised räägivad", "source": "Booking.com · 9.2 / 10 · 70 arvustust", "score": "9.2", "scoreLabel": "keskmine hinne",
+    "reviews": {"eyebrow": "Arvustused", "title": "Mida külalised räägivad", "source": "Booking.com · 9.2 / 10 · 70 arvustust", "score": "9.2", "scoreLabel": "keskmine hinne", "cta": "Vaata arvustusi Booking.com-is", "url": "https://www.booking.com/hotel/lv/mergera.lv.html?aid=331511&label=mergera-I04qIJPQaPnHIpuCe7vOLAS719991268516%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2437814816852%3Alp9254302%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7A86A4teleFWE&sid=45103c958977c1ad624fa6457e037fc2&dest_id=-3210951&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1781867980&srpvid=11f74fa3570b0f68&type=total&ucfs=1&#tab-reviews",
       "items": [
         {"rating": "10", "text": "Armas koht ja soojad võõrustajad. Tunda on maaelu rahu ja vaikust. Toad on mugavad ja hubased.", "author": "Sanita", "country": "Läti", "meta": "Kahene tuba · august 2025"},
         {"rating": "10", "text": "Suurepärane koht! Meile väga meeldis.", "author": "Rebecca", "country": "Ühendkuningriik", "meta": "Kaheinimesetuba rõduga · september 2025"},
         {"rating": "9.0", "text": "Kõik oli värske, puhas ja korras.", "author": "Gints", "country": "Läti", "meta": "Neljane tuba rõduga · jaanuar 2026"},
         {"rating": "8.0", "text": "Üldiselt mugav, hubane, puhas, lihtne juurdepääs, toas köök.", "author": "Alvis", "country": "Läti", "meta": "Kaheinimesetuba rõduga · märts 2026"},
-        {"rating": "8.0", "text": "Kõik ilus ja puhas.", "author": "Daiga", "country": "Läti", "meta": "Kaheinimesetuba rõduga · august 2025"}
+        {"rating": "8.0", "text": "Kõik ilus ja puhas.", "author": "Daiga", "country": "Läti", "meta": "Kaheinimesetuba rõduga · august 2025"},
+        {"rating": "9.0", "text": "Väga rahulik koht, mugav toa paigutus ja sõbralik vastuvõtt.", "author": "Ilze", "country": "Läti", "meta": "Kahene tuba · juuli 2025"}
       ]
     },
     "gallery": {"eyebrow": "Atmosfäär", "title": "Pilk meie keskkonda", "cta": "Vaata kogu galeriid"},
-    "location": {"eyebrow": "Asukoht", "title": "Mērsrags — kus Kurzeme kohtub merega", "text": "1,5 tundi sõitu Riiast. Kõrval — Mērsragi tuletorn, linnuvaatlustorn ja Roja rannateetee.", "ctaDirections": "Saada teejuhis"},
+    "location": {"eyebrow": "Asukoht", "title": "Mērsrags — kus Kurzeme kohtub merega", "text": "1,5 tundi sõitu Riiast. Kõrval — Mērsragi tuletorn, linnuvaatlustorn ja Roja rannateetee.", "ctaDirections": "Saada teejuhis", "mapEyebrow": "Külalistemaja tähis"},
     "finalCta": {"title": "Valmis vaikseks nädalavahetuseks?", "text": "Kontrolli vabu kuupäevi ja broneeri otse — ilma vahendajateta.", "cta": "Kontrolli kuupäevi"}
   },
   "accommodation": {
@@ -93,7 +96,7 @@
     "description": "Hotel Mergera toad ja lisateenused — saun, tünn. Kõik majutused tasuta Wi-Fi ja parkimisega.",
     "hero": {"eyebrow": "Majutus", "title": "Vali endale sobiv tuba", "subtitle": "Hubasest kahesest toast avara peresviidini. Looduslikud materjalid, pehmed padjad ja vaikus — igal pool."},
     "explore": {"eyebrow": "Lõõgastus", "title": "Rohkem kui ööbimiskoht", "pirtsText": "Traditsiooniline läti puuküttega saun soojade puitseintega — ideaalne lõõgastumiseks pärast pikka päeva mere ääres.", "balaText": "Soe välitünn lahtise taeva all. Astu sooja vette ja naudi Mērsragi vaikust tähtede all.", "cta": "Loe lähemalt"},
-    "included": {"title": "Iga öö sees", "items": ["Tasuta Wi-Fi kogu hoones", "Tasuta parkimine", "Rätikud ja kosmeetika", "Hommikukohv ja tee"]},
+    "included": {"eyebrow": "Mugavused", "title": "Kõik mugavaks peatumiseks", "text": "Läbimõeldud mugavused rahulikuks puhkuseks Mērsragsis — privaatne vannituba, kööginurk, parkimine, saun ja kümblustünn.", "items": ["Mittesuitsetajate toad", "Peretoad", "Tasuta Wi-Fi kogu majutusasutuses", "Tasuta privaatne parkimine kohapeal", "Privaatne vannituba dušiga", "Tualettpaber, rätikud ja voodipesu", "Tasuta hügieenitarbed", "Kööginurk toas", "Kohvimasin ja veekeetja", "Pliit, külmkapp ja köögitarbed", "Söögilaud ja einestamisala", "Riidekapp, riidenagi ja pistik voodi juures", "Terrass valitud tubades", "Grillimisvõimalus", "Lemmikloomad lubatud soovi korral tasuta", "Jalgrattarent ja rattatuurid lisatasu eest", "Jalgrattasõit ja matkamine läheduses", "Privaatne sisse- / väljaregistreerimine", "Kiire sisse- / väljaregistreerimine ja ööpäevaringne vastuvõtt", "Koosoleku- ja banketivõimalused lisatasu eest", "Tulekustutid, suitsuandurid ja võtmega ligipääs", "Küte ja suitsetamine kogu majutusasutuses keelatud", "Kümblustünn / mullivann lisatasu eest", "Saun lisatasu eest", "Personal räägib läti, inglise ja vene keeles"]},
     "wellness": {"title": "Lisa saun ja tünn", "text": "Tee nädalavahetus eriliseks — mõlemad teenused on saadaval lisana mis tahes toale."},
     "faq": {"eyebrow": "KKK", "title": "Enne broneerimist",
       "items": [
@@ -150,6 +153,13 @@
       "paragraphs": [
         "Mērsrags on meie jaoks alati olnud rohkem kui rannalinn — see on vaikus, mis pikkade töökuude järel laseb taas iseennast kuulda. Kui saime võimaluse osta selle maja tuletorni lähedal, mõistsime: tahame, et ka teised leiaksid sama tunde.",
         "Viimaste aastate jooksul oleme maja ümber ehitanud — looduslikud materjalid, vaikne disain, ei midagi liigset. Süda on saun ja tünn, mõlemad avatud aastaringselt. Kui väljas on talv −10 °C, on siin sees +40."
+      ]
+    },
+    "history": {"eyebrow": "Kuidas kõik algas", "title": "Vanast ideest paigani, kuhu tahad tagasi tulla", "imageAlt": "Hotel Mergera avamishetk võõrustajatega",
+      "paragraphs": [
+        "Mergera ei sündinud kiire projektina. See algas mõttest majast, kuhu inimene sisse astub ja tunneb kohe soojust — mitte ainult ahjust või saunast, vaid vastuvõtust, puidu lõhnast ja hoolest väikestes detailides.",
+        "Tahtsime säilitada maja hinge ja anda sellele samal ajal uue elu. Palju sündis oma kätega, pere ja sõprade abiga, samm-sammult.",
+        "Seepärast ei ole Hotel Mergera meie jaoks lihtsalt külalismaja. See on koht lihtsatele asjadele: vaiksele hommikule, kohvijutule, kuumale saunale, laste naerule ja tundele, et sind on siin oodatud."
       ]
     },
     "values": {"eyebrow": "Meie väärtused", "title": "Lihtne, vaikne, läbi mõeldud",

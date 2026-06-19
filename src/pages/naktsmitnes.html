@@ -6,14 +6,18 @@
 <body>
 {{> header }}
 
-<main id="main" class="pt-28 md:pt-32">
+<main id="main">
 
-  <!-- Page hero -->
-  <section class="container-content pt-12 pb-16 md:pt-20 md:pb-24">
-    <div class="max-w-3xl">
-      <div class="eyebrow">{{accommodation.hero.eyebrow}}</div>
-      <h1 class="mt-4 text-balance">{{accommodation.hero.title}}</h1>
-      <p class="mt-6 text-lg max-w-prose">{{accommodation.hero.subtitle}}</p>
+  <!-- Hero -->
+  <section class="relative h-[70vh] min-h-[520px] overflow-hidden hero-overlay">
+    <img src="/images/rooms/accommodation-hero.jpg" alt="" aria-hidden="true"
+         class="absolute inset-0 w-full h-full object-cover animate-kenburns motion-reduce:animate-none" />
+    <div class="relative z-10 container-content h-full flex flex-col justify-end pb-16 md:pb-24">
+      <div class="max-w-3xl text-white animate-fadeUp">
+        <div class="eyebrow text-accent">{{accommodation.hero.eyebrow}}</div>
+        <h1 class="mt-4 text-white text-balance">{{accommodation.hero.title}}</h1>
+        <p class="mt-6 text-white/90 text-lg max-w-2xl">{{accommodation.hero.subtitle}}</p>
+      </div>
     </div>
   </section>
 
@@ -28,13 +32,13 @@
         </div>
         <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center gap-4">
           <div class="eyebrow">{{this.eyebrow}}</div>
-          <h2 class="text-3xl font-semibold">{{this.title}}</h2>
+          <h2 class="text-3xl font-bold">{{this.title}}</h2>
           <p class="text-ink-muted">{{this.description}}</p>
           <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-muted">
             {{#each this.features}}<li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>{{this}}</li>{{/each}}
           </ul>
           <div class="flex flex-wrap items-center justify-between gap-4 mt-2 pt-5 border-t border-line">
-            <span class="text-base md:text-lg font-semibold text-accent-hover">{{this.price}}</span>
+            <span class="font-serif text-xl md:text-2xl font-semibold text-accent-hover">{{this.price}}</span>
             <a href="/{{lang}}/rezervacija/" class="btn-primary">{{../nav.reserve}}</a>
           </div>
         </div>
@@ -43,15 +47,17 @@
     </div>
   </section>
 
-  <!-- Included in every stay -->
+  <!-- Amenities -->
   <section class="section bg-bg">
-    <div class="container-content grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-      <div>
+    <div class="container-content">
+      <div class="max-w-3xl mb-12">
+        <div class="eyebrow">{{accommodation.included.eyebrow}}</div>
         <h2 class="text-balance">{{accommodation.included.title}}</h2>
+        <p class="mt-5">{{accommodation.included.text}}</p>
       </div>
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {{#each accommodation.included.items}}
-        <li class="flex items-start gap-3 p-4 rounded-xl border border-line bg-bg-surface">
+        <li class="flex items-start gap-3 p-4 rounded-xl border border-line bg-bg-surface min-h-[74px]">
           <svg class="w-5 h-5 mt-0.5 text-accent flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
           <span class="text-ink">{{this}}</span>
         </li>

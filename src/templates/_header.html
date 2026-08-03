@@ -2,7 +2,7 @@
   <div class="container-content flex items-center justify-between gap-4 py-2.5 md:py-3">
 
     <!-- Logo + brand -->
-    <a href="/{{lang}}/" class="flex items-center gap-3 group flex-none" aria-label="{{brand.name}}">
+    <a href="{{url.home}}" class="flex items-center gap-3 group flex-none" aria-label="{{brand.name}}">
       <img src="/images/brand/logo.jpg" alt="{{brand.name}} logo" width="48" height="48"
            class="w-11 h-11 md:w-12 md:h-12 rounded-full object-cover ring-1 ring-line" />
       <span class="font-serif text-lg md:text-xl font-semibold tracking-tightish text-ink whitespace-nowrap">{{brand.name}}</span>
@@ -10,30 +10,30 @@
 
     <!-- Primary nav -->
     <nav class="hidden lg:flex items-center gap-7 xl:gap-9" aria-label="{{nav.ariaPrimary}}">
-      <a href="/{{lang}}/" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.home}}</a>
+      <a href="{{url.home}}" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.home}}</a>
       <div class="relative group">
-        <a href="/{{lang}}/naktsmitnes/" class="inline-flex items-center gap-1 text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">
+        <a href="{{url.guesthouse}}" class="inline-flex items-center gap-1 text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">
           {{nav.guesthouse}}
           <svg class="w-3.5 h-3.5 text-ink-muted transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
         </a>
         <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block group-focus-within:block">
           <div class="w-52 rounded-xl border border-line bg-white shadow-nav py-1 overflow-hidden">
-            <a href="/{{lang}}/naktsmitnes/" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.accommodation}}</a>
-            <a href="/{{lang}}/naktsmitnes/bala/" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.bala}}</a>
-            <a href="/{{lang}}/naktsmitnes/pirts/" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.pirts}}</a>
-            <a href="/{{lang}}/naktsmitnes/pasakumi/" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.events}}</a>
+            <a href="{{url.apartments}}" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.accommodation}}</a>
+            <a href="{{url.hotTub}}" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.bala}}</a>
+            <a href="{{url.sauna}}" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.pirts}}</a>
+            <a href="{{url.events}}" class="block px-4 py-2.5 text-sm text-ink hover:bg-bg hover:text-accent-hover">{{nav.events}}</a>
           </div>
         </div>
       </div>
-      <a href="/{{lang}}/galerija/" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.gallery}}</a>
-      <a href="/{{lang}}/par-mums/" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.about}}</a>
-      <a href="/{{lang}}/kontakti/" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.contacts}}</a>
+      <a href="{{url.gallery}}" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.gallery}}</a>
+      <a href="{{url.about}}" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.about}}</a>
+      <a href="{{url.contacts}}" class="text-sm font-medium text-ink hover:text-accent-hover whitespace-nowrap">{{nav.contacts}}</a>
     </nav>
 
     <!-- Right cluster -->
     <div class="flex items-center gap-2 md:gap-3 flex-none">
       <div class="hidden md:block">{{{langDropdown}}}</div>
-      <a href="/{{lang}}/rezervacija/" class="btn-primary hidden sm:inline-flex whitespace-nowrap">
+      <a href="{{url.reservation}}" class="btn-primary hidden sm:inline-flex whitespace-nowrap">
         {{nav.reserve}}
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/>
@@ -50,7 +50,7 @@
 
 <div id="mobile-menu" class="fixed inset-0 z-50 bg-bg hidden flex-col" data-menu-panel>
   <div class="flex-none container-content flex items-center justify-between py-3 border-b border-line">
-    <a href="/{{lang}}/" class="flex items-center gap-3">
+    <a href="{{url.home}}" class="flex items-center gap-3">
       <img src="/images/brand/logo.jpg" alt="{{brand.name}} logo" width="40" height="40" class="w-10 h-10 rounded-full object-cover ring-1 ring-line" />
       <span class="font-serif text-lg text-ink">{{brand.name}}</span>
     </a>
@@ -61,16 +61,16 @@
     </button>
   </div>
   <nav class="flex-1 overflow-y-auto container-content flex flex-col py-4" aria-label="{{nav.ariaMobile}}">
-    <a href="/{{lang}}/" class="font-serif text-2xl py-3 border-b border-line/70">{{nav.home}}</a>
-    <a href="/{{lang}}/naktsmitnes/" class="font-serif text-2xl pt-3 pb-2">{{nav.guesthouse}}</a>
-    <a href="/{{lang}}/naktsmitnes/" class="text-base py-2 pl-4 text-ink-muted flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.accommodation}}</a>
-    <a href="/{{lang}}/naktsmitnes/bala/" class="text-base py-2 pl-4 text-ink-muted flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.bala}}</a>
-    <a href="/{{lang}}/naktsmitnes/pirts/" class="text-base py-2 pl-4 text-ink-muted flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.pirts}}</a>
-    <a href="/{{lang}}/naktsmitnes/pasakumi/" class="text-base py-2 pl-4 mb-2 text-ink-muted flex items-center gap-2.5 border-b border-line/70"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.events}}</a>
-    <a href="/{{lang}}/galerija/" class="font-serif text-2xl py-3 border-b border-line/70">{{nav.gallery}}</a>
-    <a href="/{{lang}}/par-mums/" class="font-serif text-2xl py-3 border-b border-line/70">{{nav.about}}</a>
-    <a href="/{{lang}}/kontakti/" class="font-serif text-2xl py-3">{{nav.contacts}}</a>
-    <a href="/{{lang}}/rezervacija/" class="btn-primary mt-6 justify-center">{{nav.reserve}}</a>
+    <a href="{{url.home}}" class="font-serif text-2xl py-3 border-b border-line/70">{{nav.home}}</a>
+    <a href="{{url.guesthouse}}" class="font-serif text-2xl pt-3 pb-2">{{nav.guesthouse}}</a>
+    <a href="{{url.apartments}}" class="text-base py-2 pl-4 text-ink-muted flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.accommodation}}</a>
+    <a href="{{url.hotTub}}" class="text-base py-2 pl-4 text-ink-muted flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.bala}}</a>
+    <a href="{{url.sauna}}" class="text-base py-2 pl-4 text-ink-muted flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.pirts}}</a>
+    <a href="{{url.events}}" class="text-base py-2 pl-4 mb-2 text-ink-muted flex items-center gap-2.5 border-b border-line/70"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-none"></span>{{nav.events}}</a>
+    <a href="{{url.gallery}}" class="font-serif text-2xl py-3 border-b border-line/70">{{nav.gallery}}</a>
+    <a href="{{url.about}}" class="font-serif text-2xl py-3 border-b border-line/70">{{nav.about}}</a>
+    <a href="{{url.contacts}}" class="font-serif text-2xl py-3">{{nav.contacts}}</a>
+    <a href="{{url.reservation}}" class="btn-primary mt-6 justify-center">{{nav.reserve}}</a>
     <div class="mt-auto pt-8 flex items-center gap-2" aria-label="{{nav.ariaPrimary}}">{{{langList}}}</div>
   </nav>
 </div>

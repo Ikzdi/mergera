@@ -6,7 +6,7 @@
   },
   "brand": {
     "name": "Hotel Mergera",
-    "tagline": "Klusa atpūta jūras tuvumā Mērsragā — istabas, pirts un āra baļa.",
+    "tagline": "Klusa atpūta jūras tuvumā Mērsragā — apartamenti, sauna un karstais kubls.",
     "street": "Zvejnieku iela 3B",
     "addressLine": "Zvejnieku iela 3B, Mērsrags, Talsu nov., LV-3284, Latvija",
     "postalCode": "LV-3284",
@@ -35,6 +35,22 @@
       {"name": "Rīgas lidosta", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Rīgas lidostas ieeja", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
+  "guesthouse": {
+    "title": "Viesu nams Mērsragā",
+    "description": "Hotel Mergera viesu nams Mērsragā — apartamenti, sauna, karstais kubls un pasākumu zāle vienuviet.",
+    "hero": {
+      "eyebrow": "Viesu nams",
+      "title": "Viss, ko piedāvājam vienuviet",
+      "subtitle": "Seši apartamenti, individuāli veidota sauna, karstais kubls zem klajām debesīm un zāle svinībām līdz 50 viesiem — visu var rezervēt atsevišķi vai kopā."
+    },
+    "cta": "Uzzināt vairāk",
+    "cards": {
+      "apartments": {"title": "Apartamenti", "text": "Seši apartamenti ar virtuves zonu, vannas istabu un bezmaksas WiFi. Daļai — sava terase."},
+      "hotTub": {"title": "Karstais kubls", "text": "Sildošs kubls zem klajām debesīm. Pieejams visu gadu, arī ziemā."},
+      "sauna": {"title": "Sauna", "text": "Neatkārtojama, individuāli veidota sauna ar siltām koka sienām."},
+      "events": {"title": "Pasākumi", "text": "Zāle un labiekārtota virtuve svinībām, koncertiem un semināriem līdz 50 viesiem."}
+    }
+  },
   "events": {
     "title": "Pasākumu zāle Mērsragā | Hotel Mergera",
     "description": "Zāle un labiekārtota virtuve pasākumiem līdz 50 cilvēkiem Mērsragā — svinībām, koncertiem un semināriem. Cenas no €120. Iespēja izīrēt visu viesu namu.",
@@ -54,9 +70,9 @@
     "location": "Mērsrags · Latvija",
     "home": "Sākums",
     "guesthouse": "Viesu nams",
-    "accommodation": "Naktsmītnes",
-    "bala": "Āra baļa",
-    "pirts": "Pirts",
+    "accommodation": "Apartamenti",
+    "bala": "Karstais kubls",
+    "pirts": "Sauna",
     "events": "Pasākumi",
     "gallery": "Galerija",
     "about": "Par mums",
@@ -68,7 +84,7 @@
     "ariaMobile": "Mobilā navigācija"
   },
   "footer": {
-    "tagline": "Ģimenes viesu nams Mērsragā — mājīgas istabas, īsta latviešu pirts un āra sildbaļa zem zvaigžņotām debesīm. Ideāli klusam nedēļas nogales pārtraukumam.",
+    "tagline": "Ģimenes viesu nams Mērsragā — mājīgi apartamenti, sauna un karstais kubls zem zvaigžņotām debesīm. Ideāli klusam nedēļas nogales pārtraukumam.",
     "navTitle": "Lapas",
     "contactTitle": "Sazinies",
     "bookingLink": "Skatīt Booking.com",
@@ -76,11 +92,11 @@
   },
   "home": {
     "title": "Atpūta Mērsragā jūras tuvumā",
-    "description": "Hotel Mergera — moderns viesu nams Mērsragā ar mājīgām istabām, latviešu pirti un āra baļu. Klusums, jūras tuvums, viesmīlība.",
+    "description": "Hotel Mergera — moderns viesu nams Mērsragā ar mājīgiem apartamentiem, saunu un karsto kublu. Klusums, jūras tuvums, viesmīlība.",
     "hero": {
       "eyebrow": "Mērsrags · Rīgas līča piekraste",
       "title": "Hotel Mergera",
-      "subtitle": "Viesu nams Mērsragā, soļa attālumā no jūras — mūsdienīgi numuri, pirts, āra baļa un pasākumu zāle mierīgai atpūtai pārim, ģimenei vai svinībām.",
+      "subtitle": "Viesu nams Mērsragā, netālu no jūras — mūsdienīgi, labiekārtoti numuri, sauna, karstais kubls un pasākumu zāle mierīgai atpūtai pārim, ģimenei vai svinībām.",
       "ctaPrimary": "Rezervēt naktsmītni",
       "ctaSecondary": "Skatīt naktsmītnes"
     },
@@ -90,13 +106,13 @@
       "features": [
         {
           "icon": "wave",
-          "title": "200 m līdz jūrai",
-          "text": "No nama 3 minūtes kājām līdz baltajām Rīgas līča smiltīm un Mērsraga bākai."
+          "title": "500 m līdz jūrai",
+          "text": "Pludmale ir 10 minūšu gājienā no viesu nama."
         },
         {
           "icon": "leaf",
-          "title": "Latviešu pirts un baļa",
-          "text": "Karsta krāsns pirts un āra sildbaļa zem klajām debesīm — pieejama visu cauru gadu."
+          "title": "Sauna un karstais kubls",
+          "text": "Neatkārtojama, individuāli veidota sauna un karstais kubls zem klajām debesīm, kas pieejama visu gadu."
         },
         {
           "icon": "home",
@@ -107,20 +123,25 @@
     },
     "rooms": {
       "eyebrow": "Naktsmītnes",
-      "title": "Mūsu numuri",
-      "subtitle": "Kopā seši numuri: pieci divvietīgi un viens četrvietīgs numurs ar terasi. Visos numuros privāta virtuves zona, vannas istaba, kafijas automāts un bezmaksas WiFi.",
+      "title": "Mūsu apartamenti",
+      "subtitle": "Kopā seši apartamenti: viens ģimenes apartaments ar terasi, trīs apartamenti ar terasi un divi apartamenti bez terasēm. Visos apartamentos ir virtuves zona, vannas istaba, kafijas automāts un bezmaksas WiFi.",
       "items": [
-        {"slug": "cetrvietigs-terase", "image": "/images/rooms/room-2.jpg", "alt": "Četrvietīgs numurs ar terasi", "eyebrow": "4 viesi · 28 m² · ar terasi", "title": "Četrvietīgs numurs ar terasi", "price": "€96 / 1 pers. · €102 / 2+ pers.", "description": "1 dīvāngulta un 1 liela divguļamā gulta. Privāta terase, virtuves zona un vannas istaba — pietiek vietas ģimenei vai draugu kompānijai.", "features": ["Dīvāngulta + divguļamā", "Sava terase", "Virtuves zona", "Kafijas automāts"]},
-        {"slug": "divvietigs-terase", "image": "/images/rooms/room-1.jpg", "alt": "Divvietīgs numurs ar terasi", "eyebrow": "2 viesi · 20 m² · ar terasi", "title": "Divvietīgs numurs (1 vai 2 gultas) ar terasi", "price": "€77 / 1 pers. · €85 / 2 pers.", "description": "2 vienguļamās gultas vai 1 liela divguļamā gulta. Mājīgs numurs ar privātu terasi un virtuves zonu.", "features": ["2 vienguļamās vai 1 divguļamā", "Sava terase", "Virtuves zona", "Privāta vannas istaba"]},
-        {"slug": "divvietigs", "image": "/images/rooms/room-4.jpg", "alt": "Divvietīgs numurs", "eyebrow": "2 viesi · 20 m²", "title": "Divvietīgs numurs (1 vai 2 gultas)", "price": "€72 / 1 pers. · €80 / 2 pers.", "description": "2 vienguļamās gultas vai 1 liela divguļamā gulta. Klusa istaba ar virtuves zonu un privātu vannas istabu.", "features": ["2 vienguļamās vai 1 divguļamā", "Virtuves zona", "Privāta vannas istaba", "Bezmaksas WiFi"]}
+        {"slug": "apartamenti-1", "image": "/images/rooms/apartment-1.jpg", "alt": "Ģimenes apartamenti ar terasi nr.1", "eyebrow": "Līdz 6 viesiem · ar terasi", "title": "Ģimenes apartamenti ar terasi nr.1", "price": "€96 / 1 pers. · €102 / 2+ pers.", "description": "Plaši un gaiši ģimenes apartamenti, piemēroti komfortablai atpūtai ģimenei vai draugu kompānijai. Tajā ir liela ērta divguļamā gulta un dīvāns, nodrošinot ērtu nakšņošanu visiem viesiem. Nepieciešamības gadījumā, pievienojot papildus gultas, šeit var pārnakšņot pat līdz sešām personām. Šo apartamentu īpašā priekšrocība ir plašā privātā terase, kur var nesteidzīgi baudīt rīta kafiju saules staros vai pavadīt mierpilnus vakarus svaigā gaisā, sildoties vakara saulītē. Tas rada patīkamu atmosfēru visas dienas garumā. Viesu ērtībām pieejama pilnībā aprīkota virtuves zona un labierīcību telpa ar dušu un tualeti. Ērtās gultas dēļ īpaši labi justos pāris, izbaudot kopā romantisku atpūtu.", "features": ["Divguļamā gulta + dīvāns", "Plaša privātā terase", "Pilnībā aprīkota virtuves zona", "Duša un tualete"]},
+        {"slug": "apartamenti-2", "image": "/images/rooms/apartment-2.jpg", "alt": "Apartamenti ar terasi nr.2", "eyebrow": "Līdz 3 viesiem · ar terasi", "title": "Apartamenti ar terasi nr.2", "price": "€77 / 1 pers. · €85 / 2 pers.", "description": "Mājīgi apartamenti ar privātu terasi, virtuves zonu un labierīcību telpu ar dušu un tualeti. Terasē var baudīt mierpilnu rīta kafiju, kā arī sajust rīta saules staru baudījumu. Šajos apartamentos ir iespēja izvēlēties vienu divguļamo gultu vai divas atsevišķas gultas. Varam izguldīt šajā numuriņā līdz trīs personām, pievienojot vēl vienu gultu.", "features": ["Divguļamā vai 2 atsevišķas gultas", "Privāta terase", "Virtuves zona", "Duša un tualete"]},
+        {"slug": "apartamenti-3", "image": "/images/rooms/apartment-3.jpg", "alt": "Apartamenti nr.3", "eyebrow": "Līdz 3 viesiem", "title": "Apartamenti nr.3", "price": "€72 / 1 pers. · €80 / 2 pers.", "description": "Klusi apartamenti ar virtuves zonu un labierīcību telpu ar dušu un tualeti. Interjerā izmantoti zaļie toņi, no sienas lampas Jūs sveicinās kaķis, vakara gaismu spēle padara telpu romantisku. Tajos var nakšņot līdz trīs personām. Iespējams izvēlēties gan atsevišķas gultas, gan divguļamo gultu.", "features": ["Divguļamā vai 2 atsevišķas gultas", "Virtuves zona", "Duša un tualete", "Zaļo toņu interjers"]},
+        {"slug": "apartamenti-4", "image": "/images/rooms/apartment-4.jpg", "alt": "Apartamenti nr.4", "eyebrow": "Līdz 3 viesiem", "title": "Apartamenti nr.4", "price": "€72 / 1 pers. · €80 / 2 pers.", "description": "Klusi, silti apartamenti ar virtuves zonu un labierīcību telpu ar dušu un tualeti. Interjers veidots violetos toņos. Tajos var nakšņot līdz trīs personām. Iespējams izvēlēties gan atsevišķas gultas, gan divguļamo gultu.", "features": ["Divguļamā vai 2 atsevišķas gultas", "Virtuves zona", "Duša un tualete", "Violeto toņu interjers"]},
+        {"slug": "apartamenti-5", "image": "/images/rooms/apartment-5.jpg", "alt": "Apartamenti ar terasi nr.5", "eyebrow": "Līdz 3 viesiem · ar terasi", "title": "Apartamenti ar terasi nr.5", "price": "€77 / 1 pers. · €85 / 2 pers.", "description": "Mājīgi apartamenti ar privātu terasi, virtuves zonu un labierīcību telpu ar dušu un tualeti. Terasē var baudīt pēcpusdienas saules starus un vērot pilsētu. Tajos var nakšņot līdz trīs personām. Iespējams izvēlēties gan atsevišķas gultas, gan divguļamo gultu.", "features": ["Divguļamā vai 2 atsevišķas gultas", "Privāta terase", "Virtuves zona", "Duša un tualete"]},
+        {"slug": "apartamenti-6", "image": "/images/rooms/apartment-6.jpg", "alt": "Apartamenti ar terasi nr.6", "eyebrow": "Līdz 2 viesiem · ar terasi", "title": "Apartamenti ar terasi nr.6", "price": "", "description": "Mājīgi apartamenti ar privātu terasi, virtuves zonu un labierīcību telpu ar dušu un tualeti. No terases paveras skats uz pilsētu. Terasē var baudīt pēcpusdienas saules starus. Iespējams palikt līdz divām personām, kā arī izvēlēties gan atsevišķas gultas, gan divguļamo gultu. Šis ir mūsu izdevīgākais piedāvājums, sava kompaktā izmēra dēļ. Šī paša iemesla dēļ virtuves zona nav aprīkota ar atsevišķu izlietni, taču viss vajadzīgais gatavošanai te ir atrodams.", "features": ["Divguļamā vai 2 atsevišķas gultas", "Privāta terase ar skatu uz pilsētu", "Virtuves zona", "Duša un tualete"]}
       ]
     },
     "wellness": {
-      "eyebrow": "Pirts un baļa",
+      "eyebrow": "Sauna un karstais kubls",
       "title": "Karstums, kas atjauno",
-      "text": "Iesildi muskuļus latviešu pirtī, tad lec āra baļā zem zvaigznēm. Iznomājiet to atsevišķi vai kā daļu no naktsmītnes paketes.",
-      "ctaBala": "Vairāk par baļu",
-      "ctaPirts": "Vairāk par pirti"
+      "text": "Iesildi ķermeni karstā saunā, tad baudi karsto kublu zem zvaigznēm. Iznomājiet to atsevišķi vai kā daļu no naktsmītnes piedāvājuma.",
+      "tabPirts": "Sauna",
+      "tabBala": "Karstais kubls",
+      "ctaBala": "Vairāk par karsto kublu",
+      "ctaPirts": "Vairāk par saunu"
     },
     "reviews": {
       "eyebrow": "Atsauksmes",
@@ -147,7 +168,7 @@
     "location": {
       "eyebrow": "Atrašanās vieta",
       "title": "Mērsrags — kur Kurzeme satiek jūru",
-      "text": "1.5 stundas brauciena no Rīgas. Tepat pie nama — Mērsraga bāka, putnu vērošanas tornis un Rojas piekrastes ceļš.",
+      "text": "1.5 stundas brauciena no Rīgas. Viesu nama tuvumā atrodas Mērsraga bāka 3 km, vairāki putnu vērošanas torņi, Engures ezers, Mērsraga kanāls.",
       "ctaDirections": "Saņemt virzienus",
       "mapEyebrow": "Norāde uz viesu namu"
     },
@@ -168,8 +189,8 @@
     "explore": {
       "eyebrow": "Atpūta",
       "title": "Vairāk nekā naktsmītne",
-      "pirtsText": "Tradicionāla latviešu krāsns pirts ar siltām koka sienām — ideāla, lai atpūstos pēc garas dienas pie jūras.",
-      "balaText": "Sildoša āra baļa zem klajas debess. Iekāp siltā ūdenī un baudi Mērsraga klusumu zem zvaigznēm.",
+      "pirtsText": "Neatkārtojama, individuāli veidota sauna ar siltām koka sienām — ideāla, lai atpūstos pēc garas dienas pie jūras.",
+      "balaText": "Sildošs karstais kubls zem klajas debess. Iekāp siltā ūdenī un baudi Mērsraga klusumu zem zvaigznēm.",
       "cta": "Uzzināt vairāk"
     },
     "included": {
@@ -205,7 +226,7 @@
       ]
     },
     "wellness": {
-      "title": "Pievieno pirti un baļu",
+      "title": "Pievieno saunu un karsto kublu",
       "text": "Padari nedēļas nogali īpašu — abi pakalpojumi pieejami kā papildinājums jebkurai istabai."
     },
     "faq": {
@@ -303,8 +324,8 @@
       "all": "Viss",
       "exterior": "Ārpuse",
       "rooms": "Istabas",
-      "sauna": "Pirts",
-      "hotTub": "Baļa",
+      "sauna": "Sauna",
+      "hotTub": "Karstais kubls",
       "surroundings": "Apkārtne"
     }
   },

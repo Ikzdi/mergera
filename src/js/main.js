@@ -111,8 +111,25 @@
         slides[i].classList.replace('opacity-100', 'opacity-0');
         i = (i + 1) % slides.length;
         slides[i].classList.replace('opacity-0', 'opacity-100');
-      }, 5500);
+      }, 4000);
     }
+  }
+
+  // ---- Wellness switcher (sauna / hot tub) ----
+  const wellnessTabs = $('[data-wellness-tabs]');
+  if (wellnessTabs) {
+    const panels = $$('[data-wellness-panel]');
+    wellnessTabs.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-wellness-tab]');
+      if (!btn) return;
+      const key = btn.dataset.wellnessTab;
+      $$('[data-wellness-tab]', wellnessTabs).forEach((b) => {
+        const on = b === btn;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-selected', String(on));
+      });
+      panels.forEach((p) => p.classList.toggle('hidden', p.dataset.wellnessPanel !== key));
+    });
   }
 
   // ---- Lightbox with prev/next navigation ----

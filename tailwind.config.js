@@ -48,11 +48,13 @@ export default {
           '0%': { transform: 'scale(1) translate(0,0)' },
           '100%': { transform: 'scale(1.08) translate(-1%, -1%)' }
         },
-        // Simulates a drone slowly ascending: starts lower and zoomed in,
-        // gently rises and pulls back. Stand-in until the real drone .mp4 lands.
+        // Slow drift + pull-back on the hero slides.
+        // The scale must always out-cover the translate, or the image edge lifts off
+        // the section and exposes the background as a grey strip. Worst case is the
+        // end frame: overhang = (1.10-1)/2 = 5% vs shift = 1.10 x 3% = 3.3% — covered.
         heroRise: {
-          '0%': { transform: 'scale(1.18) translateY(4%)' },
-          '100%': { transform: 'scale(1.06) translateY(-4%)' }
+          '0%': { transform: 'scale(1.20) translateY(3%)' },
+          '100%': { transform: 'scale(1.10) translateY(-3%)' }
         },
         fadeUp: {
           '0%': { opacity: 0, transform: 'translateY(12px)' },

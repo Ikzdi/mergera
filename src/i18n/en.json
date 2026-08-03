@@ -35,6 +35,22 @@
       {"name": "Riga Airport", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Entrance of Riga Airport", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
+  "guesthouse": {
+    "title": "Guest house in Mērsrags",
+    "description": "Hotel Mergera guest house in Mērsrags — apartments, sauna, hot tub and an event hall all in one place.",
+    "hero": {
+      "eyebrow": "Guest house",
+      "title": "Everything we offer, in one place",
+      "subtitle": "Six apartments, an individually built sauna, a hot tub under the open sky and a hall for celebrations of up to 50 guests — book them separately or together."
+    },
+    "cta": "Learn more",
+    "cards": {
+      "apartments": {"title": "Apartments", "text": "Six apartments with a kitchenette, bathroom and free Wi-Fi. Some have their own terrace."},
+      "hotTub": {"title": "Hot tub", "text": "A heated tub under the open sky. Available all year round, winter included."},
+      "sauna": {"title": "Sauna", "text": "A one-of-a-kind, individually built sauna with warm timber walls."},
+      "events": {"title": "Events", "text": "A hall and equipped kitchen for celebrations, concerts and seminars of up to 50 guests."}
+    }
+  },
   "events": {
     "title": "Event hall in Mērsrags | Hotel Mergera",
     "description": "A hall and equipped kitchen for events up to 50 people in Mērsrags — celebrations, concerts and seminars. Prices from €120. Rent the whole guesthouse.",
@@ -54,7 +70,7 @@
     "location": "Mērsrags · Latvia",
     "home": "Home",
     "guesthouse": "Guest house",
-    "accommodation": "Stay",
+    "accommodation": "Apartments",
     "bala": "Hot tub",
     "pirts": "Sauna",
     "events": "Events",
@@ -80,7 +96,7 @@
     "hero": {
       "eyebrow": "Mērsrags · Gulf of Riga coast",
       "title": "Hotel Mergera",
-      "subtitle": "A guest house in Mērsrags, steps from the sea — modern rooms, a sauna, an outdoor hot tub and an event hall for quiet getaways, families and celebrations.",
+      "subtitle": "A guest house in Mērsrags, close to the sea — modern, well-equipped rooms, a sauna, a hot tub and an event hall for quiet getaways, families and celebrations.",
       "ctaPrimary": "Book a room",
       "ctaSecondary": "See the rooms"
     },
@@ -88,27 +104,32 @@
       "eyebrow": "Why Mergera",
       "title": "Small place. Big stay.",
       "features": [
-        {"icon": "wave", "title": "200 m to the sea", "text": "Three minutes on foot to the white sand of the Gulf of Riga and the Mērsrags lighthouse."},
-        {"icon": "leaf", "title": "Latvian sauna & hot tub", "text": "A wood-fired sauna and an outdoor hot tub under the open sky — open all year round."},
+        {"icon": "wave", "title": "500 m to the sea", "text": "The beach is a 10-minute walk from the guest house."},
+        {"icon": "leaf", "title": "Sauna and hot tub", "text": "A one-of-a-kind, individually built sauna and a hot tub under the open sky, available all year round."},
         {"icon": "home", "title": "Cosy, modern rooms", "text": "Natural materials, quiet design and every detail considered, so you feel at home."}
       ]
     },
     "rooms": {
       "eyebrow": "Stays",
-      "title": "Our rooms",
-      "subtitle": "Six rooms in total: five double rooms and one quadruple room with a terrace. All rooms include a private kitchenette, bathroom, coffee machine and free Wi-Fi.",
+      "title": "Our apartments",
+      "subtitle": "Six apartments in total: one family apartment with a terrace, three apartments with a terrace and two apartments without terraces. All apartments have a kitchenette, bathroom, coffee machine and free Wi-Fi.",
       "items": [
-        {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Quadruple room with terrace", "eyebrow": "4 guests · 28 m² · terrace", "title": "Quadruple room with terrace", "price": "€96 / 1 guest · €102 / 2+ guests", "description": "One sofa bed and one large double bed. Private terrace, kitchenette and bathroom — room for a family or a group of friends.", "features": ["Sofa bed + double", "Private terrace", "Kitchenette", "Coffee machine"]},
-        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Double or twin room with terrace", "eyebrow": "2 guests · 20 m² · terrace", "title": "Double or twin room with terrace", "price": "€77 / 1 guest · €85 / 2 guests", "description": "Two single beds or one large double bed. A cosy room with its own terrace and a kitchenette.", "features": ["2 single beds or 1 double", "Private terrace", "Kitchenette", "Private bathroom"]},
-        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Double or twin room", "eyebrow": "2 guests · 20 m²", "title": "Double or twin room", "price": "€72 / 1 guest · €80 / 2 guests", "description": "Two single beds or one large double bed. A quiet room with a kitchenette and a private bathroom.", "features": ["2 single beds or 1 double", "Kitchenette", "Private bathroom", "Free Wi-Fi"]}
+        {"slug": "apartment-1", "image": "/images/rooms/apartment-1.jpg", "alt": "Family apartment with terrace no. 1", "eyebrow": "Up to 6 guests · terrace", "title": "Family apartment with terrace no. 1", "price": "€96 / 1 guest · €102 / 2+ guests", "description": "Spacious and bright family apartments, suited to a comfortable stay for a family or a group of friends. There is a large, comfortable double bed and a sofa, so every guest sleeps well. If needed, extra beds can be added and up to six people can stay here. The special advantage of these apartments is the generous private terrace, where you can linger over morning coffee in the sun or spend peaceful evenings in the fresh air, warmed by the evening light. It makes for a pleasant atmosphere all day long. Guests have a fully equipped kitchenette and a bathroom with a shower and toilet. Thanks to the comfortable bed, a couple will feel especially at home here on a romantic break.", "features": ["Double bed + sofa", "Large private terrace", "Fully equipped kitchenette", "Shower and toilet"]},
+        {"slug": "apartment-2", "image": "/images/rooms/apartment-2.jpg", "alt": "Apartment with terrace no. 2", "eyebrow": "Up to 3 guests · terrace", "title": "Apartment with terrace no. 2", "price": "€77 / 1 guest · €85 / 2 guests", "description": "Cosy apartments with a private terrace, a kitchenette and a bathroom with a shower and toilet. On the terrace you can enjoy a peaceful morning coffee and catch the first rays of the sun. In these apartments you can choose one double bed or two separate beds. With an extra bed added, up to three people can stay here.", "features": ["Double or 2 separate beds", "Private terrace", "Kitchenette", "Shower and toilet"]},
+        {"slug": "apartment-3", "image": "/images/rooms/apartment-3.jpg", "alt": "Apartment no. 3", "eyebrow": "Up to 3 guests", "title": "Apartment no. 3", "price": "€72 / 1 guest · €80 / 2 guests", "description": "Quiet apartments with a kitchenette and a bathroom with a shower and toilet. The interior uses green tones, a cat on the wall lamp greets you, and the play of evening light makes the room romantic. Up to three people can stay. You can choose either separate beds or a double bed.", "features": ["Double or 2 separate beds", "Kitchenette", "Shower and toilet", "Green-toned interior"]},
+        {"slug": "apartment-4", "image": "/images/rooms/apartment-4.jpg", "alt": "Apartment no. 4", "eyebrow": "Up to 3 guests", "title": "Apartment no. 4", "price": "€72 / 1 guest · €80 / 2 guests", "description": "Quiet, warm apartments with a kitchenette and a bathroom with a shower and toilet. The interior is designed in violet tones. Up to three people can stay. You can choose either separate beds or a double bed.", "features": ["Double or 2 separate beds", "Kitchenette", "Shower and toilet", "Violet-toned interior"]},
+        {"slug": "apartment-5", "image": "/images/rooms/apartment-5.jpg", "alt": "Apartment with terrace no. 5", "eyebrow": "Up to 3 guests · terrace", "title": "Apartment with terrace no. 5", "price": "€77 / 1 guest · €85 / 2 guests", "description": "Cosy apartments with a private terrace, a kitchenette and a bathroom with a shower and toilet. On the terrace you can enjoy the afternoon sun and watch the town. Up to three people can stay. You can choose either separate beds or a double bed.", "features": ["Double or 2 separate beds", "Private terrace", "Kitchenette", "Shower and toilet"]},
+        {"slug": "apartment-6", "image": "/images/rooms/apartment-6.jpg", "alt": "Apartment with terrace no. 6", "eyebrow": "Up to 2 guests · terrace", "title": "Apartment with terrace no. 6", "price": "", "description": "Cosy apartments with a private terrace, a kitchenette and a bathroom with a shower and toilet. The terrace opens onto a view of the town. On the terrace you can enjoy the afternoon sun. Up to two people can stay, and you can choose either separate beds or a double bed. This is our best-value offer, thanks to its compact size. For the same reason the kitchenette does not have a separate sink, but everything needed for cooking is there.", "features": ["Double or 2 separate beds", "Private terrace with town view", "Kitchenette", "Shower and toilet"]}
       ]
     },
     "wellness": {
-      "eyebrow": "Sauna & hot tub",
+      "eyebrow": "Sauna and hot tub",
       "title": "Heat that resets you",
-      "text": "Warm up in the Latvian sauna, then step into the outdoor hot tub under the stars. Book them on their own or as part of a stay.",
-      "ctaBala": "About the hot tub",
-      "ctaPirts": "About the sauna"
+      "text": "Warm up in the hot sauna, then enjoy the hot tub under the stars. Rent it on its own or as part of a stay.",
+      "tabPirts": "Sauna",
+      "tabBala": "Hot tub",
+      "ctaBala": "More about the hot tub",
+      "ctaPirts": "More about the sauna"
     },
     "reviews": {
       "eyebrow": "Reviews",
@@ -135,7 +156,7 @@
     "location": {
       "eyebrow": "Location",
       "title": "Mērsrags — where Kurzeme meets the sea",
-      "text": "1.5 hours' drive from Riga. Next door — the Mērsrags lighthouse, the birdwatching tower and the Roja coastal road.",
+      "text": "1.5 hours' drive from Riga. Near the guest house you will find the Mērsrags lighthouse 3 km away, several birdwatching towers, Lake Engure and the Mērsrags canal.",
       "ctaDirections": "Get directions",
       "mapEyebrow": "Guesthouse marker"
     },

@@ -28,6 +28,22 @@
       {"name": "Riia lennujaam", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Riia lennujaama sissepääs", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
+  "guesthouse": {
+    "title": "Külalismaja Mērsragis",
+    "description": "Hotel Mergera külalismaja Mērsragis — apartemendid, saun, kuum tünn ja ürituste saal ühes kohas.",
+    "hero": {
+      "eyebrow": "Külalismaja",
+      "title": "Kõik, mida pakume, ühes kohas",
+      "subtitle": "Kuus apartementi, individuaalselt ehitatud saun, kuum tünn lahtise taeva all ja saal tähistamisteks kuni 50 külalisele — broneeri eraldi või koos."
+    },
+    "cta": "Loe lähemalt",
+    "cards": {
+      "apartments": {"title": "Apartemendid", "text": "Kuus apartementi kööginurga, vannitoa ja tasuta Wi-Fi-ga. Mõnel on oma terrass."},
+      "hotTub": {"title": "Kuum tünn", "text": "Soojendatud tünn lahtise taeva all. Saadaval aastaringselt, ka talvel."},
+      "sauna": {"title": "Saun", "text": "Ainulaadne, individuaalselt ehitatud saun soojade puitseintega."},
+      "events": {"title": "Üritused", "text": "Saal ja sisustatud köök tähistamisteks, kontsertideks ja seminarideks kuni 50 külalisele."}
+    }
+  },
   "events": {
     "title": "Ürituste saal Mērsragis | Hotel Mergera",
     "description": "Saal ja sisustatud köök üritusteks kuni 50 inimesele Mērsragis — tähistamised, kontserdid ja seminarid. Hinnad alates €120. Võimalik rentida kogu külalismaja.",
@@ -45,7 +61,7 @@
   },
   "nav": {
     "location": "Mērsrags · Läti",
-    "home": "Avaleht", "guesthouse": "Külalismaja", "accommodation": "Majutus", "bala": "Tünn", "pirts": "Saun", "events": "Üritused", "gallery": "Galerii", "about": "Meist", "contacts": "Kontakt", "reserve": "Broneeri",
+    "home": "Avaleht", "guesthouse": "Külalismaja", "accommodation": "Apartemendid", "bala": "Kuum tünn", "pirts": "Saun", "events": "Üritused", "gallery": "Galerii", "about": "Meist", "contacts": "Kontakt", "reserve": "Broneeri",
     "openMenu": "Ava menüü", "closeMenu": "Sulge menüü",
     "ariaPrimary": "Põhinavigatsioon", "ariaMobile": "Mobiilinavigatsioon"
   },
@@ -59,24 +75,27 @@
     "hero": {
       "eyebrow": "Mērsrags · Riia lahe rannik",
       "title": "Hotel Mergera",
-      "subtitle": "Külalismaja Mērsragis, mere lähedal — moodsad toad, saun, välitünn ja ürituste saal rahulikuks puhkuseks, perele ja tähistamisteks.",
+      "subtitle": "Külalismaja Mērsragis, mere lähedal — moodsad, hästi sisustatud toad, saun, kuum tünn ja ürituste saal rahulikuks puhkuseks, perele ja tähistamisteks.",
       "ctaPrimary": "Broneeri tuba", "ctaSecondary": "Vaata tube"
     },
     "intro": {"eyebrow": "Miks Mergera", "title": "Väike koht. Suur kogemus.",
       "features": [
-        {"icon": "wave", "title": "200 m mereni", "text": "Kolm minutit jalgsi Riia lahe valge liivani ja Mērsragi tuletornini."},
-        {"icon": "leaf", "title": "Läti saun ja kuum tünn", "text": "Puuküttega saun ja kuum õuetünn lahtise taeva all — avatud aastaringselt."},
+        {"icon": "wave", "title": "500 m mereni", "text": "Rand on külalismajast 10 minuti jalutuskäigu kaugusel."},
+        {"icon": "leaf", "title": "Saun ja kuum tünn", "text": "Ainulaadne, individuaalselt ehitatud saun ja kuum tünn lahtise taeva all, saadaval aastaringselt."},
         {"icon": "home", "title": "Hubased, moodsad toad", "text": "Looduslikud materjalid, vaikus ja iga detail läbi mõeldud, et tunneksid end nagu kodus."}
       ]
     },
-    "rooms": {"eyebrow": "Majutus", "title": "Meie toad", "subtitle": "Kokku kuus tuba: viis kaheinimesetuba ja üks neljane tuba terrassiga. Kõigis tubades on oma kööginurk, vannituba, kohvimasin ja tasuta Wi-Fi.",
+    "rooms": {"eyebrow": "Majutus", "title": "Meie apartemendid", "subtitle": "Kokku kuus apartementi: üks pereapartement terrassiga, kolm apartementi terrassiga ja kaks apartementi ilma terrassita. Kõigis apartementides on kööginurk, vannituba, kohvimasin ja tasuta Wi-Fi.",
       "items": [
-        {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Neljane tuba terrassiga", "eyebrow": "4 külalist · 28 m² · terrass", "title": "Neljane tuba terrassiga", "price": "€96 / 1 külaline · €102 / 2+ külalist", "description": "Üks diivanvoodi ja üks suur kaheinimesevoodi. Oma terrass, kööginurk ja vannituba — ruumi perele või sõpruskonnale.", "features": ["Diivanvoodi + kaheinimese", "Oma terrass", "Kööginurk", "Kohvimasin"]},
-        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Kaheinimesetuba terrassiga", "eyebrow": "2 külalist · 20 m² · terrass", "title": "Kaheinimesetuba 1 või 2 voodiga ja terrassiga", "price": "€77 / 1 külaline · €85 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Hubane tuba oma terrassi ja kööginurgaga.", "features": ["2 üheinimesevoodit või 1 kaheinimesevoodi", "Oma terrass", "Kööginurk", "Oma vannituba"]},
-        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Kaheinimesetuba", "eyebrow": "2 külalist · 20 m²", "title": "Kaheinimesetuba 1 või 2 voodiga", "price": "€72 / 1 külaline · €80 / 2 külalist", "description": "Kaks ühest voodit või üks suur kaheinimesevoodi. Vaikne tuba kööginurga ja oma vannitoaga.", "features": ["2 üheinimesevoodit või 1 kaheinimesevoodi", "Kööginurk", "Oma vannituba", "Tasuta Wi-Fi"]}
+        {"slug": "apartment-1", "image": "/images/rooms/apartment-1.jpg", "alt": "Pereapartement terrassiga nr 1", "eyebrow": "Kuni 6 külalist · terrass", "title": "Pereapartement terrassiga nr 1", "price": "€96 / 1 külaline · €102 / 2+ külalist", "description": "Avarad ja valgusküllased pereapartemendid, mis sobivad mugavaks puhkuseks perele või sõpruskonnale. Siin on suur mugav kaheinimesevoodi ja diivan, mis tagab kõigile külalistele mugava ööbimise. Vajadusel saab lisada lisavoodeid ja siin võib ööbida kuni kuus inimest. Nende apartementide eriline eelis on avar privaatne terrass, kus saab rahulikult nautida hommikukohvi päikesepaistes või veeta rahulikke õhtuid värskes õhus, soojendades end õhtupäikeses. See loob meeldiva õhkkonna kogu päevaks. Külaliste mugavuseks on täielikult sisustatud kööginurk ja pesuruum duši ja WC-ga. Mugava voodi tõttu tunneb end siin eriti hästi paar, kes naudib koos romantilist puhkust.", "features": ["Kaheinimesevoodi + diivan", "Avar privaatne terrass", "Täielikult sisustatud köök", "Dušš ja WC"]},
+        {"slug": "apartment-2", "image": "/images/rooms/apartment-2.jpg", "alt": "Apartement terrassiga nr 2", "eyebrow": "Kuni 3 külalist · terrass", "title": "Apartement terrassiga nr 2", "price": "€77 / 1 külaline · €85 / 2 külalist", "description": "Hubased apartemendid privaatse terrassi, kööginurga ja pesuruumiga, kus on dušš ja WC. Terrassil saab nautida rahulikku hommikukohvi ja tunda esimeste päikesekiirte mõnu. Nendes apartementides saab valida ühe kaheinimesevoodi või kaks eraldi voodit. Lisavoodi lisamisel saab siin majutada kuni kolm inimest.", "features": ["Kaheinimese- või 2 eraldi voodit", "Privaatne terrass", "Kööginurk", "Dušš ja WC"]},
+        {"slug": "apartment-3", "image": "/images/rooms/apartment-3.jpg", "alt": "Apartement nr 3", "eyebrow": "Kuni 3 külalist", "title": "Apartement nr 3", "price": "€72 / 1 külaline · €80 / 2 külalist", "description": "Vaiksed apartemendid kööginurga ja pesuruumiga, kus on dušš ja WC. Sisekujunduses on kasutatud rohelisi toone, seinalambilt tervitab Teid kass ja õhtuse valguse mäng muudab ruumi romantiliseks. Siin võib ööbida kuni kolm inimest. Valida saab nii eraldi voodid kui ka kaheinimesevoodi.", "features": ["Kaheinimese- või 2 eraldi voodit", "Kööginurk", "Dušš ja WC", "Rohelistes toonides sisustus"]},
+        {"slug": "apartment-4", "image": "/images/rooms/apartment-4.jpg", "alt": "Apartement nr 4", "eyebrow": "Kuni 3 külalist", "title": "Apartement nr 4", "price": "€72 / 1 külaline · €80 / 2 külalist", "description": "Vaiksed, soojad apartemendid kööginurga ja pesuruumiga, kus on dušš ja WC. Sisekujundus on loodud lillades toonides. Siin võib ööbida kuni kolm inimest. Valida saab nii eraldi voodid kui ka kaheinimesevoodi.", "features": ["Kaheinimese- või 2 eraldi voodit", "Kööginurk", "Dušš ja WC", "Lillades toonides sisustus"]},
+        {"slug": "apartment-5", "image": "/images/rooms/apartment-5.jpg", "alt": "Apartement terrassiga nr 5", "eyebrow": "Kuni 3 külalist · terrass", "title": "Apartement terrassiga nr 5", "price": "€77 / 1 külaline · €85 / 2 külalist", "description": "Hubased apartemendid privaatse terrassi, kööginurga ja pesuruumiga, kus on dušš ja WC. Terrassil saab nautida pärastlõunast päikest ja jälgida linna. Siin võib ööbida kuni kolm inimest. Valida saab nii eraldi voodid kui ka kaheinimesevoodi.", "features": ["Kaheinimese- või 2 eraldi voodit", "Privaatne terrass", "Kööginurk", "Dušš ja WC"]},
+        {"slug": "apartment-6", "image": "/images/rooms/apartment-6.jpg", "alt": "Apartement terrassiga nr 6", "eyebrow": "Kuni 2 külalist · terrass", "title": "Apartement terrassiga nr 6", "price": "", "description": "Hubased apartemendid privaatse terrassi, kööginurga ja pesuruumiga, kus on dušš ja WC. Terrassilt avaneb vaade linnale. Terrassil saab nautida pärastlõunast päikest. Siin saab majutuda kuni kaks inimest ning valida nii eraldi voodid kui ka kaheinimesevoodi. See on meie soodsaim pakkumine tänu kompaktsele suurusele. Samal põhjusel ei ole kööginurgas eraldi kraanikaussi, kuid kõik toiduvalmistamiseks vajalik on olemas.", "features": ["Kaheinimese- või 2 eraldi voodit", "Privaatne terrass linnavaatega", "Kööginurk", "Dušš ja WC"]}
       ]
     },
-    "wellness": {"eyebrow": "Saun ja tünn", "title": "Soojus, mis taastab", "text": "Soojenda end läti saunas, siis astu kuuma õuetünni tähtede all. Broneeri eraldi või osana toast.", "ctaBala": "Tünni kohta", "ctaPirts": "Sauna kohta"},
+    "wellness": {"eyebrow": "Saun ja kuum tünn", "title": "Soojus, mis taastab", "text": "Soojenda keha kuumas saunas, siis naudi kuuma tünni tähtede all. Renti see eraldi või osana majutuspakkumisest.", "tabPirts": "Saun", "tabBala": "Kuum tünn", "ctaBala": "Rohkem kuuma tünni kohta", "ctaPirts": "Rohkem sauna kohta"},
     "reviews": {"eyebrow": "Arvustused", "title": "Mida külalised räägivad", "source": "Booking.com · 9.2 / 10 · 70 arvustust", "score": "9.2", "scoreLabel": "keskmine hinne", "cta": "Vaata arvustusi Booking.com-is", "url": "https://www.booking.com/hotel/lv/mergera.lv.html?aid=331511&label=mergera-I04qIJPQaPnHIpuCe7vOLAS719991268516%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2437814816852%3Alp9254302%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7A86A4teleFWE&sid=45103c958977c1ad624fa6457e037fc2&dest_id=-3210951&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1781867980&srpvid=11f74fa3570b0f68&type=total&ucfs=1&#tab-reviews",
       "items": [
         {"rating": "10", "text": "Armas koht ja soojad võõrustajad. Tunda on maaelu rahu ja vaikust. Toad on mugavad ja hubased.", "author": "Sanita", "country": "Läti", "meta": "Kahene tuba · august 2025"},
@@ -88,7 +107,7 @@
       ]
     },
     "gallery": {"eyebrow": "Atmosfäär", "title": "Pilk meie keskkonda", "cta": "Vaata kogu galeriid"},
-    "location": {"eyebrow": "Asukoht", "title": "Mērsrags — kus Kurzeme kohtub merega", "text": "1,5 tundi sõitu Riiast. Kõrval — Mērsragi tuletorn, linnuvaatlustorn ja Roja rannateetee.", "ctaDirections": "Saada teejuhis", "mapEyebrow": "Külalistemaja tähis"},
+    "location": {"eyebrow": "Asukoht", "title": "Mērsrags — kus Kurzeme kohtub merega", "text": "1,5 tundi sõitu Riiast. Külalismaja lähedal asuvad Mērsragi tuletorn 3 km kaugusel, mitu linnuvaatlustorni, Engure järv ja Mērsragi kanal.", "ctaDirections": "Saada teejuhis", "mapEyebrow": "Külalistemaja tähis"},
     "finalCta": {"title": "Valmis vaikseks nädalavahetuseks?", "text": "Kontrolli vabu kuupäevi ja broneeri otse — ilma vahendajateta.", "cta": "Kontrolli kuupäevi"}
   },
   "accommodation": {
@@ -143,7 +162,7 @@
     "title": "Galerii",
     "description": "Fotod Hotel Mergerast — toad, saun, õuetünn ja Mērsragi ümbrus.",
     "hero": {"eyebrow": "Galerii", "title": "Pilk kohale, kus sa oled", "subtitle": "Ausad professionaalsed fotod majast, saunast, tünnist ja loodusest ümberringi."},
-    "filters": {"all": "Kõik", "exterior": "Välimine", "rooms": "Toad", "sauna": "Saun", "hotTub": "Tünn", "surroundings": "Ümbrus"}
+    "filters": {"all": "Kõik", "exterior": "Välimine", "rooms": "Toad", "sauna": "Saun", "hotTub": "Kuum tünn", "surroundings": "Ümbrus"}
   },
   "about": {
     "title": "Meist",

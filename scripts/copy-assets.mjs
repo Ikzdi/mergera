@@ -43,20 +43,24 @@ function placeholderSvg(label, w = 1600, h = 1200) {
 </svg>`;
 }
 
+// Real photos in public/ always win — a placeholder is only written when the
+// file is missing, so dropping the real .jpg in makes the placeholder disappear.
 const PLACEHOLDER_IMAGES = [
-  ['hero/hero-poster.jpg', 'Hero — drona kadrs (placeholder)'],
-  ['rooms/room-1.jpg', 'Divvietīga istaba'],
-  ['rooms/room-2.jpg', 'Ģimenes apartaments'],
-  ['rooms/room-3.jpg', 'Luksusa istaba'],
-  ['sauna/sauna-1.jpg', 'Pirts'],
-  ['sauna/sauna-2.jpg', 'Pirts iekšskats'],
-  ['sauna/sauna-hero.jpg', 'Pirts — hero'],
-  ['hot-tub/hot-tub-1.jpg', 'Āra baļa'],
-  ['hot-tub/hot-tub-2.jpg', 'Āra baļa naktī'],
-  ['hot-tub/hot-tub-hero.jpg', 'Āra baļa — hero'],
+  ['hero/hero-poster.jpg', 'Hero (placeholder)'],
+  ['rooms/apartment-1.jpg', 'Ģimenes apartamenti nr.1'],
+  ['rooms/apartment-2.jpg', 'Apartamenti nr.2'],
+  ['rooms/apartment-3.jpg', 'Apartamenti nr.3'],
+  ['rooms/apartment-4.jpg', 'Apartamenti nr.4'],
+  ['rooms/apartment-5.jpg', 'Apartamenti nr.5'],
+  ['rooms/apartment-6.jpg', 'Apartamenti nr.6'],
+  ['sauna/sauna-1.jpg', 'Sauna'],
+  ['sauna/sauna-2.jpg', 'Sauna — iekšskats'],
+  ['sauna/sauna-hero.jpg', 'Sauna — hero'],
+  ['hot-tub/hot-tub-1.jpg', 'Karstais kubls — gaidām foto'],
+  ['hot-tub/hot-tub-2.jpg', 'Karstais kubls naktī — gaidām foto'],
+  ['hot-tub/hot-tub-hero.jpg', 'Karstais kubls — hero'],
   ['about/about-1.jpg', 'Saimnieki'],
-  ['og-cover.jpg', 'Open Graph cover'],
-  ['favicon.svg', 'Favicon']
+  ['og-cover.jpg', 'Open Graph cover']
 ];
 for (let i = 1; i <= 12; i++) PLACEHOLDER_IMAGES.push([`gallery/g${i}.jpg`, `Galerija ${i}`]);
 
@@ -80,11 +84,7 @@ async function writePlaceholders() {
     // a minimal data file. We'll write the SVG to the .jpg path too (Chrome/Edge sniff SVG).
     await writeFile(dest, placeholderSvg(label), 'utf8');
   }
-  // Favicon
-  const fav = path.join(imgDir, 'favicon.svg');
-  if (!existsSync(fav)) {
-    await writeFile(fav, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1F2937"/><text x="50%" y="56%" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#D4A24C">M</text></svg>`, 'utf8');
-  }
+  // Favicons are real assets in public/ (favicon.ico + PNG sizes) — nothing to generate.
 }
 
 async function copyJs() {

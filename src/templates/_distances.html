@@ -1,0 +1,25 @@
+<section class="section-tight bg-bg-surface">
+  <div class="container-content">
+    <div class="text-center max-w-prose mx-auto mb-12">
+      <div class="eyebrow inline-flex items-center gap-3"><span class="gold-rule"></span>{{distances.eyebrow}}<span class="gold-rule"></span></div>
+      <h2 class="mt-4 text-balance">{{distances.title}}</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {{#each distances.items}}
+      <article class="card group flex h-full flex-col">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="{{this.image}}" alt="{{this.alt}}" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        </div>
+        <div class="flex min-h-[270px] flex-1 flex-col p-6">
+          <div class="font-serif text-3xl font-semibold text-accent-hover">{{this.value}}</div>
+          <h3 class="mt-2 font-serif text-2xl font-semibold leading-snug">{{this.name}}</h3>
+          <div class="mt-auto grid grid-cols-2 gap-2 pt-6">
+            <a href="{{this.google}}" rel="noopener" target="_blank" class="btn-primary px-3 py-2 text-[0.68rem]">{{distances.googleCta}}</a>
+            <a href="{{this.waze}}" rel="noopener" target="_blank" class="btn-dark px-3 py-2 text-[0.68rem]">{{distances.wazeCta}}</a>
+          </div>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+  </div>
+</section>

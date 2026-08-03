@@ -1,0 +1,14 @@
+{
+  "name": "Hotel Mergera",
+  "short_name": "Mergera",
+  "description": "Viesu nams Mērsragā — numuri, pirts, āra baļa un pasākumu zāle.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF7",
+  "theme_color": "#FAFAF7",
+  "icons": [
+    { "src": "/images/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/images/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

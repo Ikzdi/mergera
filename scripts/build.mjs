@@ -16,16 +16,19 @@ const SITE_URL = process.env.SITE_URL || 'https://mergera.lv';
 
 // Page slug map per language. Source page filename → URL segment per language.
 // Keep slugs SEO-friendly in each language. Used for routing + sitemap + hreflang.
+// `key` is what templates reference as {{url.<key>}}. Because those URLs come from
+// this very table, a link can never point at a slug that isn't actually built.
 const PAGES = [
-  { src: 'index',        slugs: { lv: '',                en: '',           ru: '',                lt: '',                  et: '' },                 dataKey: 'home' },
-  { src: 'naktsmitnes',  slugs: { lv: 'naktsmitnes',     en: 'stay',       ru: 'razmeshchenie',   lt: 'apgyvendinimas',    et: 'majutus' },          dataKey: 'accommodation' },
-  { src: 'bala',         slugs: { lv: 'naktsmitnes/bala',en: 'stay/hot-tub', ru: 'razmeshchenie/kupel', lt: 'apgyvendinimas/karsta-vonia', et: 'majutus/tunn' }, dataKey: 'bala' },
-  { src: 'pirts',        slugs: { lv: 'naktsmitnes/pirts',en: 'stay/sauna', ru: 'razmeshchenie/banya', lt: 'apgyvendinimas/pirtis', et: 'majutus/saun' }, dataKey: 'pirts' },
-  { src: 'pasakumi',     slugs: { lv: 'naktsmitnes/pasakumi', en: 'stay/events', ru: 'razmeshchenie/meropriyatiya', lt: 'apgyvendinimas/renginiai', et: 'majutus/uritused' }, dataKey: 'events' },
-  { src: 'galerija',     slugs: { lv: 'galerija',        en: 'gallery',    ru: 'galereya',        lt: 'galerija',          et: 'galerii' },          dataKey: 'gallery' },
-  { src: 'par-mums',     slugs: { lv: 'par-mums',        en: 'about',      ru: 'o-nas',           lt: 'apie-mus',          et: 'meist' },            dataKey: 'about' },
-  { src: 'kontakti',     slugs: { lv: 'kontakti',        en: 'contact',    ru: 'kontakty',        lt: 'kontaktai',         et: 'kontakt' },          dataKey: 'contacts' },
-  { src: 'rezervacija',  slugs: { lv: 'rezervacija',     en: 'book',       ru: 'bronirovanie',    lt: 'rezervacija',       et: 'broneerimine' },     dataKey: 'reservation' }
+  { src: 'index',        key: 'home',        slugs: { lv: '',                          en: '',                         ru: '',                              lt: '',                            et: '' },                          dataKey: 'home' },
+  { src: 'viesu-nams',   key: 'guesthouse',  slugs: { lv: 'viesu-nams',                en: 'guest-house',              ru: 'gostevoy-dom',                  lt: 'svetiu-namai',                et: 'kulalismaja' },               dataKey: 'guesthouse' },
+  { src: 'naktsmitnes',  key: 'apartments',  slugs: { lv: 'viesu-nams/apartamenti',    en: 'guest-house/apartments',   ru: 'gostevoy-dom/apartamenty',      lt: 'svetiu-namai/apartamentai',   et: 'kulalismaja/apartemendid' },  dataKey: 'accommodation' },
+  { src: 'bala',         key: 'hotTub',      slugs: { lv: 'viesu-nams/karstais-kubls', en: 'guest-house/hot-tub',      ru: 'gostevoy-dom/goryachiy-chan',   lt: 'svetiu-namai/kubilas',        et: 'kulalismaja/kuum-tunn' },     dataKey: 'bala' },
+  { src: 'pirts',        key: 'sauna',       slugs: { lv: 'viesu-nams/sauna',          en: 'guest-house/sauna',        ru: 'gostevoy-dom/sauna',            lt: 'svetiu-namai/sauna',          et: 'kulalismaja/saun' },          dataKey: 'pirts' },
+  { src: 'pasakumi',     key: 'events',      slugs: { lv: 'viesu-nams/pasakumi',       en: 'guest-house/events',       ru: 'gostevoy-dom/meropriyatiya',    lt: 'svetiu-namai/renginiai',      et: 'kulalismaja/uritused' },      dataKey: 'events' },
+  { src: 'galerija',     key: 'gallery',     slugs: { lv: 'galerija',                  en: 'gallery',                  ru: 'galereya',                      lt: 'galerija',                    et: 'galerii' },                   dataKey: 'gallery' },
+  { src: 'par-mums',     key: 'about',       slugs: { lv: 'par-mums',                  en: 'about',                    ru: 'o-nas',                         lt: 'apie-mus',                    et: 'meist' },                     dataKey: 'about' },
+  { src: 'kontakti',     key: 'contacts',    slugs: { lv: 'kontakti',                  en: 'contact',                  ru: 'kontakty',                      lt: 'kontaktai',                   et: 'kontakt' },                   dataKey: 'contacts' },
+  { src: 'rezervacija',  key: 'reservation', slugs: { lv: 'rezervacija',               en: 'book',                     ru: 'bronirovanie',                  lt: 'rezervacija',                 et: 'broneerimine' },              dataKey: 'reservation' }
 ];
 
 const LANGS = ['lv', 'en', 'ru', 'lt', 'et'];
@@ -206,6 +209,8 @@ function buildCtx({ lang, locales, page }) {
     hreflangTags: buildHreflang(page),
     langDropdown: buildLangDropdown(lang, page, locales),
     langList: buildLangList(lang, page),
+    // Every internal link goes through this, so templates never hardcode a slug.
+    url: Object.fromEntries(PAGES.map((p) => [p.key, urlFor(lang, p)])),
     page: {
       title: get(data, `${page.dataKey}.title`) ?? data.brand.name,
       description: get(data, `${page.dataKey}.description`) ?? data.brand.tagline

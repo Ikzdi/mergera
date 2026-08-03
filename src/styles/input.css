@@ -102,6 +102,21 @@
     @apply fixed top-4 left-4 right-4 z-40 rounded-2xl bg-white/85 backdrop-blur-md shadow-nav border border-line;
   }
 
+  /* Sauna / hot tub switcher on the home page. */
+  /* Mobile: the two tabs share one row (flex-1 + min-w-0 lets them shrink).
+     sm and up: back to a fixed comfortable width. */
+  .wellness-tab {
+    @apply inline-flex flex-col items-center justify-center gap-2 flex-1 min-w-0 rounded-2xl border border-line bg-bg-surface px-3 py-5
+           text-xs font-semibold tracking-wideish uppercase text-ink-muted cursor-pointer transition-colors text-center
+           sm:flex-none sm:w-56 sm:px-6 sm:text-sm;
+  }
+  .wellness-tab:hover {
+    @apply border-accent text-ink;
+  }
+  .wellness-tab.is-active {
+    @apply border-accent bg-accent-soft/50 text-ink shadow-card;
+  }
+
   .lang-pill {
     @apply px-2 py-1 text-xs font-semibold uppercase tracking-wideish rounded-full text-ink-muted hover:text-ink cursor-pointer;
   }

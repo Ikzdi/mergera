@@ -12,11 +12,11 @@
   <section class="relative h-screen min-h-[640px] overflow-hidden hero-overlay" aria-label="{{home.hero.title}}">
     <!-- Elegant crossfade slideshow on loop (slow, modern transitions) -->
     <div class="absolute inset-0" data-hero-slideshow>
-      <img src="/images/hero/slide-1.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" aria-hidden="true" />
-      <img src="/images/hero/slide-2.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
-      <img src="/images/hero/slide-3.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
-      <img src="/images/hero/slide-4.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
-      <img src="/images/hero/slide-5.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1600ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+      <img src="/images/hero/slide-1.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-[1200ms] ease-in-out animate-heroRise motion-reduce:animate-none" aria-hidden="true" />
+      <img src="/images/hero/slide-2.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1200ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+      <img src="/images/hero/slide-3.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1200ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+      <img src="/images/hero/slide-4.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1200ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
+      <img src="/images/hero/slide-5.jpg" alt="" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[1200ms] ease-in-out animate-heroRise motion-reduce:animate-none" loading="lazy" aria-hidden="true" />
     </div>
     <!-- Left-side dark gradient for text legibility -->
     <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" aria-hidden="true"></div>
@@ -28,8 +28,8 @@
         <h1 class="mt-6 text-white text-balance">{{home.hero.title}}</h1>
         <p class="mx-auto mt-6 text-white/90 text-lg md:text-xl max-w-2xl">{{home.hero.subtitle}}</p>
         <div class="mt-10 flex flex-wrap justify-center gap-4">
-          <a href="/{{lang}}/rezervacija/" class="btn-primary">{{home.hero.ctaPrimary}}</a>
-          <a href="/{{lang}}/naktsmitnes/" class="btn-ghost text-white border-white/40 hover:bg-white hover:text-ink">{{home.hero.ctaSecondary}}</a>
+          <a href="{{url.reservation}}" class="btn-primary">{{home.hero.ctaPrimary}}</a>
+          <a href="{{url.apartments}}" class="btn-ghost text-white border-white/40 hover:bg-white hover:text-ink">{{home.hero.ctaSecondary}}</a>
         </div>
       </div>
     </div>
@@ -71,20 +71,21 @@
       <div class="rooms-rows flex flex-col gap-8 md:gap-10">
         {{#each home.rooms.items}}
         <article class="room-row card overflow-hidden flex flex-col md:flex-row group">
+          <!-- Image fills its half edge-to-edge. object-cover crops, never distorts. -->
           <div class="md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[360px] overflow-hidden">
             <img src="{{this.image}}" alt="Hotel Mergera — {{this.alt}}" loading="lazy" decoding="async"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                 class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center gap-4">
             <div class="eyebrow">{{this.eyebrow}}</div>
             <h3 class="text-3xl font-bold">{{this.title}}</h3>
-            <p class="text-ink-muted">{{this.description}}</p>
+            <p class="text-base text-ink-muted">{{this.description}}</p>
             <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-muted">
               {{#each this.features}}<li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>{{this}}</li>{{/each}}
             </ul>
             <div class="flex flex-wrap items-center justify-between gap-4 mt-2 pt-5 border-t border-line">
               <span class="font-serif text-xl md:text-2xl font-semibold text-accent-hover">{{this.price}}</span>
-              <a href="/{{lang}}/rezervacija/" class="btn-primary">{{../nav.reserve}}</a>
+              <a href="{{url.reservation}}" class="btn-primary">{{../nav.reserve}}</a>
             </div>
           </div>
         </article>
@@ -93,24 +94,56 @@
     </div>
   </section>
 
-  <!-- Wellness banner -->
-  <section class="section bg-bg-dark text-white">
+  <!-- Wellness: sauna / hot tub tabs -->
+  <section class="section bg-bg">
     <div class="container-content">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="eyebrow text-accent">{{home.wellness.eyebrow}}</div>
-          <h2 class="mt-4 text-white text-balance">{{home.wellness.title}}</h2>
-          <p class="mt-6 text-white/80 max-w-prose">{{home.wellness.text}}</p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="/{{lang}}/naktsmitnes/bala/" class="btn-primary">{{home.wellness.ctaBala}}</a>
-            <a href="/{{lang}}/naktsmitnes/pirts/" class="btn-ghost text-white border-white/40 hover:bg-white hover:text-ink">{{home.wellness.ctaPirts}}</a>
+      <div class="text-center max-w-prose mx-auto mb-12">
+        <div class="eyebrow inline-flex items-center gap-3">
+          <span class="gold-rule"></span>{{home.wellness.eyebrow}}<span class="gold-rule"></span>
+        </div>
+        <h2 class="mt-4 text-balance">{{home.wellness.title}}</h2>
+        <p class="mt-6">{{home.wellness.text}}</p>
+      </div>
+
+      <div class="flex justify-center gap-3 sm:gap-4" role="tablist" aria-label="{{home.wellness.eyebrow}}" data-wellness-tabs>
+        <button type="button" role="tab" aria-selected="true" aria-controls="wellness-sauna" data-wellness-tab="sauna" class="wellness-tab is-active">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path stroke-linecap="round" d="M8 3c-1 1.2-1 2.3 0 3.5S9 8.8 8 10M12 2.5c-1 1.2-1 2.3 0 3.5s1 2.3 0 3.5M16 3c-1 1.2-1 2.3 0 3.5s1 2.3 0 3.5"/>
+            <rect x="4" y="13" width="16" height="8" rx="2"/>
+            <circle cx="9" cy="16.8" r="1.1"/><circle cx="12.5" cy="16.8" r="1.1"/><circle cx="16" cy="16.8" r="1.1"/>
+          </svg>
+          <span>{{home.wellness.tabPirts}}</span>
+        </button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="wellness-hot-tub" data-wellness-tab="hot-tub" class="wellness-tab">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path stroke-linecap="round" d="M9 2.5c-.8 1-.8 1.9 0 2.9s.8 1.9 0 2.9M15 2.5c-.8 1-.8 1.9 0 2.9s.8 1.9 0 2.9"/>
+            <path stroke-linejoin="round" d="M3 11h18l-1.4 8.2a2 2 0 0 1-2 1.8H6.4a2 2 0 0 1-2-1.8L3 11z"/>
+            <path stroke-linecap="round" d="M5.6 14.6c1.6 0 1.6 1.2 3.2 1.2s1.6-1.2 3.2-1.2 1.6 1.2 3.2 1.2 1.6-1.2 3.2-1.2"/>
+          </svg>
+          <span>{{home.wellness.tabBala}}</span>
+        </button>
+      </div>
+
+      <div class="mt-10">
+        <div id="wellness-sauna" role="tabpanel" data-wellness-panel="sauna">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <img src="/images/sauna/sauna-1.jpg" alt="Hotel Mergera sauna" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl" />
+            <img src="/images/sauna/sauna-2.jpg" alt="Hotel Mergera sauna, iekstelpu skats" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl" />
+            <img src="/images/sauna/sauna-hero.jpg" alt="Hotel Mergera sauna ar koka soliem" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl" />
+          </div>
+          <div class="mt-8 text-center">
+            <a href="{{url.sauna}}" class="btn-primary">{{home.wellness.ctaPirts}}</a>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <img src="/images/hot-tub/hot-tub-1.jpg" alt="Hotel Mergera āra baļa naktī" loading="lazy" decoding="async"
-               class="w-full aspect-[3/4] object-cover rounded-2xl translate-y-6" />
-          <img src="/images/sauna/sauna-1.jpg" alt="Hotel Mergera latviešu pirts" loading="lazy" decoding="async"
-               class="w-full aspect-[3/4] object-cover rounded-2xl" />
+        <div id="wellness-hot-tub" role="tabpanel" data-wellness-panel="hot-tub" class="hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <img src="/images/hot-tub/hot-tub-1.jpg" alt="Hotel Mergera karstais kubls" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl" />
+            <img src="/images/hot-tub/hot-tub-2.jpg" alt="Hotel Mergera karstais kubls naktī" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl" />
+            <img src="/images/hot-tub/hot-tub-hero.jpg" alt="Hotel Mergera karstais kubls zem klajas debess" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl" />
+          </div>
+          <div class="mt-8 text-center">
+            <a href="{{url.hotTub}}" class="btn-primary">{{home.wellness.ctaBala}}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -135,7 +168,7 @@
         <img src="/images/gallery/g13.jpg" alt="Hotel Mergera pirts" loading="lazy" class="w-full aspect-square object-cover rounded-xl" />
       </div>
       <div class="mt-10 text-center">
-        <a href="/{{lang}}/galerija/" class="btn-ghost">{{home.gallery.cta}}</a>
+        <a href="{{url.gallery}}" class="btn-ghost">{{home.gallery.cta}}</a>
       </div>
     </div>
   </section>
@@ -187,38 +220,14 @@
   </section>
 
   <!-- Distances -->
-  <section class="section-tight bg-bg-surface">
-    <div class="container-content">
-      <div class="text-center max-w-prose mx-auto mb-12">
-        <div class="eyebrow inline-flex items-center gap-3"><span class="gold-rule"></span>{{distances.eyebrow}}<span class="gold-rule"></span></div>
-        <h2 class="mt-4 text-balance">{{distances.title}}</h2>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {{#each distances.items}}
-        <article class="card group flex h-full flex-col">
-          <div class="aspect-[4/3] overflow-hidden">
-            <img src="{{this.image}}" alt="{{this.alt}}" loading="lazy" decoding="async" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          </div>
-          <div class="flex min-h-[270px] flex-1 flex-col p-6">
-            <div class="font-serif text-3xl font-semibold text-accent-hover">{{this.value}}</div>
-            <h3 class="mt-2 font-serif text-2xl font-semibold leading-snug">{{this.name}}</h3>
-            <div class="mt-auto grid grid-cols-2 gap-2 pt-6">
-              <a href="{{this.google}}" rel="noopener" target="_blank" class="btn-primary px-3 py-2 text-[0.68rem]">{{distances.googleCta}}</a>
-              <a href="{{this.waze}}" rel="noopener" target="_blank" class="btn-dark px-3 py-2 text-[0.68rem]">{{distances.wazeCta}}</a>
-            </div>
-          </div>
-        </article>
-        {{/each}}
-      </div>
-    </div>
-  </section>
+{{> distances }}
 
   <!-- Final CTA -->
   <section class="bg-accent-soft py-20">
     <div class="container-content text-center">
       <h2 class="text-balance">{{home.finalCta.title}}</h2>
       <p class="mt-6 max-w-prose mx-auto">{{home.finalCta.text}}</p>
-      <a href="/{{lang}}/rezervacija/" class="btn-primary mt-10">{{home.finalCta.cta}}</a>
+      <a href="{{url.reservation}}" class="btn-primary mt-10">{{home.finalCta.cta}}</a>
     </div>
   </section>
 

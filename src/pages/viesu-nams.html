@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+{{> head }}
+</head>
+<body>
+{{> header }}
+
+<main id="main" class="pt-28 md:pt-32">
+
+  <!-- Page hero -->
+  <section class="container-content pt-12 pb-16 md:pt-20 md:pb-20">
+    <div class="max-w-3xl">
+      <div class="eyebrow">{{guesthouse.hero.eyebrow}}</div>
+      <h1 class="mt-4 text-balance">{{guesthouse.hero.title}}</h1>
+      <p class="mt-6 text-lg max-w-prose">{{guesthouse.hero.subtitle}}</p>
+    </div>
+  </section>
+
+  <!-- The four things the guest house offers -->
+  <section class="section-tight bg-bg-surface">
+    <div class="container-content">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+
+        <a href="{{url.apartments}}" class="card group flex h-full flex-col">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/images/rooms/apartment-1.jpg" alt="{{guesthouse.cards.apartments.title}}" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <h2 class="text-2xl">{{guesthouse.cards.apartments.title}}</h2>
+            <p class="mt-3 flex-1 text-base">{{guesthouse.cards.apartments.text}}</p>
+            <span class="mt-6 inline-flex items-center gap-2 text-base font-semibold text-accent-hover group-hover:text-ink">
+              {{guesthouse.cta}}
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="{{url.hotTub}}" class="card group flex h-full flex-col">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/images/hot-tub/hot-tub-1.jpg" alt="{{guesthouse.cards.hotTub.title}}" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <h2 class="text-2xl">{{guesthouse.cards.hotTub.title}}</h2>
+            <p class="mt-3 flex-1 text-base">{{guesthouse.cards.hotTub.text}}</p>
+            <span class="mt-6 inline-flex items-center gap-2 text-base font-semibold text-accent-hover group-hover:text-ink">
+              {{guesthouse.cta}}
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="{{url.sauna}}" class="card group flex h-full flex-col">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/images/sauna/sauna-1.jpg" alt="{{guesthouse.cards.sauna.title}}" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <h2 class="text-2xl">{{guesthouse.cards.sauna.title}}</h2>
+            <p class="mt-3 flex-1 text-base">{{guesthouse.cards.sauna.text}}</p>
+            <span class="mt-6 inline-flex items-center gap-2 text-base font-semibold text-accent-hover group-hover:text-ink">
+              {{guesthouse.cta}}
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="{{url.events}}" class="card group flex h-full flex-col">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="/images/events/hero.jpg" alt="{{guesthouse.cards.events.title}}" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <h2 class="text-2xl">{{guesthouse.cards.events.title}}</h2>
+            <p class="mt-3 flex-1 text-base">{{guesthouse.cards.events.text}}</p>
+            <span class="mt-6 inline-flex items-center gap-2 text-base font-semibold text-accent-hover group-hover:text-ink">
+              {{guesthouse.cta}}
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby -->
+{{> distances }}
+
+  <!-- Final CTA -->
+  <section class="bg-accent-soft py-20">
+    <div class="container-content text-center">
+      <h2 class="text-balance">{{home.finalCta.title}}</h2>
+      <p class="mt-6 max-w-prose mx-auto">{{home.finalCta.text}}</p>
+      <a href="{{url.reservation}}" class="btn-primary mt-10">{{home.finalCta.cta}}</a>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

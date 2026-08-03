@@ -28,6 +28,22 @@
       {"name": "Rygos oro uostas", "value": "83 km", "image": "/images/nearby/lidosta.jpg", "alt": "Rygos oro uosto įėjimas", "google": "https://www.google.com/maps/search/?api=1&query=Riga+Airport", "waze": "https://waze.com/ul?q=Riga%20Airport&navigate=yes"}
     ]
   },
+  "guesthouse": {
+    "title": "Svečių namai Mērsrage",
+    "description": "Hotel Mergera svečių namai Mērsrage — apartamentai, sauna, kubilas ir renginių salė vienoje vietoje.",
+    "hero": {
+      "eyebrow": "Svečių namai",
+      "title": "Viskas, ką siūlome, vienoje vietoje",
+      "subtitle": "Šeši apartamentai, individualiai įrengta sauna, kubilas po atviru dangumi ir salė šventėms iki 50 svečių — galima rezervuoti atskirai arba kartu."
+    },
+    "cta": "Sužinoti daugiau",
+    "cards": {
+      "apartments": {"title": "Apartamentai", "text": "Šeši apartamentai su virtuvėle, vonios kambariu ir nemokamu Wi-Fi. Kai kurie turi savo terasą."},
+      "hotTub": {"title": "Kubilas", "text": "Šildomas kubilas po atviru dangumi. Prieinamas ištisus metus, taip pat žiemą."},
+      "sauna": {"title": "Sauna", "text": "Nepakartojama, individualiai įrengta sauna su šiltomis medinėmis sienomis."},
+      "events": {"title": "Renginiai", "text": "Salė ir įrengta virtuvė šventėms, koncertams ir seminarams iki 50 svečių."}
+    }
+  },
   "events": {
     "title": "Renginių salė Mērsrage | Hotel Mergera",
     "description": "Salė ir įrengta virtuvė renginiams iki 50 žmonių Mērsrage — šventės, koncertai ir seminarai. Kainos nuo €120. Galima išsinuomoti visus svečių namus.",
@@ -45,7 +61,7 @@
   },
   "nav": {
     "location": "Mērsragas · Latvija",
-    "home": "Pradžia", "guesthouse": "Svečių namai", "accommodation": "Apgyvendinimas", "bala": "Karšta vonia", "pirts": "Pirtis", "events": "Renginiai", "gallery": "Galerija", "about": "Apie mus", "contacts": "Kontaktai", "reserve": "Rezervuoti",
+    "home": "Pradžia", "guesthouse": "Svečių namai", "accommodation": "Apartamentai", "bala": "Kubilas", "pirts": "Sauna", "events": "Renginiai", "gallery": "Galerija", "about": "Apie mus", "contacts": "Kontaktai", "reserve": "Rezervuoti",
     "openMenu": "Atidaryti meniu", "closeMenu": "Uždaryti meniu",
     "ariaPrimary": "Pagrindinė navigacija", "ariaMobile": "Mobili navigacija"
   },
@@ -59,24 +75,27 @@
     "hero": {
       "eyebrow": "Mērsragas · Rygos įlankos pakrantė",
       "title": "Hotel Mergera",
-      "subtitle": "Svečių namai Mērsrage, vos už kelių žingsnių nuo jūros — modernūs kambariai, pirtis, lauko vonia ir renginių salė ramiam poilsiui, šeimai ir šventėms.",
+      "subtitle": "Svečių namai Mērsrage, netoli jūros — modernūs, gerai įrengti kambariai, sauna, kubilas ir renginių salė ramiam poilsiui, šeimai ir šventėms.",
       "ctaPrimary": "Rezervuoti kambarį", "ctaSecondary": "Pamatyti kambarius"
     },
     "intro": {"eyebrow": "Kodėl Mergera", "title": "Maža vieta. Didelis poilsis.",
       "features": [
-        {"icon": "wave", "title": "200 m iki jūros", "text": "Trys minutės pėsčiomis iki balto Rygos įlankos smėlio ir Mērsrago švyturio."},
-        {"icon": "leaf", "title": "Latviška pirtis ir karšta vonia", "text": "Malkomis kūrenama pirtis ir lauko karšta vonia po atviru dangumi — atviros ištisus metus."},
+        {"icon": "wave", "title": "500 m iki jūros", "text": "Paplūdimys už 10 minučių kelio pėsčiomis nuo svečių namų."},
+        {"icon": "leaf", "title": "Sauna ir kubilas", "text": "Nepakartojama, individualiai įrengta sauna ir kubilas po atviru dangumi, prieinami ištisus metus."},
         {"icon": "home", "title": "Jaukūs, modernūs kambariai", "text": "Natūralios medžiagos, tyla ir kiekviena detalė apgalvota, kad jaustumėtės kaip namuose."}
       ]
     },
-    "rooms": {"eyebrow": "Apgyvendinimas", "title": "Mūsų kambariai", "subtitle": "Iš viso šeši kambariai: penki dviviečiai ir vienas keturvietis kambarys su terasa. Visuose kambariuose yra sava virtuvėlė, vonios kambarys, kavos aparatas ir nemokamas Wi-Fi.",
+    "rooms": {"eyebrow": "Apgyvendinimas", "title": "Mūsų apartamentai", "subtitle": "Iš viso šeši apartamentai: vieni šeimos apartamentai su terasa, treji apartamentai su terasa ir dveji apartamentai be terasų. Visuose apartamentuose yra virtuvėlė, vonios kambarys, kavos aparatas ir nemokamas Wi-Fi.",
       "items": [
-        {"slug": "quad-terrace", "image": "/images/rooms/room-2.jpg", "alt": "Keturvietis kambarys su terasa", "eyebrow": "4 svečiai · 28 m² · terasa", "title": "Keturvietis kambarys su terasa", "price": "€96 / 1 asm. · €102 / 2+ asm.", "description": "Viena sofa-lova ir viena didelė dviguba lova. Sava terasa, virtuvėlė ir vonios kambarys — vietos šeimai ar draugų kompanijai.", "features": ["Sofa-lova + dviguba", "Sava terasa", "Virtuvėlė", "Kavos aparatas"]},
-        {"slug": "double-terrace", "image": "/images/rooms/room-1.jpg", "alt": "Dvivietis kambarys su terasa", "eyebrow": "2 svečiai · 20 m² · terasa", "title": "Dvivietis kambarys su 1 arba 2 lovomis ir terasa", "price": "€77 / 1 asm. · €85 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba. Jaukus kambarys su sava terasa ir virtuvėle.", "features": ["2 viengulės arba 1 dviguba", "Sava terasa", "Virtuvėlė", "Atskiras vonios kambarys"]},
-        {"slug": "double", "image": "/images/rooms/room-4.jpg", "alt": "Dvivietis kambarys", "eyebrow": "2 svečiai · 20 m²", "title": "Dvivietis kambarys su 1 arba 2 lovomis", "price": "€72 / 1 asm. · €80 / 2 asm.", "description": "Dvi viengulės lovos arba viena didelė dviguba lova. Ramus kambarys su virtuvėle ir atskiru vonios kambariu.", "features": ["2 viengulės arba 1 dviguba", "Virtuvėlė", "Atskiras vonios kambarys", "Nemokamas Wi-Fi"]}
+        {"slug": "apartment-1", "image": "/images/rooms/apartment-1.jpg", "alt": "Šeimos apartamentai su terasa nr.1", "eyebrow": "Iki 6 svečių · terasa", "title": "Šeimos apartamentai su terasa nr.1", "price": "€96 / 1 asm. · €102 / 2+ asm.", "description": "Erdvūs ir šviesūs šeimos apartamentai, tinkami komfortiškam šeimos ar draugų kompanijos poilsiui. Juose yra didelė patogi dviguba lova ir sofa, užtikrinanti patogią nakvynę visiems svečiams. Prireikus, pridėjus papildomas lovas, čia gali apsistoti net iki šešių asmenų. Ypatingas šių apartamentų privalumas — erdvi privati terasa, kurioje galima neskubant mėgautis rytine kava saulės spinduliuose arba leisti ramius vakarus gryname ore, šildantis vakaro saulėje. Tai kuria malonią atmosferą visą dieną. Svečių patogumui yra visiškai įrengta virtuvėlė ir sanitarinis mazgas su dušu ir tualetu. Dėl patogios lovos čia ypač gerai jausis pora, kartu besimėgaujanti romantišku poilsiu.", "features": ["Dviguba lova + sofa", "Erdvi privati terasa", "Visiškai įrengta virtuvėlė", "Dušas ir tualetas"]},
+        {"slug": "apartment-2", "image": "/images/rooms/apartment-2.jpg", "alt": "Apartamentai su terasa nr.2", "eyebrow": "Iki 3 svečių · terasa", "title": "Apartamentai su terasa nr.2", "price": "€77 / 1 asm. · €85 / 2 asm.", "description": "Jaukūs apartamentai su privačia terasa, virtuvėle ir sanitariniu mazgu su dušu ir tualetu. Terasoje galima mėgautis ramia rytine kava ir pajusti pirmųjų saulės spindulių malonumą. Šiuose apartamentuose galima pasirinkti vieną dvigulę lovą arba dvi atskiras lovas. Pridėjus dar vieną lovą, čia galime apgyvendinti iki trijų asmenų.", "features": ["Dviguba arba 2 atskiros lovos", "Privati terasa", "Virtuvėlė", "Dušas ir tualetas"]},
+        {"slug": "apartment-3", "image": "/images/rooms/apartment-3.jpg", "alt": "Apartamentai nr.3", "eyebrow": "Iki 3 svečių", "title": "Apartamentai nr.3", "price": "€72 / 1 asm. · €80 / 2 asm.", "description": "Ramūs apartamentai su virtuvėle ir sanitariniu mazgu su dušu ir tualetu. Interjere naudojami žali atspalviai, nuo sieninės lempos Jus pasveikins katinas, o vakaro šviesos žaismas suteikia patalpai romantikos. Juose gali nakvoti iki trijų asmenų. Galima pasirinkti tiek atskiras lovas, tiek dvigulę lovą.", "features": ["Dviguba arba 2 atskiros lovos", "Virtuvėlė", "Dušas ir tualetas", "Žalių atspalvių interjeras"]},
+        {"slug": "apartment-4", "image": "/images/rooms/apartment-4.jpg", "alt": "Apartamentai nr.4", "eyebrow": "Iki 3 svečių", "title": "Apartamentai nr.4", "price": "€72 / 1 asm. · €80 / 2 asm.", "description": "Ramūs, šilti apartamentai su virtuvėle ir sanitariniu mazgu su dušu ir tualetu. Interjeras sukurtas violetiniais atspalviais. Juose gali nakvoti iki trijų asmenų. Galima pasirinkti tiek atskiras lovas, tiek dvigulę lovą.", "features": ["Dviguba arba 2 atskiros lovos", "Virtuvėlė", "Dušas ir tualetas", "Violetinių atspalvių interjeras"]},
+        {"slug": "apartment-5", "image": "/images/rooms/apartment-5.jpg", "alt": "Apartamentai su terasa nr.5", "eyebrow": "Iki 3 svečių · terasa", "title": "Apartamentai su terasa nr.5", "price": "€77 / 1 asm. · €85 / 2 asm.", "description": "Jaukūs apartamentai su privačia terasa, virtuvėle ir sanitariniu mazgu su dušu ir tualetu. Terasoje galima mėgautis popietės saulės spinduliais ir stebėti miestą. Juose gali nakvoti iki trijų asmenų. Galima pasirinkti tiek atskiras lovas, tiek dvigulę lovą.", "features": ["Dviguba arba 2 atskiros lovos", "Privati terasa", "Virtuvėlė", "Dušas ir tualetas"]},
+        {"slug": "apartment-6", "image": "/images/rooms/apartment-6.jpg", "alt": "Apartamentai su terasa nr.6", "eyebrow": "Iki 2 svečių · terasa", "title": "Apartamentai su terasa nr.6", "price": "", "description": "Jaukūs apartamentai su privačia terasa, virtuvėle ir sanitariniu mazgu su dušu ir tualetu. Iš terasos atsiveria vaizdas į miestą. Terasoje galima mėgautis popietės saulės spinduliais. Galima apsistoti iki dviejų asmenų, taip pat pasirinkti tiek atskiras lovas, tiek dvigulę lovą. Tai mūsų naudingiausias pasiūlymas dėl kompaktiško dydžio. Dėl tos pačios priežasties virtuvėlėje nėra atskiros kriauklės, tačiau viskas, ko reikia gaminimui, čia yra.", "features": ["Dviguba arba 2 atskiros lovos", "Privati terasa su vaizdu į miestą", "Virtuvėlė", "Dušas ir tualetas"]}
       ]
     },
-    "wellness": {"eyebrow": "Pirtis ir karšta vonia", "title": "Šiluma, kuri atgaivina", "text": "Sušilkite latviškoje pirtyje, tada šokite į lauko karštą vonią po žvaigždėmis. Galima rezervuoti atskirai arba kartu su nakvyne.", "ctaBala": "Daugiau apie vonią", "ctaPirts": "Daugiau apie pirtį"},
+    "wellness": {"eyebrow": "Sauna ir kubilas", "title": "Šiluma, kuri atgaivina", "text": "Sušildykite kūną karštoje saunoje, tada mėgaukitės kubilu po žvaigždėmis. Išsinuomokite atskirai arba kaip apgyvendinimo pasiūlymo dalį.", "tabPirts": "Sauna", "tabBala": "Kubilas", "ctaBala": "Daugiau apie kubilą", "ctaPirts": "Daugiau apie sauną"},
     "reviews": {"eyebrow": "Atsiliepimai", "title": "Ką sako mūsų svečiai", "source": "Booking.com · 9.2 / 10 · 70 atsiliepimų", "score": "9.2", "scoreLabel": "vidutinis įvertinimas", "cta": "Žiūrėti atsiliepimus Booking.com", "url": "https://www.booking.com/hotel/lv/mergera.lv.html?aid=331511&label=mergera-I04qIJPQaPnHIpuCe7vOLAS719991268516%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2437814816852%3Alp9254302%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7A86A4teleFWE&sid=45103c958977c1ad624fa6457e037fc2&dest_id=-3210951&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1781867980&srpvid=11f74fa3570b0f68&type=total&ucfs=1&#tab-reviews",
       "items": [
         {"rating": "10", "text": "Miela vieta ir nuoširdūs šeimininkai. Jaučiama kaimo ramybė ir tyla. Kambariai patogūs ir jaukūs.", "author": "Sanita", "country": "Latvija", "meta": "Dvivietis kambarys · 2025 m. rugpj."},
@@ -88,7 +107,7 @@
       ]
     },
     "gallery": {"eyebrow": "Atmosfera", "title": "Žvilgsnis į mūsų aplinką", "cta": "Pilna galerija"},
-    "location": {"eyebrow": "Vieta", "title": "Mērsragas — kur Kuržemė susitinka su jūra", "text": "1,5 val. kelio nuo Rygos. Šalia — Mērsrago švyturys, paukščių stebėjimo bokštas ir Rojos pajūrio kelias.", "ctaDirections": "Gauti maršrutą", "mapEyebrow": "Svečių namų žyma"},
+    "location": {"eyebrow": "Vieta", "title": "Mērsragas — kur Kuržemė susitinka su jūra", "text": "1,5 val. kelio nuo Rygos. Netoli svečių namų yra Mērsrago švyturys už 3 km, keli paukščių stebėjimo bokštai, Engurės ežeras ir Mērsrago kanalas.", "ctaDirections": "Gauti maršrutą", "mapEyebrow": "Svečių namų žyma"},
     "finalCta": {"title": "Pasiruošę ramiam savaitgaliui?", "text": "Patikrinkite laisvas datas ir rezervuokite tiesiogiai — be tarpininkų.", "cta": "Tikrinti datas"}
   },
   "accommodation": {
@@ -143,7 +162,7 @@
     "title": "Galerija",
     "description": "Hotel Mergera nuotraukos — kambariai, pirtis, lauko karšta vonia ir Mērsrago apylinkės.",
     "hero": {"eyebrow": "Galerija", "title": "Žvilgsnis į vietą, kurioje būsite", "subtitle": "Sąžiningos profesionalios nuotraukos: namas, pirtis, vonia ir gamta aplink."},
-    "filters": {"all": "Viskas", "exterior": "Išorė", "rooms": "Kambariai", "sauna": "Pirtis", "hotTub": "Karšta vonia", "surroundings": "Apylinkės"}
+    "filters": {"all": "Viskas", "exterior": "Išorė", "rooms": "Kambariai", "sauna": "Sauna", "hotTub": "Kubilas", "surroundings": "Apylinkės"}
   },
   "about": {
     "title": "Apie mus",
